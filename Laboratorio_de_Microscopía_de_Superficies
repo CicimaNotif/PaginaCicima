@@ -1,0 +1,185 @@
+<!-- 
+    ============================================================
+    SECCIÓN DE MICROSCOPÍA DE SUPERFICIES - CICIMA
+    ============================================================
+    Esta sección presenta los equipos de microscopía avanzada disponibles
+    en el laboratorio especializado en análisis de superficies
+-->
+
+<!-- 
+    CELDA 1: BOTONES DE ACCESO A EQUIPOS DE MICROSCOPÍA
+    Contiene enlaces a las páginas específicas de los microscopios
+-->
+<div class="cell-container">
+    <!-- 
+        TÍTULO DE LA SECCIÓN
+        Identifica claramente el tipo de equipos presentados
+    -->
+    <div class="custom-title">
+        Equipos
+    </div>
+    
+    <!-- 
+        CONTENEDOR DE BOTONES
+        Agrupa los botones de enlace usando Flexbox para diseño responsive
+    -->
+    <div class="button-container">
+        <!-- 
+            BOTÓN 1: MICROSCOPIO ELECTRÓNICO DE BARRIDO
+            - class="button btn-blue": Aplica estilos de botón azul
+            - href: Enlace directo a la página del equipo JSM-IT500
+            - Texto: Nombre completo y modelo del equipo
+        -->
+        <a class="button btn-blue" href="https://cicima.ucr.ac.cr/microscopio-barrido-electronico-jsm-it500">
+            Microscopio de Barrido Electrónico JSM-IT500
+        </a>
+        
+        <!-- 
+            BOTÓN 2: MICROSCOPIO DE FUERZA ATÓMICA
+            - Misma estructura que el primer botón
+            - Enlace a la página del equipo Multimode-SPM
+        -->
+        <a class="button btn-blue" href="https://cicima.ucr.ac.cr/microscopio-fuerza-atomica-multimode-spm">
+            Microscopio de Fuerza Atómica Multimode-SPM
+        </a>
+    </div>
+</div>
+
+<!-- 
+    CELDA 2: INFORMACIÓN CIENTÍFICA DEL LABORATORIO
+    Proporciona contexto técnico detallado sobre las capacidades del laboratorio
+-->
+<div class="cell-container">
+    <!-- 
+        TÍTULO DEL LABORATORIO
+        Nombre oficial del laboratorio especializado
+    -->
+    <div class="custom-title">
+        Laboratorio de Microscopía de Superficies
+    </div>
+    
+    <!-- 
+        DESCRIPCIÓN TÉCNICA DETALLADA
+        Texto científico que explica fundamentos, equipos y aplicaciones
+        - style="color:#000;text-align:justify;": Asegura legibilidad y formato profesional
+    -->
+    <div class="description" style="color:#000;text-align:justify;">
+        <!-- Párrafo 1: Introducción general al laboratorio -->
+        <p>
+            El Laboratorio de Microscopía de Superficies es un espacio especializado y dedicado al estudio detallado de las características y propiedades de las superficies de diferentes materiales. Este laboratorio cuenta con dos instrumentos principales: un Microscopio Electrónico de Barrido (SEM, por sus siglas en inglés) y un Microscopio de Fuerza Atómica (AFM, por sus siglas en inglés):
+        </p>
+        
+        <!-- Lista de equipos principales (sin formato de lista HTML) -->
+        <p>
+            Microscopio de Barrido Electrónico JSM-IT500
+        </p>
+        <p>
+            Microscopio de Fuerza Atómica Multimode-SPM
+        </p>
+        
+        <!-- Párrafo 2: Explicación técnica del SEM -->
+        <p>
+            El SEM es un potente instrumento que utiliza un haz de electrones para explorar y analizar la superficie de una muestra. Este microscopio es capaz de generar imágenes de alta resolución en tres dimensiones, lo que permite observar la topografía y la estructura de la superficie con gran detalle. Además, el SEM ofrece información sobre la composición química de la muestra mediante la detección de los electrones retrodispersados o emitidos por la interacción del haz de electrones con la muestra. Esto permite analizar la distribución de elementos químicos en la superficie y realizar mapeos de composición.
+        </p>
+        
+        <!-- Párrafo 3: Explicación técnica del AFM -->
+        <p>
+            Por otro lado, el AFM es un microscopio que utiliza una sonda extremadamente fina y sensible para explorar la superficie de la muestra a nivel atómico. La sonda realiza un barrido sobre la superficie y mide las fuerzas de interacción entre la sonda y la muestra, lo que proporciona información sobre la topografía, la rugosidad y las propiedades mecánicas de la superficie. El AFM es capaz de obtener imágenes de alta resolución, incluso a escala atómica, y permite la manipulación y caracterización de nanoestructuras.
+        </p>
+        
+        <!-- Párrafo 4: Aplicaciones interdisciplinarias -->
+        <p>
+            Estos instrumentos en el Laboratorio de Microscopía de Superficies son utilizados en una amplia gama de campos de investigación. En la ciencia de materiales, permiten analizar y comprender la morfología y estructura de materiales como metales, cerámicas, polímeros y materiales compuestos. En la nanotecnología, son herramientas fundamentales para la caracterización y manipulación de nanoestructuras y nanomateriales. En la biología, se utilizan para estudiar células, tejidos y superficies biológicas con alta resolución. También tienen aplicaciones en la ciencia ambiental, la catálisis, la electrónica y muchos otros campos científicos y tecnológicos.
+        </p>
+        
+        <!-- Párrafo 5: Resumen y conclusión -->
+        <p>
+            En resumen, el Laboratorio de Microscopía de Superficies es un espacio especializado que alberga un Microscopio Electrónico de Barrido (SEM) y un Microscopio de Fuerza Atómica (AFM), dos instrumentos clave para el estudio detallado de las superficies de los materiales permitiendo obtener imágenes de alta resolución y caracterizar la topografía, estructura y composición química de las superficies.
+        </p>
+    </div>
+</div>
+
+<!-- 
+    ============================================================
+    ESTILOS CSS PARA LA SECCIÓN DE MICROSCOPÍA
+    ============================================================
+    Define la apariencia visual de todos los elementos
+-->
+<style>
+    /* 
+        ESTILO BASE PARA CONTENEDORES DE CELDAS
+        Crea tarjetas visuales con diseño moderno y profesional
+    */
+    .cell-container {
+        background-color: white; /* Fondo blanco para máximo contraste y profesionalidad */
+        border-radius: 20px; /* Esquinas muy redondeadas para diseño contemporáneo */
+        padding: 20px; /* Espaciado interno generoso para respiración visual */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para efecto de profundidad */
+        margin: 20px auto; /* Centrado automático con márgenes verticales consistentes */
+        max-width: 1000px; /* Ancho máximo controlado para optimizar lectura */
+    }
+
+    /* 
+        ESTILO PARA TÍTULOS PERSONALIZADOS
+        Diseño consistente para encabezados principales y de sección
+    */
+    .custom-title {
+        text-align: center; /* Centrado horizontal para énfasis visual */
+        font-size: 24px; /* Tamaño de fuente destacado pero no excesivo */
+        font-weight: bold; /* Negrita para jerarquía visual clara */
+        margin-bottom: 20px; /* Espacio inferior generoso para separación */
+        color: #333; /* Color gris oscuro profesional y legible */
+    }
+
+    /* 
+        CONTENEDOR DE BOTONES CON FLEXBOX
+        Sistema de layout flexible y responsive para los botones
+    */
+    .button-container {
+        text-align: center; /* Centrado horizontal del contenido interno */
+        margin: 20px 0; /* Márgenes verticales para separación del título y otros elementos */
+        display: flex; /* Activa el modelo Flexbox para disposición flexible */
+        flex-wrap: wrap; /* Permite que los botones se envuelvan en pantallas pequeñas */
+        justify-content: center; /* Centra los botones horizontalmente dentro del contenedor */
+    }
+
+    /* 
+        ESTILO BASE PARA TODOS LOS BOTONES
+        Define la apariencia consistente de los elementos clickeables
+    */
+    .button {
+        display: inline-block; /* Permite dimensiones específicas y comportamiento de bloque */
+        padding: 12px 25px; /* Espaciado interno generoso para targets de click accesibles */
+        font-size: 18px; /* Tamaño de fuente legible y prominente */
+        color: white; /* Texto blanco para máximo contraste sobre fondos coloreados */
+        text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+        border-radius: 20px; /* Esquinas muy redondeadas para estilo moderno de botones */
+        cursor: pointer; /* Cursor de mano para indicar interactividad */
+        margin: 10px; /* Separación externa entre botones */
+        transition: background-color 0.3s, opacity 0.3s; /* Transiciones suaves para efectos hover */
+    }
+
+    /* 
+        EFECTO HOVER PARA BOTONES
+        Proporciona feedback visual al interactuar con los botones
+    */
+    .button:hover {
+        opacity: 0.85; /* Ligera transparencia al pasar el cursor para indicar interactividad */
+    }
+
+    /* 
+        VARIANTE ESPECÍFICA DE BOTÓN AZUL
+        Define el color institucional para los botones principales
+    */
+    .btn-blue {
+        background-color: #008CBA; /* Color azul característico del CICIMA/UCR */
+    }
+
+    /* 
+        ESTILO PARA ENLACES DENTRO DE DESCRIPCIONES
+        Aunque no se utiliza en el HTML actual, está definido para consistencia
+    */
+    .description a {
+        font-weight: bold; /* Texto en negrita para enlaces dentro de descripciones */
+    }
+</style>
