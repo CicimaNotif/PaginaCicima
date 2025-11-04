@@ -1,0 +1,246 @@
+<!-- 
+    ============================================================
+    SECCIÓN DE SOLICITUD DE USO DE EQUIPOS - CICIMA
+    ============================================================
+    Esta sección contiene información sobre el uso de equipos especializados
+    y un formulario embebido de Google Forms para solicitudes formales
+-->
+
+<!-- 
+    CONTENEDOR PRINCIPAL DE LA CELDA
+    Crea una tarjeta visual con sombras y bordes redondeados
+-->
+<div class="cell-container">
+    
+    <!-- 
+        TÍTULO PERSONALIZADO (VACÍO)
+        - Contiene un espacio no rompible (&nbsp;) como placeholder
+        - Podría utilizarse para un título futuro
+    -->
+    <div class="custom-title">
+        &nbsp;
+    </div>
+    
+    <!-- 
+        SECCIÓN DE DESCRIPCIÓN Y CONTEXTO
+        Proporciona información detallada sobre el proceso de solicitud de equipos
+    -->
+    <div class="description">
+        <!-- 
+            PÁRRAFO 1: Introducción y propósito
+            Presenta el centro y explica el objetivo del formulario
+        -->
+        <p>
+            Nos complace enormemente su interés en establecer una alianza con nuestro centro, un espacio dedicado a la investigación, la innovación y el apoyo técnico-científico de alto nivel. A través de este formulario, usted podrá solicitar formalmente el uso de nuestra gama de equipos especializados y el respaldo de nuestro personal experto para impulsar sus proyectos de investigación, desarrollo o innovación.
+        </p>
+        
+        <!-- 
+            PÁRRAFO 2: Utilidad de la información
+            Explica cómo se utilizarán los datos proporcionados
+        -->
+        <p>
+            La información que nos proporcione en este formulario es fundamental. No solo nos permitirá evaluar la viabilidad técnica de su solicitud y coordinar la disponibilidad inmediata de los equipos, sino que también será la base para programar el uso de manera eficiente, asignar los recursos humanos necesarios y, de ser requerido, generar una cotización detallada y personalizada que se ajuste a las necesidades específicas de su proyecto.
+        </p>
+        
+        <!-- 
+            PÁRRAFO 3: Instrucciones de llenado
+            Guía al usuario sobre cómo completar correctamente el formulario
+        -->
+        <p>
+            Le solicitamos completar todos los campos con la mayor claridad y veracidad posible, ya que estos datos son esenciales para agilizar el proceso de revisión y respuesta. La transparencia en la información nos permite entender a profundidad los objetivos de su investigación y, de esta forma, potenciar el valor de nuestra colaboración mutua.
+        </p>
+        
+        <!-- 
+            PÁRRAFO 4: Proceso posterior al envío
+            Detalla qué sucede después de enviar la solicitud
+        -->
+        <p>
+            Una vez recibida su solicitud, nuestro equipo administrativo y técnico la revisará minuciosamente y se pondrá en contacto con usted en el menor tiempo posible para confirmar la disponibilidad, discutir los detalles logísticos, absolver cualquier consulta y guiarle en los siguientes pasos a seguir.
+        </p>
+        
+        <!-- 
+            PÁRRAFO 5: Cierre y compromiso institucional
+            Refuerza la misión del centro y cierra de manera positiva
+        -->
+        <p>
+            Agradecemos su confianza en las capacidades del CICIMA-UCR. Estamos comprometidos con apoyar la generación de conocimiento y el avance científico-tecnológico, y esperamos con interés la oportunidad de colaborar con usted para hacer de su proyecto una realidad.
+        </p>
+    </div>
+    
+    <!-- 
+        FORMULARIO DE GOOGLE EMBEBIDO
+        Contiene el iframe que carga el formulario específico para equipos
+    -->
+    <div class="form-container">
+        <!-- 
+            IFRAME DEL FORMULARIO DE GOOGLE
+            - src: URL única del formulario específico para equipos
+            - width: 100% → Ocupa todo el ancho disponible
+            - height: 2400px → Altura fija optimizada para este formulario
+            - frameborder: 0 → Elimina el borde por defecto
+            - marginheight: 0 → Sin márgenes internos verticales
+            - marginwidth: 0 → Sin márgenes internos horizontales
+            Texto "Cargando..." como fallback para navegadores antiguos
+        -->
+        <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfIYgcwciDG1XYm6OJb5PV-JAoKxJYgZuQL5YACu4thzZpPKw/viewform?embedded=true" 
+            width="100%" 
+            height="2400" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0">
+            Cargando…
+        </iframe>
+    </div>
+    
+    <!-- 
+        ============================================================
+        ESTILOS CSS ESPECÍFICOS PARA ESTA SECCIÓN
+        ============================================================
+        Estos estilos controlan la apariencia de todos los elementos
+        Nota: Incluye estilos para un carrusel (aunque no se usa en el HTML visible)
+    -->
+    <style>
+        /* 
+            ESTILO BASE PARA EL CONTENEDOR DE CELDA
+            Define la tarjeta principal con diseño moderno
+        */
+        .cell-container {
+            background-color: white; /* Fondo blanco para profesionalismo */
+            border-radius: 20px; /* Esquinas muy redondeadas */
+            padding: 20px; /* Espaciado interno generoso */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para profundidad */
+            margin: 20px auto; /* Centrado automático con margen vertical */
+            max-width: 1200px; /* Ancho máximo para diseño responsive */
+        }
+
+        /* 
+            ESTILO PARA TÍTULOS PERSONALIZADOS
+            Diseño para encabezados destacados (aunque está vacío en este caso)
+        */
+        .custom-title {
+            text-align: center; /* Centrado horizontal */
+            font-size: 24px; /* Tamaño de fuente grande */
+            font-weight: bold; /* Negrita para énfasis */
+            margin-bottom: 10px; /* Espacio inferior */
+            color: #333; /* Color gris oscuro profesional */
+        }
+
+        /* 
+            ESTILO PARA BLOQUES DE DESCRIPCIÓN
+            Controla la presentación del texto explicativo
+        */
+        .description {
+            color: #000; /* Negro puro para máxima legibilidad */
+            text-align: justify; /* Texto justificado para apariencia formal */
+        }
+
+        /* 
+            ESTILO PARA PÁRRAFOS INDIVIDUALES
+            Mejora la legibilidad y estructura del texto
+        */
+        .description p {
+            margin-bottom: 15px; /* Separación clara entre párrafos */
+            line-height: 1.5; /* Interlineado amplio para lectura cómoda */
+        }
+
+        /* 
+            CONTENEDOR DEL FORMULARIO
+            Gestiona el espaciado alrededor del iframe
+        */
+        .form-container {
+            margin: 30px 0; /* Márgenes verticales grandes para separación */
+        }
+
+        /* 
+            ESTILO PARA EL IFRAME DEL FORMULARIO
+            Personaliza la apariencia del formulario embebido
+        */
+        .form-container iframe {
+            border: none; /* Elimina el borde predeterminado del iframe */
+            border-radius: 8px; /* Esquinas ligeramente redondeadas */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra sutil para integración */
+            width: 100%; /* Ancho completo del contenedor padre */
+            height: 2400px; /* Altura fija específica para este formulario */
+        }
+
+        /* 
+            CELDA SEPARADA (ESTILO DEFINIDO PERO NO UTILIZADO)
+            Podría usarse para contenido adicional como galerías o información extra
+        */
+        .separate-cell {
+            background-color: #f8f9fa; /* Fondo gris muy claro */
+            border-radius: 10px; /* Esquinas redondeadas */
+            padding: 20px; /* Espaciado interno */
+            margin-top: 40px; /* Separación superior grande */
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Sombra más suave */
+        }
+
+        /* 
+            TÍTULO PARA CARRUSEL (NO UTILIZADO)
+            Estilo para encabezados de galerías o sliders
+        */
+        .carousel-title {
+            text-align: center; /* Centrado horizontal */
+            margin-bottom: 20px; /* Espacio inferior */
+            color: #333; /* Color gris oscuro */
+            font-size: 22px; /* Tamaño de fuente grande */
+        }
+
+        /* 
+            CONTENEDOR DE CARRUSEL (NO UTILIZADO)
+            Estructura base para un carrusel de imágenes
+        */
+        .carousel-container {
+            overflow: hidden; /* Oculta el contenido que se desborda */
+            position: relative; /* Posicionamiento para elementos hijos absolutos */
+            border-radius: 10px; /* Esquinas redondeadas */
+            background-color: #fff; /* Fondo blanco */
+            padding: 10px; /* Espaciado interno */
+        }
+
+        /* 
+            PISTA DEL CARRUSEL (NO UTILIZADO)
+            Contenedor flexible para los elementos del carrusel
+        */
+        .carousel-track {
+            display: flex; /* Usa flexbox para alineación horizontal */
+            width: max-content; /* Ancho según el contenido total */
+        }
+
+        /* 
+            ELEMENTO INDIVIDUAL DEL CARRUSEL (NO UTILIZADO)
+            Define cada ítem de la galería
+        */
+        .carousel-item {
+            flex: 0 0 auto; /* No crece, no se encoge, tamaño automático */
+            width: 300px; /* Ancho fijo para cada elemento */
+            height: 200px; /* Alto fijo para consistencia */
+            margin-right: 15px; /* Separación entre elementos */
+            border-radius: 8px; /* Esquinas redondeadas */
+            overflow: hidden; /* Recorta el contenido que se desborda */
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Sombra sutil */
+        }
+
+        /* 
+            IMAGEN DENTRO DEL CARRUSEL (NO UTILIZADO)
+            Controla cómo se muestran las imágenes
+        */
+        .carousel-item img {
+            width: 100%; /* Ancho completo del contenedor */
+            height: 100%; /* Alto completo del contenedor */
+            object-fit: cover; /* Recorta la imagen para llenar el espacio */
+        }
+
+        /* 
+            INSTRUCCIONES DEL CARRUSEL (NO UTILIZADO)
+            Texto de ayuda para la interacción del usuario
+        */
+        .carousel-instruction {
+            text-align: center; /* Centrado horizontal */
+            margin-top: 10px; /* Espacio superior */
+            color: #666; /* Color gris medio */
+            font-size: 14px; /* Tamaño de fuente pequeño */
+        }
+    </style>
+</div>
