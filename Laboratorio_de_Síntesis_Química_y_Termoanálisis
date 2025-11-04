@@ -1,0 +1,96 @@
+<!-- Celda de botones -->
+<div class="cell-container">
+    <div class="custom-title">
+        Equipos
+    </div>
+    <div class="button-container">
+        <a class="button btn-blue" href="https://cicima.ucr.ac.cr/analizador-termogravimetrico-tga-5500">Analizador Termogravimétrico TGA-5500</a> <a class="button btn-blue" href="https://cicima.ucr.ac.cr/calorimetro-barrido-diferencial-dsc2500">Calorímetro de Barrido Diferencial DSC2500</a> <a class="button btn-blue" href="https://cicima.ucr.ac.cr/analizador-dinamico-mecanico-g2-rsa">Analizador Dinámico Mecánico G2 RSA</a> <a class="button btn-blue" href="https://cicima.ucr.ac.cr/reometro-ares-g2">Reómetro ARES G2</a> <a class="button btn-blue" href="https://cicima.ucr.ac.cr/cortadora-hilo-diamante-dws100">Cortadora de Hilo de Diamante DWS.100</a>
+    </div>
+</div>
+<!-- Celda descriptiva sin enlaces -->
+<div class="cell-container">
+    <div class="custom-title">
+        Laboratorio de Síntesis Química y Termoanálisis
+    </div>
+    <div class="description" style="color:#000;text-align:justify;">
+        <p>
+            El Laboratorio de Síntesis Química y Termoanálisis es un espacio dedicado al estudio y desarrollo de materiales mediante síntesis química y análisis termoanalíticos. Este laboratorio cuenta con varios instrumentos clave, incluyendo un DSC (Calorímetro de Barrido Diferencial), un TGA (Análisis Termogravimétrico), un reómetro y un DMA (Análisis Dinámico-Mecánico).
+        </p>
+        <p>
+            El DSC es utilizado para investigar los cambios en el calor absorbido o liberado por una muestra durante procesos térmicos. Permite estudiar las transiciones de fase, la estabilidad térmica, las reacciones químicas y otros fenómenos relacionados con el calor. El DSC registra la diferencia de temperatura entre la muestra y una referencia mientras se somete a un programa de calentamiento o enfriamiento controlado.
+        </p>
+        <p>
+            El TGA mide los cambios en la masa de una muestra en función de la temperatura o el tiempo. Este análisis termogravimétrico permite determinar la composición de la muestra, identificar la presencia de diferentes componentes, evaluar la estabilidad térmica y analizar la descomposición o pérdida de masa durante procesos de calentamiento.
+        </p>
+        <p>
+            El reómetro mide propiedades reológicas de los materiales, es decir, cómo fluyen y responden a la aplicación de fuerzas. Permite estudiar la viscosidad, el comportamiento elástico y viscoelástico, la fluidez y la deformación de los materiales líquidos y sólidos. El reómetro es utilizado en la caracterización de polímeros, fluidos y materiales complejos.
+        </p>
+        <p>
+            El DMA permite analizar las propiedades mecánicas y dinámicas de los materiales. Mediciones del módulo de elasticidad, resistencia al flujo, rigidez y capacidad de amortiguamiento de una muestra bajo diferentes condiciones de temperatura y frecuencia. El DMA es ampliamente utilizado en el estudio de polímeros, materiales compuestos y biomateriales.
+        </p>
+        <p>
+            El laboratorio está equipado con:
+        </p>
+        <ul>
+            <li>
+                Analizador Termogravimétrico TGA-5500
+            </li>
+            <li>
+                Calorímetro de Barrido Diferencial DSC2500
+            </li>
+            <li>
+                Analizador Dinámico Mecánico G2 RSA
+            </li>
+            <li>
+                Reómetro ARES G2
+            </li>
+            <li>
+                Cortadora de Hilo de Diamante DWS.100
+            </li>
+        </ul>
+        <p>
+            Estos instrumentos en el Laboratorio de Síntesis Química y Termoanálisis son fundamentales para el diseño, estudio y desarrollo de nuevos materiales. La síntesis química permite la fabricación de materiales a medida, mientras que los análisis termoanalíticos brindan información crucial sobre la estabilidad térmica, la pureza, las transiciones de fase y otros aspectos fundamentales de los materiales. El uso del reómetro y el DMA permite comprender y controlar las propiedades mecánicas y reológicas de los materiales, lo que es esencial para su aplicación en diversas industrias, como la automotriz, la electrónica, la medicina y muchas otras.
+        </p>
+    </div>
+</div>
+<!-- CSS compartido --><style>
+    .cell-container {
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        max-width: 1000px;
+    }
+    .custom-title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .button-container {
+        text-align: center;
+        margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .button {
+        display: inline-block;
+        padding: 12px 25px;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 10px;
+        transition: background-color 0.3s, opacity 0.3s;
+    }
+    .button:hover {
+        opacity: 0.85;
+    }
+    .btn-blue {
+        background-color: #008CBA;
+    }
+</style>
