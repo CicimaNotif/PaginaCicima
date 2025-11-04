@@ -1,0 +1,99 @@
+!-- Celda de botones -->
+<div class="cell-container">
+    <div class="custom-title">
+        Equipos
+    </div>
+    <div class="button-container">
+        <a class="button btn-blue" href="https://cicima.ucr.ac.cr/microscopio-invertido-epi-fluorescencia-ti2-e">Microscopio Invertido de Epi-fluorescencia Ti2-E</a> <a class="button btn-blue" href="https://cicima.ucr.ac.cr/sistema-microespectrofotometria-visnir-lv100nd508pv">Sistema de Microespectrofotometría (Vis/NIR) LV100ND/508PV</a> <a class="button btn-blue" href="https://cicima.ucr.ac.cr/espectrofotometro-precision-uvvisnir-lambda1050">Espectrofotómetro de precisión (UV/Vis/NIR) Lambda1050</a> <a class="button btn-blue" href="https://cicima.ucr.ac.cr/espectrometro-infrarrojo-transformada-fourier-ft-ir-frontier100">Espectrómetro Infrarrojo de Transformada de Fourier (FT-IR) Frontier100</a> <a class="button btn-blue" href="https://cicima.ucr.ac.cr/sistema-imagenes-en-infrarrojo-ft-ir-spotligth400">Sistema de Imágenes en Infrarrojo (FT-IR) Spotligth400</a> <a class="button btn-blue" href="https://cicima.ucr.ac.cr/fluorometro-fl8500">Fluorómetro FL8500</a> <a class="button btn-blue" href="https://cicima.ucr.ac.cr/sistema-modular-microespectrocopia-raman-alpha300r">Sistema Modular de Microespectroscopía Raman Alpha300R</a>
+    </div>
+</div>
+<!-- Celda descriptiva sin enlaces -->
+<div class="cell-container">
+    <div class="custom-title">
+        Laboratorio de Óptica de Precisión y Espectroscopía
+    </div>
+    <div class="description" style="color:#000;text-align:justify;">
+        <p>
+            El Laboratorio de Óptica de Precisión y Espectroscopía es un espacio especializado al estudio y análisis detallado de materiales utilizando técnicas ópticas avanzadas. Combina la precisión y la alta resolución de los equipos ópticos con la espectroscopia para investigar las propiedades de los materiales a nivel molecular.
+        </p>
+        <p>
+            La óptica de precisión se enfoca en la manipulación y medición precisa de la luz y sus interacciones con la materia. Los investigadores en este laboratorio utilizan diversos principios ópticos para comprender la estructura y las propiedades de los materiales, así como para desarrollar nuevas aplicaciones y tecnologías.
+        </p>
+        <p>
+            La espectroscopia es una técnica que permite el estudio de la interacción entre la luz y la materia, analizando cómo los materiales absorben, reflejan o emiten luz en función de su composición y estructura molecular. Proporcionando información valiosa sobre las propiedades químicas y físicas de los materiales, así como su comportamiento en diferentes condiciones.
+        </p>
+        <p>
+            El Laboratorio está equipado con:
+        </p>
+        <ul>
+            <li>
+                Microscopio Invertido de Epi-fluorescencia Ti2-E
+            </li>
+            <li>
+                Sistema de Microespectrofotometría (Vis/NIR) LV100ND/508PV
+            </li>
+            <li>
+                Espectrofotómetro de precisión (UV/Vis/NIR) Lambda1050
+            </li>
+            <li>
+                Espectrómetro Infrarrojo de Transformada de Fourier (FT-IR) Frontier100
+            </li>
+            <li>
+                Sistema de Imágenes en Infrarrojo (FT-IR) Spotligth400
+            </li>
+            <li>
+                Fluorómetro FL8500
+            </li>
+            <li>
+                Sistema Modular de Microespectroscopía Raman Alpha300R
+            </li>
+        </ul>
+        <p>
+            Estos equipos permiten a los investigadores obtener información precisa sobre la composición química, estructura molecular, propiedades ópticas y térmicas, distribución de temperatura, y características físicas de los materiales en estudio. Aportando en áreas como la ciencia de materiales, la química, la biología, la nanotecnología, la medicina y la industria, entre otros campos.
+        </p>
+        <p>
+            El Laboratorio de Óptica de Precisión y Espectroscopía se destaca por su capacidad para realizar investigaciones avanzadas y proporcionar resultados detallados y confiables. Además, fomenta la colaboración con otros investigadores y la transferencia de conocimientos para impulsar la innovación en el campo de la óptica y la espectroscopía, y contribuir al avance científico y tecnológico en diversas disciplinas.
+        </p>
+    </div>
+</div>
+<!-- Estilos CSS --><style>
+    .cell-container {
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        max-width: 1000px;
+    }
+    .custom-title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .button-container {
+        text-align: center;
+        margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .button {
+        display: inline-block;
+        padding: 12px 25px;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 10px;
+        transition: background-color 0.3s, opacity 0.3s;
+    }
+    .button:hover {
+        opacity: 0.85;
+    }
+    .btn-blue {
+        background-color: #008CBA;
+    }
+</style>
