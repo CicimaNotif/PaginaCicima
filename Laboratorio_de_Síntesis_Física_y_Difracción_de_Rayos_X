@@ -1,0 +1,195 @@
+<!-- 
+    ============================================================
+    SECCIÓN DE EQUIPOS DEL LABORATORIO - CICIMA
+    ============================================================
+    Esta sección presenta los equipos disponibles en el laboratorio
+    con enlaces a sus páginas específicas y descripción detallada
+-->
+
+<!-- 
+    CELDA 1: BOTONES DE ACCESO A EQUIPOS
+    Contiene los enlaces principales a los equipos disponibles
+-->
+<div class="cell-container">
+    <!-- 
+        TÍTULO DE LA SECCIÓN
+        Indica claramente el propósito de los botones
+    -->
+    <div class="custom-title">
+        Equipos
+    </div>
+    
+    <!-- 
+        CONTENEDOR DE BOTONES
+        Agrupa los botones de enlace a los equipos específicos
+    -->
+    <div class="button-container">
+        <!-- 
+            BOTÓN 1: DIFRACTÓMETRO DE RAYOS X
+            - class="button btn-blue": Aplica estilos de botón azul
+            - href: Enlace a la página específica del equipo
+            - Texto: Nombre completo del equipo
+        -->
+        <a class="button btn-blue" href="https://cicima.ucr.ac.cr/difractometro-rayos-x-empyrean">
+            Difractómetro de Rayos X EMPYREAN
+        </a>
+        
+        <!-- 
+            BOTÓN 2: MICROSCOPÍA CONFOCAL
+            - Misma estructura que el primer botón
+            - Enlace a la página del sistema de microscopía
+        -->
+        <a class="button btn-blue" href="https://cicima.ucr.ac.cr/sistema-microscopia-confocal-superalta-resolucion-n-sim-s-n-storm-a1rhd">
+            Sistema de Microscopía Confocal de Súperalta Resolución N-SIM-S y N-Storm A1RHD
+        </a>
+    </div>
+</div>
+
+<!-- 
+    CELDA 2: INFORMACIÓN DETALLADA DEL LABORATORIO
+    Proporciona contexto científico y técnico sobre las capacidades del laboratorio
+-->
+<div class="cell-container">
+    <div class="content">
+        <!-- 
+            TÍTULO DEL LABORATORIO
+            Nombre formal del laboratorio especializado
+        -->
+        <div class="title">
+            Laboratorio de Síntesis Física y Difracción de Rayos X
+        </div>
+        
+        <!-- 
+            DESCRIPCIÓN DETALLADA
+            Texto científico-técnico explicando las capacidades y aplicaciones
+            - class="text-align-justify description": Aplica justificación y estilos de descripción
+            - style="color:#000;": Asegura color negro para mejor legibilidad
+        -->
+        <div class="text-align-justify description" style="color:#000;">
+            <!-- Párrafo 1: Introducción al laboratorio y difractómetro -->
+            El Laboratorio de Síntesis Física y Difracción de Rayos X desempeña un papel fundamental en la síntesis y caracterización de materiales mediante el uso de técnicas avanzadas de difracción de rayos X. El difractómetro de rayos X es una herramienta clave en este proceso, permite analizar la estructura cristalina de los materiales, determinar su composición química y obtener información detallada sobre sus propiedades físicas.&nbsp;<br>
+            <br>
+            
+            <!-- Párrafo 2: Explicación técnica del análisis estructural -->
+            A partir de un patrón de difracción característico, es posible determinar la disposición espacial de los átomos en la muestra. Proporcionando información valiosa sobre la estructura atómica y molecular del material, incluyendo parámetros como las distancias interatómicas, los ángulos de enlace y la simetría cristalina.&nbsp;<br>
+            <br>
+            
+            <!-- Párrafo 3: Introducción al microscopio confocal -->
+            Por otro lado, el laboratorio cuenta también con un microscopio confocal de super alta resolución, una herramienta de vanguardia en la investigación y caracterización de materiales a nivel microscópico. Este microscopio utiliza una técnica de escaneo láser para generar imágenes tridimensionales de alta calidad y resolución.&nbsp;<br>
+            <br>
+            
+            <!-- Párrafo 4: Capacidades de resolución del microscopio -->
+            El microscopio confocal de super alta resolución es capaz de detectar características microscópicas con una resolución excepcional, incluso a nivel nanométrico. Esto permite observar y analizar la estructura y morfología de las muestras con gran detalle, obteniendo información sobre la distribución de partículas, la topografía de la superficie y otras propiedades microscópicas relevantes.&nbsp;<br>
+            <br>
+            
+            <!-- Párrafo 5: Capacidades 3D del microscopio -->
+            Además, gracias a su capacidad de escaneo tridimensional, el microscopio confocal permite reconstruir imágenes en 3D, lo que brinda una representación más completa y precisa de la muestra. Esto facilita el análisis cuantitativo de parámetros morfológicos, como el tamaño, la forma y la rugosidad de las estructuras presentes en el material.&nbsp;<br>
+            <br>
+            
+            <!-- Párrafo 6: Combinación sinérgica de equipos -->
+            En conjunto, el difractómetro de rayos X y el microscopio confocal de super alta resolución del laboratorio proporcionan una combinación poderosa de herramientas para la caracterización y análisis detallado de materiales e incluso células.&nbsp;<br>
+            <br>
+            
+            <!-- Lista de equipos disponibles -->
+            <strong>El laboratorio está equipado con:</strong><br>
+            - Difractómetro de Rayos X EMPYREAN<br>
+            - Sistema de Microscopía Confocal de Súperalta Resolución N-SIM-S y N-Storm A1RHD&nbsp;<br>
+            <br>
+            
+            <!-- Párrafo 7: Importancia científica y aplicaciones -->
+            Estos instrumentos son esenciales en la investigación científica y tecnológica, ya que permiten comprender mejor las propiedades de los materiales, desarrollar nuevos materiales con aplicaciones específicas y contribuir al avance en campos como la ciencia de materiales, la nanotecnología, la química y muchas otras disciplinas.
+        </div>
+    </div>
+</div>
+
+<!-- 
+    ============================================================
+    ESTILOS CSS PARA LA SECCIÓN DE EQUIPOS
+    ============================================================
+    Define la apariencia visual de todos los elementos
+-->
+<style>
+    /* 
+        ESTILO BASE PARA CONTENEDORES DE CELDAS
+        Crea tarjetas visuales con diseño moderno y profesional
+    */
+    .cell-container {
+        background-color: white; /* Fondo blanco para máximo contraste */
+        border-radius: 20px; /* Esquinas muy redondeadas para diseño moderno */
+        padding: 20px; /* Espaciado interno generoso */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para efecto de elevación */
+        margin: 20px auto; /* Centrado automático con márgenes verticales */
+        max-width: 1000px; /* Ancho máximo para controlar el layout */
+        text-align: center; /* Centrado general del contenido */
+    }
+
+    /* 
+        ESTILO PARA TÍTULOS PERSONALIZADOS
+        Diseño para encabezados principales
+    */
+    .custom-title {
+        text-align: center; /* Centrado horizontal */
+        font-size: 24px; /* Tamaño de fuente grande para destacar */
+        font-weight: bold; /* Negrita para énfasis visual */
+        margin-bottom: 20px; /* Espacio inferior separador */
+        color: #333; /* Color gris oscuro profesional */
+    }
+
+    /* 
+        CONTENEDOR DE BOTONES
+        Usa Flexbox para disposición flexible y responsive
+    */
+    .button-container {
+        text-align: center; /* Centrado horizontal de los botones */
+        margin: 20px 0; /* Márgenes verticales para separación */
+        display: flex; /* Activa Flexbox para layout flexible */
+        flex-wrap: wrap; /* Permite que los botones se envuelvan en móviles */
+        justify-content: center; /* Centra los botones horizontalmente */
+    }
+
+    /* 
+        ESTILO BASE PARA BOTONES
+        Diseño consistente para todos los botones de enlace
+    */
+    .button {
+        display: inline-block; /* Permite dimensiones y márgenes */
+        padding: 12px 25px; /* Espaciado interno generoso para fácil click */
+        font-size: 18px; /* Tamaño de fuente legible */
+        color: white; /* Texto blanco para contraste con fondo azul */
+        text-decoration: none; /* Elimina subrayado de enlaces */
+        border-radius: 20px; /* Esquinas muy redondeadas (botones ovalados) */
+        cursor: pointer; /* Cursor de mano al pasar sobre el botón */
+        margin: 10px; /* Separación entre botones */
+        background-color: #008CBA; /* Color azul institucional */
+        transition: background-color 0.3s, opacity 0.3s; /* Transiciones suaves para hover */
+    }
+
+    /* 
+        EFECTO HOVER PARA BOTONES
+        Cambio visual al interactuar con el mouse
+    */
+    .button:hover {
+        opacity: 0.85; /* Ligera transparencia al pasar el cursor */
+    }
+
+    /* 
+        ESTILO PARA TÍTULOS INTERNOS
+        Encabezados dentro del contenido descriptivo
+    */
+    .title {
+        font-size: 24px; /* Mismo tamaño que custom-title para consistencia */
+        font-weight: bold; /* Negrita para destacar */
+        margin-bottom: 15px; /* Espacio inferior */
+        color: #333; /* Color gris oscuro profesional */
+    }
+
+    /* 
+        ESTILO PARA DESCRIPCIONES
+        Controla la presentación del texto explicativo
+    */
+    .description {
+        font-size: 16px; /* Tamaño estándar para lectura cómoda */
+        color: #000; /* Negro puro para máxima legibilidad */
+        text-align: justify; /* Texto justificado para apariencia formal */
+    }
+</style>
