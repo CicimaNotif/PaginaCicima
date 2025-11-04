@@ -1,0 +1,492 @@
+<!-- ===== COMIENZO DEL CÓDIGO HTML PARA PERFILES DE INVESTIGADORES ===== -->
+
+<!-- 
+    PERFIL 1: Dr. Arturo Ramírez Porras
+    Este es el primer perfil de investigador. La estructura se repite para los 18 perfiles.
+-->
+<!-- Contenedor principal del perfil con clase 'profile-cell reverse' para posicionar la imagen a la derecha -->
+<div class="profile-cell reverse">
+    <!-- 
+        IMAGEN DEL PERFIL:
+        - class="profile-image": Aplica estilos CSS específicos para imágenes
+        - src: URL de la imagen desde el servidor de CICIMA
+        - alt: Texto alternativo para accesibilidad (lectores de pantalla)
+        - width y height: Dimensiones originales de la imagen (no afectan el tamaño visual debido a CSS)
+    -->
+    <img class="profile-image" src="https://cicima.ucr.ac.cr/sites/default/files/2023-09/ArturoRamirez.png" alt="Dr. Arturo Ramírez Porras" width="1280" height="764">
+    
+    <!-- Contenedor de la información textual del perfil -->
+    <div class="profile-info">
+        <!-- Nombre del investigador con estilos específicos -->
+        <div class="profile-name">
+            Dr. Arturo Ramírez Porras
+        </div>
+        
+        <!-- Descripción biográfica y profesional del investigador -->
+        <div class="profile-description">
+            Arturo Ramírez es Profesor Catedrático en la Escuela de Física de la Universidad de Costa Rica. Obtuvo su doctorado en Físico Química en la Universidad de Puerto Rico, Recinto de Río Piedras. Su principal línea de investigación se centra en el estudio del silicio poroso. Puedes contactarlo al correo electrónico: arturo.ramirez@ucr.ac.cr.
+        </div>
+        
+        <!-- Contenedor de enlaces a proyectos y publicaciones -->
+        <p>
+            <!-- 
+                BOTONES DE ENLACE:
+                - class="btn": Aplica estilos de botón
+                - href: URL destino del enlace
+                - Texto visible del botón
+            -->
+            <a class="btn" href="https://vinv.ucr.ac.cr/sigpro/web/researchers/106620090">Proyectos</a> 
+            <a class="btn" href="https://scholar.google.es/citations?hl=es&amp;user=6hbp8kkAAAAJ">Publicaciones</a>
+        </p>
+    </div>
+</div>
+
+<!-- PERFIL 2: Dra. Cindy Torres Quirós -->
+<!-- Este perfil NO tiene la clase 'reverse', por lo que la imagen aparece a la izquierda -->
+<div class="profile-cell">
+    <img class="profile-image" src="https://cicima.ucr.ac.cr/sites/default/files/2023-09/Cindy-Torres-Quiro%CC%81s.jpg" alt="Dra. Cindy Torres Quirós" width="400" height="312">
+    <div class="profile-info">
+        <div class="profile-name">
+            Dra. Cindy Torres Quirós
+        </div>
+        <div class="profile-description">
+            Cindy Torres es doctora en Ingeniería Química por la Universidad de Costa Rica, donde actualmente se desempeña como asociada en la Escuela de Ingeniería Química. Su trabajo académico y profesional se centra en la formación de nuevas generaciones de ingenieros e ingenieras químicas, contribuyendo al desarrollo científico del país desde la docencia y la investigación. Puedes contactarla al correo cindy.torres@ucr.ac.cr.
+        </div>
+        <p>
+            <!-- Este perfil solo tiene enlace a publicaciones, no a proyectos -->
+            <a class="btn" href="https://vinv.ucr.ac.cr/sigpro/web/researchers/110630473">Publicaciones</a>
+        </p>
+    </div>
+</div>
+
+<!-- PERFIL 3: Dr. Daniel Azofeifa Alvarado -->
+<!-- Perfil con clase 'reverse' (imagen a la derecha) -->
+<div class="profile-cell reverse">
+    <img class="profile-image" src="https://cicima.ucr.ac.cr/sites/default/files/2023-09/Daniel.png" alt="Dr. Daniel Azofeifa Alvarado" width="1280" height="1092">
+    <div class="profile-info">
+        <div class="profile-name">
+            Dr. Daniel Azofeifa Alvarado
+        </div>
+        <div class="profile-description">
+            Daniel Azofeifa es profesor catedrático pensionado y actualmente investigador activo en la Universidad de Costa Rica, donde ostenta el título de Profesor Emérito. Es doctor en Física del Estado Sólido por la Universidad de Ohio, Estados Unidos. Su trayectoria académica ha estado marcada por una destacada labor en el estudio de materiales, con especial énfasis en la absorción de hidrógeno en metales, las propiedades ópticas y eléctricas de capas delgadas metálicas, y el fenómeno del color estructural. Para consultas o colaboraciones, se le puede contactar al correo daniel.azofeifa@ucr.ac.cr.
+        </div>
+        <p>
+            <a class="btn" href="https://scholar.google.es/citations?hl=es&amp;user=a-YBsUgAAAAJ">Publicaciones</a>
+        </p>
+    </div>
+</div>
+
+<!-- PERFIL 4: Esteban Avendaño Soto, PhD. -->
+<div class="profile-cell">
+    <img class="profile-image" src="https://cicima.ucr.ac.cr/sites/default/files/2023-09/esteban_avendano.jpg" alt="Esteban Avendaño Soto, PhD." width="522" height="400">
+    <div class="profile-info">
+        <div class="profile-name">
+            Esteban Avendaño Soto, PhD.
+        </div>
+        <div class="profile-description">
+            Esteban Avendaño Soto es profesor catedrático de la Escuela de Física de la Universidad de Costa Rica. Obtuvo el título de doctor (PhD.) en Física del Estado Sólido por la Universidad de Uppsala, Suecia. Su labor académica y de investigación se centra en el área de la física de los materiales y la física del estado sólido. Para establecer contacto o coordinar colaboraciones, se le puede escribir al correo esteban.avendanosoto@ucr.ac.cr.
+        </div>
+        <p>
+            <a class="btn" href="https://vinv.ucr.ac.cr/sigpro/web/researchers/109040803">Proyectos</a> 
+            <a class="btn" href="https://scholar.google.es/citations?user=JtLKuYIPlkkC&amp;hl=es&amp;oi=sra">Publicaciones</a>
+        </p>
+    </div>
+</div>
+
+<!-- PERFIL 5: Esteban Bermúdez Ureña, Ph.D. -->
+<div class="profile-cell reverse">
+    <img class="profile-image" src="https://cicima.ucr.ac.cr/sites/default/files/2023-09/esteban-bermudez-x6076174157a86.jpg" alt="Esteban Bermúdez Ureña, Ph.D." width="900" height="722">
+    <div class="profile-info">
+        <div class="profile-name">
+            Esteban Bermúdez Ureña, Ph.D.
+        </div>
+        <div class="profile-description">
+            Esteban Bermúdez Ureña es profesor asociado en la Escuela de Física de la Universidad de Costa Rica. Obtuvo su doctorado (Ph.D.) en Fotónica por el Instituto de Ciencias Fotónicas (ICFO) y la Universidad Politécnica de Cataluña, en España. Su investigación se enfoca en el estudio de fenómenos ópticos en seres vivos, combinando la física con la biología para comprender la interacción de la luz con sistemas biológicos. Puede ser contactado al correo esteban.bermudezurena@ucr.ac.cr.
+        </div>
+        <p>
+            <a class="btn" href="https://vinv.ucr.ac.cr/sigpro/web/researchers/112320729">Proyectos</a> 
+            <a class="btn" href="https://scholar.google.es/citations?hl=es&amp;user=H_ovrSgAAAAJ">Publicaciones</a>
+        </p>
+    </div>
+</div>
+
+<!-- PERFIL 6: Dr. Edgar Rojas González -->
+<div class="profile-cell">
+    <img class="profile-image" src="https://cicima.ucr.ac.cr/sites/default/files/2023-09/WhatsApp%20Image%202023-02-06%20at%2015.17.54%20%281%29.jpeg" alt="Dr. Edgar Rojas González" width="100" height="93">
+    <div class="profile-info">
+        <div class="profile-name">
+            Dr. Edgar Rojas González
+        </div>
+        <div class="profile-description">
+            Édgar Rojas González es profesor de la Escuela de Física de la Universidad de Costa Rica. Obtuvo su doctorado en Física del Estado Sólido en la Universidad de Upsala, Suecia. Su trabajo de investigación se centra en áreas como la óptica, la fotónica, la óptica cuántica y el estudio de materiales electrocrómicos. Puede ser contactado al correo edgar.rojasgonzalez@ucr.ac.cr.
+        </div>
+        <p>
+            <a class="btn" href="https://vinv.ucr.ac.cr/sigpro/web/researchers/113990602">Proyectos</a> 
+            <a class="btn" href="https://scholar.google.es/citations?hl=es&amp;user=5R7sKKsAAAAJ">Publicaciones</a>
+        </p>
+    </div>
+</div>
+
+<!-- PERFIL 7: Erick Castellón Elizondo, PhD. -->
+<div class="profile-cell reverse">
+    <img class="profile-image" src="https://cicima.ucr.ac.cr/sites/default/files/2023-09/Erick-Castellon.jpg" alt="Erick Castellón Elizondo, PhD." width="512" height="420">
+    <div class="profile-info">
+        <div class="profile-name">
+            Erick Castellón Elizondo, PhD.
+        </div>
+        <div class="profile-description">
+            Erick Castellón Ramírez es profesor catedrático en la Escuela de Química de la Universidad de Costa Rica. Obtuvo su doctorado (Ph.D.) en Físico Química en el Instituto de Ciencia de Materiales de Madrid, España. Sus áreas de interés incluyen los cristales líquidos y el desarrollo de dispositivos inteligentes. Puede ser contactado al correo erick.castellon@ucr.ac.cr.
+        </div>
+        <p>
+            <a class="btn" href="https://vinv.ucr.ac.cr/sigpro/web/researchers/110360927">Proyectos</a> 
+            <a class="btn" href="https://scholar.google.es/citations?hl=es&amp;user=pgVgRmUAAAAJ">Publicaciones</a>
+        </p>
+    </div>
+</div>
+
+<!-- PERFIL 8: Ernesto Ballestero Martínez, PhD. -->
+<div class="profile-cell">
+    <img class="profile-image" src="https://cicima.ucr.ac.cr/sites/default/files/2023-09/Screenshot%202023-02-01%2018.30.57.png" alt="Ernesto Ballestero Martínez, PhD." width="405" height="294">
+    <div class="profile-info">
+        <div class="profile-name">
+            Ernesto Ballestero Martínez, PhD.
+        </div>
+        <div class="profile-description">
+            Ernesto Ballestero-Artavia es profesor asociado en la Escuela de Química de la Universidad de Costa Rica. Obtuvo su doctorado (Ph.D.) en Química Inorgánica en la Universidad Técnica de Berlín, Alemania. Su principal área de investigación es la síntesis organometálica. Puede ser contactado al correo ernesto.ballestero@ucr.ac.cr.
+        </div>
+        <p>
+            <a class="btn" href="https://vinv.ucr.ac.cr/sigpro/web/researchers/113790506">Proyectos</a> 
+            <a class="btn" href="https://scholar.google.es/citations?hl=es&amp;user=uqJQ-R0AAAAJ">Publicaciones</a>
+        </p>
+    </div>
+</div>
+
+<!-- PERFIL 9: Fabián Vásquez Sancho, PhD. -->
+<div class="profile-cell reverse">
+    <img class="profile-image" src="https://cicima.ucr.ac.cr/sites/default/files/2023-09/Fabia%CC%81n%20Va%CC%81squez.jpg" alt="Fabián Vásquez Sancho, PhD." width="1280" height="833">
+    <div class="profile-info">
+        <div class="profile-name">
+            Fabián Vásquez Sancho, PhD.
+        </div>
+        <div class="profile-description">
+            Fabián Vásquez-Sancho es profesor asociado en la Escuela de Física de la Universidad de Costa Rica. Obtuvo su doctorado (Ph.D.) en Física en la Universidad Autónoma de Barcelona, España. Sus áreas de investigación incluyen la física del estado sólido y las propiedades físicas de los materiales. Puede ser contactado al correo fabian.vasquezsancho@ucr.ac.cr.
+        </div>
+        <p>
+            <a class="btn" href="https://vinv.ucr.ac.cr/sigpro/web/researchers/206320749">Proyectos</a> 
+            <a class="btn" href="https://scholar.google.es/citations?hl=es&amp;user=ecwJI2UAAAAJ">Publicaciones</a>
+        </p>
+    </div>
+</div>
+
+<!-- PERFIL 10: Dr. Federico Muñoz Rojas -->
+<div class="profile-cell">
+    <img class="profile-image" src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/AF1QipONeb2QVrw5mKJp193hxQy_97nZDJR-m5WPG3Cc%3Dw2448-h3264.jpg" alt="Dr. Federico Muñoz Rojas" width="1280" height="1554">
+    <div class="profile-info">
+        <div class="profile-name">
+            Dr. Federico Muñoz Rojas
+        </div>
+        <div class="profile-description">
+            Federico Muñoz-Rojas es profesor asociado en la Escuela de Física de la Universidad de Costa Rica. Obtuvo su doctorado en Ciencia de Materiales en la Universidad de Alicante, España. Sus principales áreas de investigación incluyen la física computacional, la teoría del funcional de la densidad y la dinámica molecular. Puede ser contactado al correo federico.munozrojas@ucr.ac.cr.
+        </div>
+        <p>
+            <!-- Este perfil solo tiene enlace a proyectos -->
+            <a class="btn" href="https://vinv.ucr.ac.cr/sigpro/web/researchers/110900712">Proyectos</a>
+        </p>
+    </div>
+</div>
+
+<!-- PERFIL 11: Gian Guzmán Verri, PhD. -->
+<div class="profile-cell reverse">
+    <img class="profile-image" src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/Gian%20Giacomo.jpg" alt="Gian Guzmán Verri, PhD." width="1058" height="705">
+    <div class="profile-info">
+        <div class="profile-name">
+            Gian Guzmán Verri, PhD.
+        </div>
+        <div class="profile-description">
+            Gian Guzmán es profesor catedrático en la Escuela de Física de la Universidad de Costa Rica. Obtuvo su doctorado (PhD.) en Física en la Universidad de California, Riverside, Estados Unidos. Su investigación se enfoca en la teoría de la física de la materia condensada. Puede ser contactado al correo gian.guzman@ucr.ac.cr.
+        </div>
+        <p>
+            <a class="btn" href="https://vinv.ucr.ac.cr/sigpro/web/researchers/111230818">Proyectos</a> 
+            <a class="btn" href="https://scholar.google.com/citations?user=lN00YgkAAAAJ&amp;hl=en&amp;oi=ao">Publicaciones</a>
+        </p>
+    </div>
+</div>
+
+<!-- PERFIL 12: Dra. Isabel Ferreto Gutiérrez -->
+<div class="profile-cell">
+    <img class="profile-image" src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/IMG_7111.jpeg" alt="Dra. Isabel Ferreto Gutiérrez" width="1280" height="756">
+    <div class="profile-info">
+        <div class="profile-name">
+            Dra. Isabel Ferreto Gutiérrez
+        </div>
+        <div class="profile-description">
+            Isabel Ferreto es profesora asociada en la Escuela de Odontología de la Universidad de Costa Rica. Posee un doctorado en Odontología y un máster en Operatoria Estética, ambos de la Universidad de Costa Rica. Sus intereses de investigación incluyen las propiedades físicas de polímeros, cerámicas, PMMA fresados, termocurados e impresos. Puedes contactarla en isabel.ferreto@ucr.ac.cr.
+        </div>
+        <p>
+            <!-- Este perfil solo tiene enlace a proyectos -->
+            <a class="btn" href="https://vinv.ucr.ac.cr/sigpro/web/researchers/108720759">Proyectos</a>
+        </p>
+    </div>
+</div>
+
+<!-- PERFIL 13: Marcela Hernández Jiménez, PhD. -->
+<div class="profile-cell reverse">
+    <img class="profile-image" src="https://cicima.ucr.ac.cr/sites/default/files/2025-05/Marcela%20H.jpeg" alt="Marcela Hernández Jiménez, PhD." width="1208" height="1600">
+    <div class="profile-info">
+        <div class="profile-name">
+            Marcela Hernández Jiménez, PhD.
+        </div>
+        <div class="profile-description">
+            Marcela Hernández es profesora asociada en la Escuela de Física de la Universidad de Costa Rica. Obtuvo su PhD en Física de la Materia Condensada en la Universidad Estatal de Campinas, Brasil. Sus intereses incluyen fenómenos ópticos en seres vivos y física de la materia condensada. Puedes contactarla en marcela.hernandezjimenez@ucr.ac.cr.
+        </div>
+        <p>
+            <a class="btn" href="https://vinv.ucr.ac.cr/sigpro/web/researchers/110110289">Proyectos</a> 
+            <a class="btn" href="https://scholar.google.es/citations?hl=es&amp;user=Y8sFm4oAAAAJ">Publicaciones</a>
+        </p>
+    </div>
+</div>
+
+<!-- PERFIL 14: Mavis L. Montero Villalobos, PhD. -->
+<div class="profile-cell">
+    <img class="profile-image" src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/rs234406_krb_25055f5ae95204751.jpg" alt="Mavis L. Montero Villalobos, PhD." width="704" height="510">
+    <div class="profile-info">
+        <div class="profile-name">
+            Mavis L. Montero Villalobos, PhD.
+        </div>
+        <div class="profile-description">
+            Mavis Montero es profesora catedrática en la Escuela de Química de la Universidad de Costa Rica. Obtuvo su PhD en Química Inorgánica en la Universidad de Götingen, Alemania. Sus intereses incluyen nanopartículas, escleritas y química inorgánica. Puedes contactarla en mavis.montero@ucr.ac.cr.
+        </div>
+        <p>
+            <a class="btn" href="https://vinv.ucr.ac.cr/sigpro/web/researchers/602130494">Proyectos</a> 
+            <a class="btn" href="https://scholar.google.es/citations?hl=es&amp;user=33b3vDUAAAAJ">Publicaciones</a>
+        </p>
+    </div>
+</div>
+
+<!-- PERFIL 15: Mónica Prado Porras, PhD. -->
+<div class="profile-cell reverse">
+    <img class="profile-image" src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/monica%20prado%20%281%29.png" alt="Mónica Prado Porras, PhD." width="350" height="319">
+    <div class="profile-info">
+        <div class="profile-name">
+            Mónica Prado Porras, PhD.
+        </div>
+        <div class="profile-description">
+            Mónica Prado Porras es profesora catedrática en la Escuela de Microbiología de la Universidad de Costa Rica. Obtuvo su PhD en Microbiología en la Universidad de Hamburgo, Alemania. Sus intereses se enfocan en protozoología y anticuerpos. Puedes contactarla en monica.pradoporras@ucr.ac.cr.
+        </div>
+        <p>
+            <!-- Este perfil solo tiene enlace a proyectos -->
+            <a class="btn" href="https://vinv.ucr.ac.cr/sigpro/web/researchers/110320668">Proyectos</a>
+        </p>
+    </div>
+</div>
+
+<!-- PERFIL 16: M. Sc. Neville Clark Binns -->
+<div class="profile-cell">
+    <img class="profile-image" src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/WhatsApp%20Image%202023-02-09%20at%2011.26.01.jpeg" alt="M. Sc. Neville Clark Binns" width="868" height="658">
+    <div class="profile-info">
+        <div class="profile-name">
+            M. Sc. Neville Clark Binns
+        </div>
+        <div class="profile-description">
+            Neville Clark es Profesor Emérito, catedrático pensionado e investigador activo en la Universidad de Costa Rica. Cuenta con una Maestría en Física del Estado Sólido de la Universidad de Miami, Estados Unidos. Sus intereses incluyen la absorción de hidrógeno en metales, propiedades ópticas y eléctricas de capas delgadas metálicas, y el color estructural. Puedes contactarlo en neville.clark@ucr.ac.cr.
+        </div>
+        <p>
+            <!-- Este perfil solo tiene enlace a proyectos -->
+            <a class="btn" href="https://vinv.ucr.ac.cr/sigpro/web/researchers/700240978">Proyectos</a>
+        </p>
+    </div>
+</div>
+
+<!-- PERFIL 17: Rebeca Mora Castro, PhD. -->
+<div class="profile-cell reverse">
+    <img class="profile-image" src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/mi%20foto.JPG" alt="Rebeca Mora Castro, PhD." width="990" height="634">
+    <div class="profile-info">
+        <div class="profile-name">
+            Rebeca Mora Castro, PhD.
+        </div>
+        <div class="profile-description">
+            Rebeca Mora es Profesora Asociada en la Escuela de Biología de la Universidad de Costa Rica. Posee un PhD en Biología de la Universidad de Costa Rica y es especialista en Biomímesis por la University of Arizona - Biomimicry 3.8. Sus intereses abarcan la biofísica, biomímesis, biodiseño, entomología y biomateriales. Puedes contactarla en rebeca.mora@ucr.ac.cr.
+        </div>
+        <p>
+            <a class="btn" href="https://vinv.ucr.ac.cr/sigpro/web/researchers/109610270">Proyectos</a> 
+            <a class="btn" href="https://scholar.google.co.th/citations?hl=en&amp;user=rl1ZXMoAAAAJ">Publicaciones</a>
+        </p>
+    </div>
+</div>
+
+<!-- PERFIL 18: Dr. William Vargas Castro -->
+<div class="profile-cell">
+    <img class="profile-image" src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/Premiados-William_y_Adolfo_0.jpg" alt="Dr. William Vargas Castro" width="249" height="203">
+    <div class="profile-info">
+        <div class="profile-name">
+            Dr. William Vargas Castro
+        </div>
+        <div class="profile-description">
+            William Vargas es Profesor Emérito, Profesor Catedrático pensionado e investigador activo en la Universidad de Costa Rica. Obtuvo su Doctorado en Física del Estado Sólido en la Universidad de Upsala, Suecia. Sus intereses incluyen las propiedades ópticas de los materiales. Puedes contactarlo en william.vargascastro@ucr.ac.cr.
+        </div>
+        <p>
+            <a class="btn" href="https://vinv.ucr.ac.cr/sigpro/web/researchers/302400685">Proyectos</a> 
+            <a class="btn" href="https://orcid.org/0000-0001-8460-8491">Publicaciones</a>
+        </p>
+    </div>
+</div>
+
+<!-- ===== SECCIÓN DE ESTILOS CSS ===== -->
+<!-- 
+    Todos los estilos están contenidos en la etiqueta <style>
+    Esto se llama "CSS interno" o "embedded CSS"
+-->
+<style>
+/* 
+    ESTILO PARA LA CELDA DE PERFIL PRINCIPAL:
+    - display: flex → Usa el modelo de caja flexible (Flexbox) para diseño
+    - align-items: center → Centra verticalmente los elementos hijos
+    - background-color: white → Fondo blanco para contraste
+    - border-radius: 20px → Esquinas redondeadas (efecto moderno)
+    - padding: 20px → Espacio interno alrededor del contenido
+    - box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) → Sombra sutil para efecto de elevación
+    - margin: 20px auto → Margen superior/inferior de 20px y centrado automático horizontal
+    - max-width: 1000px → Ancho máximo para evitar que se expanda demasiado en pantallas grandes
+    - flex-wrap: wrap → Permite que los elementos se envuelvan en pantallas pequeñas
+*/
+.profile-cell {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
+/* 
+    ESTILO PARA PERFILES INVERTIDOS (clase 'reverse'):
+    - flex-direction: row-reverse → Invierte el orden de los elementos flexibles
+    Esto coloca la imagen a la derecha y el texto a la izquierda
+*/
+.profile-cell.reverse {
+  flex-direction: row-reverse;
+}
+
+/* 
+    ESTILO PARA IMÁGENES DE PERFIL:
+    - width: 150px → Ancho fijo para todas las imágenes
+    - height: 150px → Alto fijo para mantener proporción cuadrada
+    - border-radius: 15px → Esquinas redondeadas en la imagen
+    - object-fit: cover → Recorta la imagen para que llene el contenedor manteniendo proporción
+    - margin: 0 20px → Sin margen vertical, 20px de margen horizontal
+    - flex-shrink: 0 → Evita que la imagen se encoja cuando hay espacio limitado
+*/
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin: 0 20px;
+  flex-shrink: 0;
+}
+
+/* 
+    CONTENEDOR DE INFORMACIÓN DEL PERFIL:
+    - flex: 1 → Ocupa todo el espacio disponible restante
+    - min-width: 250px → Ancho mínimo para mantener legibilidad
+*/
+.profile-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* 
+    ESTILO PARA EL NOMBRE DEL INVESTIGADOR:
+    - font-size: 22px → Tamaño de fuente grande para destacar
+    - font-weight: bold → Texto en negrita para énfasis
+    - color: #333 → Color gris oscuro (más profesional que negro puro)
+    - margin-bottom: 10px → Espacio inferior para separar de la descripción
+*/
+.profile-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* 
+    ESTILO PARA LA DESCRIPCIÓN:
+    - font-size: 16px → Tamaño de fuente estándar para lectura
+    - color: #555 → Color gris medio para buen contraste sin ser muy intenso
+    - margin-bottom: 15px → Espacio inferior para separar de los botones
+*/
+.profile-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* 
+    ESTILO PARA BOTONES:
+    - background-color: #007bff → Color azul estándar (común en interfaces web)
+    - color: white → Texto blanco para contraste
+    - padding: 8px 16px → Espacio interno (8px vertical, 16px horizontal)
+    - margin-right: 10px → Separación entre botones
+    - border: none → Elimina el borde por defecto
+    - border-radius: 6px → Esquinas ligeramente redondeadas
+    - text-decoration: none → Elimina el subrayado de los enlaces
+    - font-size: 14px → Tamaño de fuente más pequeño para botones
+    - cursor: pointer → Cambia el cursor a mano al pasar sobre el botón
+    - display: inline-block → Permite aplicar padding y margin
+    - transition: background-color 0.3s ease → Transición suave para el efecto hover
+*/
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+/* 
+    EFECTO HOVER PARA BOTONES:
+    - background-color: #0056b3 → Color azul más oscuro al pasar el mouse
+    Esto proporciona feedback visual al usuario
+*/
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* 
+    MEDIA QUERY PARA DISPOSITIVOS MÓVILES (responsive design):
+    - Se activa cuando el ancho de pantalla es máximo 600px
+*/
+@media (max-width: 600px) {
+  /* En móviles, cambia la dirección a columna para ambos tipos de perfil */
+  .profile-cell,
+  .profile-cell.reverse {
+    flex-direction: column; /* Apila elementos verticalmente */
+    align-items: flex-start; /* Alinea a la izquierda */
+  }
+  
+  /* Ajusta el margen de la imagen para móviles */
+  .profile-image {
+    margin: 0 0 15px 0; /* Sin margen lateral, solo 15px abajo */
+  }
+}
+
+/* 
+    CENTRADO DE PÁRRAFOS DENTRO DE PROFILE-INFO:
+    - text-align: center → Centra el texto horizontalmente
+    Esto afecta específicamente a los párrafos que contienen los botones
+*/
+.profile-info p {
+  text-align: center;
+}
+</style>
+
+<!-- ===== FIN DEL CÓDIGO ===== -->
