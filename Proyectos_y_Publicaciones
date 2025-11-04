@@ -1,0 +1,1474 @@
+<!-- 
+    ============================================================
+    SECCIÓN DE PROYECTOS Y PUBLICACIONES - CICIMA
+    ============================================================
+    Esta sección muestra información sobre proyectos, publicaciones
+    y servicios del Centro de Investigaciones en Ciencia e Ingeniería de Materiales
+-->
+
+<!-- 
+    CELDA 1: INFORMACIÓN GENERAL Y CONTACTO
+    Contiene la descripción general del CICIMA y información de contacto
+-->
+<div class="cell-container">
+    <div class="description">
+        <p>
+            Bienvenido a la sección de proyectos y publicaciones del Centro de Investigaciones en Ciencia e Ingeniería de Materiales (CICIMA) de la Universidad de Costa Rica. Aquí podrá consultar los proyectos académicos actualmente vigentes, inscritos en la Vicerrectoría de Investigación mediante el sistema SIGPRO, así como las publicaciones científicas más recientes desarrolladas por nuestro equipo de investigación.
+        </p>
+        <p>
+            El CICIMA ofrece servicios de investigación especializados enfocados en la solución de problemas industriales mediante análisis integrales, caracterización avanzada de materiales y la interpretación de datos por parte de un grupo interdisciplinario con experiencia en Ingeniería, Física, Química, Microbiología y Biología. Además, contamos con instrumentación de alta gama para el análisis de materiales.
+        </p>
+        <p>
+            La contratación de estos servicios se gestiona a través de la Fundación para la Investigación de la Universidad de Costa Rica. El procedimiento incluye:
+        </p>
+        <!-- Lista de procedimientos para contratación de servicios -->
+        <ul>
+            <li>
+                La explicación del problema a estudiar (incluyendo descripción de muestra y cantidad de ensayos).
+            </li>
+            <li>
+                La coordinación de una reunión sin costo para discutir el problema a abordar.
+            </li>
+        </ul>
+        <!-- Sección de contacto con enlaces de correo -->
+        <h3>
+            Contacto
+        </h3>
+        <p>
+            Dr. Esteban Avendaño – <a href="mailto:esteban.avendanosoto@ucr.ac.cr">esteban.avendanosoto@ucr.ac.cr</a><br>
+            Dra. Mavis L. Montero – <a href="mailto:mavis.montero@ucr.ac.cr">mavis.montero@ucr.ac.cr</a><br>
+            Lic. Jhonatan D. Alfaro Arbustini – <a href="mailto:jhonatan.alfaro@ucr.ac.cr">jhonatan.alfaro@ucr.ac.cr</a>
+        </p>
+        <p>
+            Para más información, puede escribir a: <a href="mailto:cicima.ucr@ucr.ac.cr">cicima.ucr@ucr.ac.cr</a><br>
+            Teléfonos: 2511-4110 / 2511-5903
+        </p>
+    </div>
+</div>
+
+<!-- 
+    CELDA 2: PROYECTOS SIGPRO
+    Muestra información sobre proyectos de investigación y enlace al sistema SIGPRO
+-->
+<div class="cell-container">
+    <!-- Título de la sección -->
+    <div class="custom-title">
+        Proyectos
+    </div>
+    <div class="description centered-text">
+        <p>
+            El CICIMA cuenta con diversos proyectos de investigación inscritos en el sistema SIGPRO de la Vicerrectoría de Investigación de la UCR. Estos proyectos abordan temas como la síntesis y caracterización de nuevos materiales, la evaluación de propiedades físico-químicas, y el desarrollo de soluciones tecnológicas aplicadas a la industria y al medio ambiente.
+        </p>
+    </div>
+    <!-- Botón que redirige al sistema SIGPRO -->
+    <div class="button-container">
+        <a class="button btn-blue" href="https://vinv.ucr.ac.cr/sigpro/web/units/816?p_researcher=1&amp;%3Bp_project=1&amp;%3Bp_state=0&amp;%3Br_state=0#projects">Proyectos en SIGPRO</a>
+    </div>
+</div>
+
+<!-- 
+    CELDA 3: ESTADÍSTICAS EN TIEMPO REAL
+    Muestra estadísticas dinámicas de publicaciones científicas
+-->
+<div class="cell-container">
+    <div class="custom-title">
+        Estadísticas de Publicaciones
+    </div>
+    <div class="description centered-text">
+        <p>
+            Esta sección presenta una recopilación detallada de las publicaciones científicas generadas por el CICIMA, reflejando el compromiso sostenido con la investigación, el desarrollo y la innovación en ciencia de materiales. Los datos se actualizan automáticamente desde nuestra base de datos.
+        </p>
+    </div>
+    <!-- Sección de estadísticas principales -->
+    <div class="stats-section">
+        <h3>
+            Resumen General
+        </h3>
+        <!-- Contenedor donde se cargarán dinámicamente las estadísticas -->
+        <div class="stats-grid" id="estadisticasPrincipales">
+            <div class="stat-card">
+                <div>
+                    Cargando datos...
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 
+    CELDA 4: GRÁFICOS DE PUBLICACIONES
+    Contiene visualizaciones gráficas interactivas de las publicaciones
+-->
+<div class="cell-container">
+    <div class="custom-title">
+        Gráficos de Publicaciones
+    </div>
+    <div class="description centered-text">
+        <p>
+            Visualización gráfica de las publicaciones científicas realizadas por el CICIMA y sus investigadores, mostrando la distribución temporal y por tipo de publicación. Seleccione un año en el menú desplegable para ver los detalles de las publicaciones de ese año.
+        </p>
+    </div>
+    <!-- Contenedor principal que divide en dos columnas: gráficos y detalles -->
+    <div class="charts-details-container">
+        <!-- COLUMNA IZQUIERDA: GRÁFICOS VISUALES -->
+        <div class="charts-column">
+            <!-- Primer gráfico: Publicaciones por año -->
+            <div class="chart-wrapper">
+                <h3>
+                    Publicaciones por Año
+                </h3>
+                <div class="chart-container">
+                    <!-- Canvas donde se dibujará el gráfico de barras con Chart.js -->
+                    <canvas id="graficoBarras"></canvas>
+                </div>
+            </div>
+            <!-- Segundo gráfico: Distribución por tipo -->
+            <div class="chart-wrapper">
+                <h3>
+                    Distribución por Tipo
+                </h3>
+                <div class="chart-container">
+                    <!-- Canvas donde se dibujará el gráfico de pastel con Chart.js -->
+                    <canvas id="graficoPastel"></canvas>
+                </div>
+            </div>
+        </div>
+        
+        <!-- COLUMNA DERECHA: SELECTOR Y DETALLES -->
+        <div class="details-column">
+            <div class="details-panel">
+                <!-- Selector de año para filtrar publicaciones -->
+                <div class="selector-container">
+                    <h3>
+                        Detalles por Año
+                    </h3>
+                    <p>
+                        <label for="selectorAnio">Seleccione un año:</label> 
+                        <select class="anio-selector" id="selectorAnio">
+                            <!-- Las opciones se llenarán dinámicamente con JavaScript -->
+                            <option value="">-- Todos los años --</option>
+                        </select>
+                    </p>
+                </div>
+                
+                <!-- BARRA DE BÚSQUEDA PARA FILTRAR PUBLICACIONES -->
+                <div class="search-container">
+                    <p>
+                        <!-- Input de texto para buscar en títulos y autores -->
+                        <input class="search-input" type="text" id="barraBusqueda" placeholder="Buscar por título o autor...">
+                    </p>
+                    <div class="search-info">
+                        Buscar en títulos y autores
+                    </div>
+                </div>
+                
+                <!-- CONTENEDOR CON SCROLL PARA LA TABLA DE DETALLES -->
+                <div class="table-scroll-container">
+                    <!-- Tabla que muestra los detalles de las publicaciones -->
+                    <table id="tablaDetalles">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <p>
+                                        Título
+                                    </p>
+                                </th>
+                                <th>
+                                    <p>
+                                        Autores
+                                    </p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Los datos se llenarán dinámicamente con JavaScript -->
+                            &nbsp;
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Pie de página con contador de resultados -->
+                <div class="detalles-footer">
+                    <p id="contadorDetalles">
+                        Cargando publicaciones...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 
+    ============================================================
+    SECCIÓN DE ESTILOS CSS
+    ============================================================
+    Define la apariencia visual de todos los elementos de la página
+-->
+<style>
+    /* 
+        ESTILO BASE PARA CONTENEDORES DE CELDAS
+        Crea el efecto de tarjetas con sombras y bordes redondeados
+    */
+    .cell-container {
+        background-color: white; /* Fondo blanco para contraste */
+        border-radius: 20px; /* Esquinas redondeadas */
+        padding: 20px; /* Espacio interno */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil para efecto de elevación */
+        margin: 20px auto; /* Centrado con márgenes automáticos */
+        max-width: 1200px; /* Ancho máximo para pantallas grandes */
+    }
+
+    /* 
+        ESTILO PARA TÍTULOS PERSONALIZADOS
+        Títulos centrados con formato destacado
+    */
+    .custom-title {
+        text-align: center; /* Centrado horizontal */
+        font-size: 24px; /* Tamaño de fuente grande */
+        font-weight: bold; /* Texto en negrita */
+        margin-bottom: 10px; /* Espacio inferior */
+        color: #333; /* Color gris oscuro */
+    }
+
+    /* 
+        ESTILO BASE PARA DESCRIPCIONES
+        Texto justificado por defecto
+    */
+    .description {
+        color: #000; /* Color negro para texto */
+        text-align: justify; /* Texto justificado */
+    }
+
+    /* 
+        CLASE PARA TEXTO CENTRADO
+        Modificador para centrar texto en lugar de justificar
+    */
+    .centered-text {
+        text-align: center; /* Centrado horizontal */
+    }
+
+    /* 
+        ESTILO PARA LISTAS NO ORDENADAS
+        Indentación y alineación específica
+    */
+    .description ul {
+        margin-left: 20px; /* Sangría izquierda */
+        text-align: left; /* Alineación izquierda (anula el justify) */
+    }
+
+    /* 
+        ESTILO PARA ENCABEZADOS DE NIVEL 3
+        Encabezados con espaciado y color específico
+    */
+    .description h3 {
+        margin-top: 30px; /* Espacio superior grande */
+        margin-bottom: 10px; /* Espacio inferior */
+        color: #333; /* Color gris oscuro */
+    }
+
+    /* 
+        CONTENEDOR PARA BOTONES
+        Centra los botones horizontalmente
+    */
+    .button-container {
+        text-align: center; /* Centrado horizontal */
+        margin-top: 30px; /* Espacio superior */
+    }
+
+    /* 
+        ESTILO BASE PARA BOTONES
+        Diseño moderno con transiciones suaves
+    */
+    .button {
+        display: inline-block; /* Permite padding y márgenes */
+        padding: 12px 25px; /* Espacio interno generoso */
+        font-size: 18px; /* Tamaño de fuente legible */
+        color: white; /* Texto blanco para contraste */
+        text-decoration: none; /* Sin subrayado */
+        border-radius: 20px; /* Esquinas muy redondeadas */
+        cursor: pointer; /* Cursor de mano al pasar */
+        background-color: #008CBA; /* Color azul por defecto */
+        transition: background-color 0.3s, opacity 0.3s; /* Transiciones suaves */
+        border: none; /* Sin borde */
+        margin: 5px; /* Separación entre botones */
+    }
+
+    /* 
+        EFECTO HOVER PARA BOTONES
+        Cambio visual al pasar el mouse
+    */
+    .button:hover {
+        opacity: 0.85; /* Ligera transparencia */
+    }
+
+    /* 
+        VARIANTE DE BOTÓN AZUL
+        Clase específica para botones azules
+    */
+    .btn-blue {
+        background-color: #008CBA; /* Color azul característico */
+    }
+
+    /* 
+        VARIANTE DE BOTÓN VERDE
+        Clase específica para botones verdes (no utilizada en este código)
+    */
+    .btn-green {
+        background-color: #4CAF50; /* Color verde */
+    }
+    
+    /* 
+        ESTILOS PARA LA SECCIÓN DE ESTADÍSTICAS
+        Diseño de tarjetas con gradientes y efectos hover
+    */
+    .stats-section {
+        margin: 30px 0; /* Espacio vertical */
+    }
+    
+    /* Encabezado de sección de estadísticas */
+    .stats-section h3 {
+        color: #333; /* Color gris oscuro */
+        border-bottom: 2px solid #008CBA; /* Línea inferior azul */
+        padding-bottom: 10px; /* Espacio entre texto y línea */
+        margin-bottom: 20px; /* Espacio inferior */
+    }
+    
+    /* 
+        CUADRICULA DE ESTADÍSTICAS
+        Diseño responsive con CSS Grid
+    */
+    .stats-grid {
+        display: grid; /* Usa CSS Grid para layout */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas responsive */
+        gap: 15px; /* Espacio entre elementos */
+        margin: 20px 0; /* Espacio vertical */
+    }
+    
+    /* 
+        TARJETAS DE ESTADÍSTICAS INDIVIDUALES
+        Diseño atractivo con gradientes y efectos
+    */
+    .stat-card {
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); /* Gradiente azul */
+        color: white; /* Texto blanco */
+        padding: 20px; /* Espacio interno */
+        border-radius: 8px; /* Esquinas redondeadas */
+        text-align: center; /* Texto centrado */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra sutil */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    }
+    
+    /* 
+        EFECTO HOVER PARA TARJETAS DE ESTADÍSTICAS
+        Elevación y sombra más pronunciada al pasar el mouse
+    */
+    .stat-card:hover {
+        transform: translateY(-5px); /* Efecto de elevación */
+        box-shadow: 0 8px 15px rgba(0,0,0,0.2); /* Sombra más pronunciada */
+    }
+    
+    /* 
+        NÚMEROS DE ESTADÍSTICAS
+        Estilo para números grandes y destacados
+    */
+    .stat-number {
+        font-size: 2em; /* Tamaño de fuente muy grande */
+        font-weight: bold; /* Texto en negrita */
+        margin: 10px 0; /* Espacio vertical */
+    }
+    
+    /* 
+        CONTENEDOR PRINCIPAL DE GRÁFICOS Y DETALLES
+        Diseño de dos columnas usando CSS Grid
+    */
+    .charts-details-container {
+        display: grid; /* Usa CSS Grid */
+        grid-template-columns: 2fr 1fr; /* Dos columnas: gráficos más ancha, detalles más estrecha */
+        gap: 30px; /* Espacio entre columnas */
+        margin: 30px 0; /* Espacio vertical */
+    }
+    
+    /* 
+        COLUMNA DE GRÁFICOS
+        Diseño en columna para apilar los gráficos verticalmente
+    */
+    .charts-column {
+        display: flex; /* Usa Flexbox para alineación */
+        flex-direction: column; /* Elementos en columna */
+        gap: 30px; /* Espacio entre gráficos */
+    }
+    
+    /* 
+        COLUMNA DE DETALLES
+        También usa Flexbox para organización vertical
+    */
+    .details-column {
+        display: flex; /* Usa Flexbox */
+        flex-direction: column; /* Elementos en columna */
+    }
+    
+    /* 
+        CONTENEDOR DE GRÁFICOS INDIVIDUALES
+        Fondo y bordes para separar visualmente cada gráfico
+    */
+    .chart-wrapper {
+        background: #f8f9fa; /* Fondo gris muy claro */
+        padding: 20px; /* Espacio interno */
+        border-radius: 10px; /* Esquinas redondeadas */
+        border: 1px solid #e9ecef; /* Borde sutil */
+    }
+    
+    /* 
+        CONTENEDOR PARA LOS CANVAS DE GRÁFICOS
+        Controla la altura y posición de los gráficos
+    */
+    .chart-container {
+        position: relative; /* Posicionamiento relativo para elementos hijos */
+        height: 300px; /* Altura fija para consistencia */
+        margin: 15px 0; /* Espacio vertical */
+    }
+    
+    /* 
+        MENSAJE CUANDO NO HAY DATOS
+        Estilo para mensajes de datos no disponibles
+    */
+    .no-data-message {
+        text-align: center; /* Texto centrado */
+        color: #666; /* Color gris */
+        font-style: italic; /* Texto en cursiva */
+        padding: 40px 0; /* Espacio vertical generoso */
+    }
+    
+    /* 
+        PANEL DE DETALLES
+        Diseño del panel lateral con información detallada
+    */
+    .details-panel {
+        background: #f8f9fa; /* Fondo gris muy claro */
+        padding: 20px; /* Espacio interno */
+        border-radius: 10px; /* Esquinas redondeadas */
+        border: 1px solid #e9ecef; /* Borde sutil */
+        height: 100%; /* Ocupa toda la altura disponible */
+        display: flex; /* Usa Flexbox */
+        flex-direction: column; /* Elementos en columna */
+        min-height: 600px; /* Altura mínima para buena visualización */
+    }
+    
+    /* 
+        CONTENEDOR DEL SELECTOR DE AÑO
+        Estilo para el área del selector
+    */
+    .selector-container {
+        margin-bottom: 20px; /* Espacio inferior */
+        flex-shrink: 0; /* Evita que se encoja en layouts flex */
+    }
+    
+    /* Encabezado del selector */
+    .selector-container h3 {
+        margin-top: 0; /* Sin margen superior */
+        color: #333; /* Color gris oscuro */
+        border-bottom: 2px solid #008CBA; /* Línea inferior azul */
+        padding-bottom: 10px; /* Espacio entre texto y línea */
+        margin-bottom: 15px; /* Espacio inferior */
+    }
+    
+    /* Etiqueta del selector */
+    .selector-container label {
+        display: block; /* Ocupa toda la línea */
+        margin-bottom: 8px; /* Espacio inferior */
+        font-weight: bold; /* Texto en negrita */
+        color: #333; /* Color gris oscuro */
+    }
+    
+    /* 
+        SELECTOR DE AÑO (dropdown)
+        Estilo personalizado para el elemento select
+    */
+    .anio-selector {
+        width: 100%; /* Ancho completo */
+        padding: 10px; /* Espacio interno */
+        border: 1px solid #ddd; /* Borde gris claro */
+        border-radius: 5px; /* Esquinas ligeramente redondeadas */
+        background-color: white; /* Fondo blanco */
+        font-size: 16px; /* Tamaño de fuente legible */
+    }
+    
+    /* 
+        ESTADO DE FOCO PARA EL SELECTOR
+        Cambio visual cuando el selector está activo
+    */
+    .anio-selector:focus {
+        outline: none; /* Elimina el outline por defecto */
+        border-color: #008CBA; /* Borde azul */
+        box-shadow: 0 0 0 2px rgba(0, 140, 186, 0.2); /* Sombra azul sutil */
+    }
+    
+    /* 
+        CONTENEDOR DE BÚSQUEDA
+        Estilo para el área de búsqueda
+    */
+    .search-container {
+        margin-bottom: 15px; /* Espacio inferior */
+        flex-shrink: 0; /* Evita que se encoja en layouts flex */
+    }
+    
+    /* 
+        CAMPO DE BÚSQUEDA
+        Estilo personalizado para el input de texto
+    */
+    .search-input {
+        width: 100%; /* Ancho completo */
+        padding: 10px; /* Espacio interno */
+        border: 1px solid #ddd; /* Borde gris claro */
+        border-radius: 5px; /* Esquinas ligeramente redondeadas */
+        background-color: white; /* Fondo blanco */
+        font-size: 16px; /* Tamaño de fuente legible */
+        box-sizing: border-box; /* Incluye padding en el ancho total */
+    }
+    
+    /* 
+        ESTADO DE FOCO PARA EL CAMPO DE BÚSQUEDA
+        Cambio visual cuando el campo está activo
+    */
+    .search-input:focus {
+        outline: none; /* Elimina el outline por defecto */
+        border-color: #008CBA; /* Borde azul */
+        box-shadow: 0 0 0 2px rgba(0, 140, 186, 0.2); /* Sombra azul sutil */
+    }
+    
+    /* 
+        INFORMACIÓN DE BÚSQUEDA
+        Texto pequeño con instrucciones
+    */
+    .search-info {
+        font-size: 0.8em; /* Tamaño de fuente pequeño */
+        color: #666; /* Color gris */
+        margin-top: 5px; /* Espacio superior */
+    }
+    
+    /* 
+        CONTENEDOR CON SCROLL PARA LA TABLA
+        Permite scroll vertical cuando hay muchos datos
+    */
+    .table-scroll-container {
+        flex: 1; /* Ocupa el espacio disponible restante */
+        overflow-y: auto; /* Scroll vertical cuando sea necesario */
+        border: 1px solid #e9ecef; /* Borde sutil */
+        border-radius: 8px; /* Esquinas redondeadas */
+        background: white; /* Fondo blanco */
+        margin-bottom: 15px; /* Espacio inferior */
+        max-height: 400px; /* Altura máxima antes de mostrar scroll */
+    }
+    
+    /* 
+        ESTILO PARA TABLAS
+        Diseño limpio y moderno para tablas de datos
+    */
+    table {
+        width: 100%; /* Ancho completo */
+        border-collapse: collapse; /* Elimina espacios entre bordes */
+    }
+    
+    /* 
+        CELDAS DE TABLA (encabezados y datos)
+        Espaciado y bordes para mejor legibilidad
+    */
+    th, td {
+        padding: 12px 15px; /* Espacio interno generoso */
+        text-align: left; /* Alineación izquierda */
+        border-bottom: 1px solid #e9ecef; /* Línea separadora */
+    }
+    
+    /* 
+        ENCABEZADOS DE TABLA
+        Estilo destacado con posición sticky
+    */
+    th {
+        background-color: #f8f9fa; /* Fondo gris claro */
+        position: sticky; /* Se mantiene visible al hacer scroll */
+        top: 0; /* Posición en la parte superior */
+        z-index: 10; /* Por encima del contenido */
+        font-weight: bold; /* Texto en negrita */
+        color: #333; /* Color gris oscuro */
+    }
+    
+    /* 
+        EFECTO HOVER PARA FILAS DE TABLA
+        Resalta la fila bajo la que está el cursor
+    */
+    tr:hover {
+        background-color: #f5f5f5; /* Fondo gris muy claro */
+    }
+    
+    /* 
+        PIE DE DETALLES
+        Información del contador de resultados
+    */
+    .detalles-footer {
+        text-align: center; /* Texto centrado */
+        color: #666; /* Color gris */
+        font-style: italic; /* Texto en cursiva */
+        margin-top: 10px; /* Espacio superior */
+        flex-shrink: 0; /* Evita que se encoja en layouts flex */
+    }
+    
+    /* 
+        MEDIA QUERY PARA DISPOSITIVOS DE ESCRITORIO MEDIANOS (1024px)
+        Ajustes responsive para tablets grandes
+    */
+    @media (max-width: 1024px) {
+        .charts-details-container {
+            grid-template-columns: 1fr; /* Una sola columna en lugar de dos */
+            gap: 20px; /* Menor espacio entre elementos */
+        }
+        
+        .charts-column {
+            gap: 20px; /* Menor espacio entre gráficos */
+        }
+        
+        .chart-container {
+            height: 250px; /* Altura reducida para gráficos */
+        }
+        
+        .details-panel {
+            min-height: 500px; /* Altura mínima reducida */
+        }
+        
+        .table-scroll-container {
+            max-height: 350px; /* Altura máxima reducida */
+        }
+    }
+    
+    /* 
+        MEDIA QUERY PARA DISPOSITIVOS MÓVILES (768px)
+        Ajustes responsive para tablets y teléfonos
+    */
+    @media (max-width: 768px) {
+        .stats-grid {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Columnas más estrechas */
+        }
+        
+        .chart-container {
+            height: 200px; /* Altura aún más reducida */
+        }
+        
+        .details-panel {
+            min-height: 450px; /* Altura mínima aún más reducida */
+        }
+        
+        .table-scroll-container {
+            max-height: 300px; /* Altura máxima aún más reducida */
+        }
+        
+        th, td {
+            padding: 8px 10px; /* Espaciado reducido */
+            font-size: 0.9em; /* Tamaño de fuente reducido */
+        }
+    }
+</style>
+
+<!-- 
+    ============================================================
+    SECCIÓN DE JAVASCRIPT
+    ============================================================
+    Código para cargar datos, generar gráficos y manejar interacciones
+-->
+
+<!-- 
+    INCLUSIÓN DE BIBLIOTECAS EXTERNAS
+    - PapaParse: Para procesar archivos CSV
+    - Chart.js: Para crear gráficos interactivos
+-->
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- 
+    CÓDIGO JAVASCRIPT PRINCIPAL
+    Maneja la lógica de la aplicación
+-->
+<script>
+    // ===== CONFIGURACIÓN PRINCIPAL =====
+    // URL directa a la hoja de Google Sheets publicada (formato CSV)
+    const URL_OPTIONS = [
+        'https://docs.google.com/spreadsheets/d/e/2PACX-1vT_kiwTiz9yAtvMzZpp6V3KvtPj3gT4CSsaj7GKSu68VgL6taokqEbobqTMN5YcgN0qm17ViycLj4IS/pub?gid=975984200&single=true&output=csv'
+    ];
+    
+    // ===== VARIABLES GLOBALES =====
+    let datosActuales = []; // Almacena todos los datos cargados
+    let currentUrlIndex = 0; // Índice de la URL actual (para reintentos)
+    let isLoading = false; // Bandera para evitar cargas simultáneas
+    let columnaAnioSeleccionada = ''; // Nombre de la columna que contiene los años
+    let columnaTipoSeleccionada = ''; // Nombre de la columna que contiene los tipos
+    let columnaTituloSeleccionada = ''; // Nombre de la columna que contiene los títulos
+    let columnaAutoresSeleccionada = ''; // Nombre de la columna que contiene los autores
+    let chartBarras = null; // Referencia al gráfico de barras
+    let chartPastel = null; // Referencia al gráfico de pastel
+    let aniosDisponibles = []; // Lista de años disponibles en los datos
+    let publicacionesFiltradas = []; // Publicaciones filtradas según selección actual
+    let anioSeleccionadoActual = ''; // Año seleccionado actualmente
+    
+    // ===== FUNCIONES PRINCIPALES =====
+    
+    /**
+     * Función principal para cargar datos desde Google Sheets
+     * Utiliza fetch para obtener el CSV y PapaParse para procesarlo
+     */
+    async function cargarDatos() {
+        // Evitar múltiples cargas simultáneas
+        if (isLoading) {
+            console.log('Ya hay una carga en progreso, ignorando nueva solicitud');
+            return;
+        }
+        
+        isLoading = true;
+        mostrarEstadoCarga('Cargando datos...');
+        
+        try {
+            console.log(`Iniciando carga de datos. URL actual: ${currentUrlIndex}`);
+            
+            // Realizar petición HTTP para obtener el CSV
+            const response = await fetch(URL_OPTIONS[currentUrlIndex], {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'text/csv'
+                },
+                cache: 'no-cache' // Evitar caché para obtener datos frescos
+            });
+            
+            console.log(`Respuesta recibida: ${response.status} ${response.statusText}`);
+            
+            // Verificar si la respuesta es exitosa
+            if (!response.ok) {
+                throw new Error(`Error HTTP: ${response.status} - ${response.statusText}`);
+            }
+            
+            // Obtener el texto CSV
+            const csvText = await response.text();
+            console.log(`Datos CSV recibidos (${csvText.length} caracteres)`);
+            
+            // Verificar que el CSV no esté vacío
+            if (!csvText || csvText.trim() === '') {
+                throw new Error('El archivo CSV está vacío');
+            }
+            
+            console.log('Iniciando análisis del CSV con PapaParse');
+            
+            // Parsear el CSV usando PapaParse
+            return new Promise((resolve, reject) => {
+                Papa.parse(csvText, {
+                    header: true, // Primera fila como nombres de columnas
+                    dynamicTyping: true, // Convertir números y booleanos automáticamente
+                    skipEmptyLines: true, // Saltar líneas vacías
+                    complete: function(resultados) {
+                        console.log(`Análisis completado. ${resultados.data.length} filas procesadas`);
+                        
+                        // Verificar errores de parsing
+                        if (resultados.errors.length > 0) {
+                            console.error('Errores en el análisis:', resultados.errors);
+                            reject(new Error('Error al procesar los datos: ' + resultados.errors[0].message));
+                            return;
+                        }
+                        
+                        // Filtrar filas completamente vacías
+                        datosActuales = resultados.data.filter(fila => 
+                            Object.values(fila).some(valor => valor !== null && valor !== '')
+                        );
+                        
+                        console.log(`✅ ${datosActuales.length} registros válidos encontrados`);
+                        
+                        // Procesar datos si hay registros válidos
+                        if (datosActuales.length > 0) {
+                            // Obtener nombres de columnas disponibles
+                            const columnasDisponibles = Object.keys(datosActuales[0]);
+                            console.log('Columnas detectadas:', columnasDisponibles);
+                            
+                            // Detectar automáticamente qué columnas contienen qué información
+                            detectarColumnasAutomaticamente(columnasDisponibles);
+                            
+                            // Actualizar todos los componentes de la interfaz
+                            actualizarEstadisticas();
+                            actualizarGraficos();
+                            actualizarSelectorAnios();
+                            
+                            // Mostrar todas las publicaciones inicialmente
+                            mostrarTodasLasPublicaciones();
+                            
+                            // Quitar mensaje de carga
+                            mostrarEstadoCarga('', false);
+                        } else {
+                            mostrarEstadoCarga('No se encontraron datos válidos en el archivo');
+                        }
+                        
+                        resolve(datosActuales);
+                    },
+                    error: function(error) {
+                        console.error('Error en PapaParse:', error);
+                        reject(new Error('Error al procesar el formato del archivo: ' + error.message));
+                    }
+                });
+            });
+            
+        } catch (error) {
+            console.error('❌ Error en la carga:', error);
+            
+            // ESTRATEGIA DE REINTENTO: Intentar con URL alternativa si hay error
+            if (currentUrlIndex < URL_OPTIONS.length - 1) {
+                currentUrlIndex++;
+                console.log(`🔄 Intentando con URL alternativa: ${currentUrlIndex}`);
+                
+                // Pequeña pausa antes de reintentar
+                setTimeout(() => {
+                    cargarDatos();
+                }, 1000);
+                return;
+            } else {
+                // Si fallan todos los intentos, mostrar error al usuario
+                mostrarError('No se pudieron cargar los datos después de intentar todas las URLs.<br>' +
+                           'Posibles causas:<br>' +
+                           '1. La hoja no está publicada correctamente<br>' +
+                           '2. Problemas de CORS<br>' +
+                           '3. Límites de frecuencia en los proxies<br><br>' +
+                           '<a href="https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/edit" target="_blank">Verificar hoja</a>');
+            }
+        } finally {
+            isLoading = false;
+        }
+    }
+    
+    /**
+     * Detecta automáticamente qué columnas contienen años, tipos, títulos y autores
+     * basándose en nombres comunes de columnas
+     */
+    function detectarColumnasAutomaticamente(columnasDisponibles) {
+        // Buscar columnas que puedan contener años
+        const posiblesColumnasAnio = columnasDisponibles.filter(col => 
+            col.toLowerCase().includes('año') || 
+            col.toLowerCase().includes('year') ||
+            col.toLowerCase().includes('fecha') ||
+            col.toLowerCase().includes('date')
+        );
+        
+        if (posiblesColumnasAnio.length > 0 && !columnaAnioSeleccionada) {
+            columnaAnioSeleccionada = posiblesColumnasAnio[0];
+            console.log(`Columna de año detectada automáticamente: ${columnaAnioSeleccionada}`);
+        }
+        
+        // Buscar columnas que puedan contener tipos
+        const posiblesColumnasTipo = columnasDisponibles.filter(col => 
+            col.toLowerCase().includes('tipo') || 
+            col.toLowerCase().includes('type') ||
+            col.toLowerCase().includes('categoría') ||
+            col.toLowerCase().includes('category') ||
+            col.toLowerCase().includes('clasificación')
+        );
+        
+        if (posiblesColumnasTipo.length > 0 && !columnaTipoSeleccionada) {
+            columnaTipoSeleccionada = posiblesColumnasTipo[0];
+            console.log(`Columna de tipo detectada automáticamente: ${columnaTipoSeleccionada}`);
+        }
+        
+        // Buscar columnas que puedan contener títulos
+        const posiblesColumnasTitulo = columnasDisponibles.filter(col => 
+            col.toLowerCase().includes('título') || 
+            col.toLowerCase().includes('titulo') ||
+            col.toLowerCase().includes('title') ||
+            col.toLowerCase().includes('nombre') ||
+            col.toLowerCase().includes('name')
+        );
+        
+        if (posiblesColumnasTitulo.length > 0 && !columnaTituloSeleccionada) {
+            columnaTituloSeleccionada = posiblesColumnasTitulo[0];
+            console.log(`Columna de título detectada automáticamente: ${columnaTituloSeleccionada}`);
+        }
+        
+        // Buscar columnas que puedan contener autores
+        const posiblesColumnasAutores = columnasDisponibles.filter(col => 
+            col.toLowerCase().includes('autor') || 
+            col.toLowerCase().includes('author') ||
+            col.toLowerCase().includes('autores') ||
+            col.toLowerCase().includes('authors')
+        );
+        
+        if (posiblesColumnasAutores.length > 0 && !columnaAutoresSeleccionada) {
+            columnaAutoresSeleccionada = posiblesColumnasAutores[0];
+            console.log(`Columna de autores detectada automáticamente: ${columnaAutoresSeleccionada}`);
+        }
+        
+        // Si no se detectó automáticamente, usar las primeras columnas disponibles como fallback
+        if (!columnaAnioSeleccionada && columnasDisponibles.length > 0) {
+            columnaAnioSeleccionada = columnasDisponibles[0];
+        }
+        
+        if (!columnaTipoSeleccionada && columnasDisponibles.length > 1) {
+            columnaTipoSeleccionada = columnasDisponibles[1];
+        }
+        
+        if (!columnaTituloSeleccionada && columnasDisponibles.length > 2) {
+            columnaTituloSeleccionada = columnasDisponibles[2];
+        }
+        
+        if (!columnaAutoresSeleccionada && columnasDisponibles.length > 3) {
+            columnaAutoresSeleccionada = columnasDisponibles[3];
+        }
+    }
+    
+    /**
+     * Muestra mensajes de estado durante la carga de datos
+     */
+    function mostrarEstadoCarga(mensaje, esCarga = true) {
+        const container = document.getElementById('estadisticasPrincipales');
+        
+        if (esCarga) {
+            container.innerHTML = `
+                <div class="stat-card" style="grid-column: 1 / -1;">
+                    <div>
+                        ${mensaje}
+                    </div>
+                    <div style="font-size: 0.9em; margin-top: 10px;">
+                        Por favor espere...
+                    </div>
+                </div>
+            `;
+        } else if (mensaje) {
+            container.innerHTML = `
+                <div class="stat-card" style="grid-column: 1 / -1; background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);">
+                    <div>
+                        ${mensaje}
+                    </div>
+                </div>
+            `;
+        }
+    }
+    
+    /**
+     * Muestra mensajes de error al usuario
+     */
+    function mostrarError(mensaje) {
+        document.getElementById('estadisticasPrincipales').innerHTML = `
+            <div class="stat-card" style="grid-column: 1 / -1; background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);">
+                <div>
+                    Error de Conexión
+                </div>
+                <div style="font-size: 0.9em; margin-top: 10px;">
+                    ${mensaje}
+                </div>
+                <div style="font-size: 0.8em; margin-top: 15px;">
+                    <strong>Para solucionar:</strong><br>
+                    1. Verifica que la hoja esté publicada correctamente<br>
+                    2. Asegúrate de que esté compartida como "Cualquier persona con el enlace"<br>
+                    3. Intenta recargar la página
+                </div>
+            </div>
+        `;
+    }
+    
+    // ===== FUNCIONES DE ANÁLISIS DE DATOS =====
+    
+    /**
+     * Calcula estadísticas generales a partir de los datos cargados
+     * @returns {Object} Objeto con estadísticas calculadas
+     */
+    function calcularEstadisticas() {
+        if (datosActuales.length === 0) return {};
+        
+        const stats = {
+            totalRegistros: datosActuales.length,
+            publicacionesPorAnio: {},
+            publicacionesPorTipo: {},
+            añosUnicos: new Set(),
+            tiposUnicos: new Set()
+        };
+        
+        // Analizar cada fila de datos
+        datosActuales.forEach(fila => {
+            // Obtener año de la columna seleccionada
+            let año = null;
+            if (columnaAnioSeleccionada && fila[columnaAnioSeleccionada]) {
+                año = fila[columnaAnioSeleccionada];
+            }
+            
+            // Contar publicaciones por año
+            if (año && !isNaN(año)) {
+                const añoNum = parseInt(año);
+                stats.publicacionesPorAnio[añoNum] = (stats.publicacionesPorAnio[añoNum] || 0) + 1;
+                stats.añosUnicos.add(añoNum);
+            }
+            
+            // Obtener tipo de la columna seleccionada
+            let tipo = null;
+            if (columnaTipoSeleccionada && fila[columnaTipoSeleccionada]) {
+                tipo = fila[columnaTipoSeleccionada];
+            }
+            
+            // Contar publicaciones por tipo
+            if (tipo) {
+                const tipoStr = tipo.toString().trim();
+                if (tipoStr) {
+                    stats.publicacionesPorTipo[tipoStr] = (stats.publicacionesPorTipo[tipoStr] || 0) + 1;
+                    stats.tiposUnicos.add(tipoStr);
+                }
+            }
+        });
+        
+        return stats;
+    }
+    
+    // ===== FUNCIONES DE ACTUALIZACIÓN DE INTERFAZ =====
+    
+    /**
+     * Actualiza las tarjetas de estadísticas en la interfaz
+     */
+    function actualizarEstadisticas() {
+        const stats = calcularEstadisticas();
+        const container = document.getElementById('estadisticasPrincipales');
+        
+        // Mostrar mensaje si no hay datos
+        if (datosActuales.length === 0) {
+            container.innerHTML = `
+                <div class="stat-card" style="grid-column: 1 / -1;">
+                    <div>
+                        No hay datos disponibles
+                    </div>
+                    <div style="font-size: 0.9em; margin-top: 10px;">
+                        El archivo no contiene registros válidos
+                    </div>
+                </div>
+            `;
+            return;
+        }
+        
+        // Calcular rango temporal
+        const años = Object.keys(stats.publicacionesPorAnio);
+        const añoMin = años.length > 0 ? Math.min(...años) : 'N/A';
+        const añoMax = años.length > 0 ? Math.max(...años) : 'N/A';
+        
+        // Actualizar HTML con las estadísticas calculadas
+        container.innerHTML = `
+            <div class="stat-card">
+                <div>
+                    Total Publicaciones
+                </div>
+                <div class="stat-number">
+                    ${stats.totalRegistros}
+                </div>
+                <div>
+                    registros científicos
+                </div>
+            </div>
+            <div class="stat-card">
+                <div>
+                    Rango Temporal
+                </div>
+                <div class="stat-number">
+                    ${añoMin}-${añoMax}
+                </div>
+                <div>
+                    ${años.length} años diferentes
+                </div>
+            </div>
+            <div class="stat-card">
+                <div>
+                    Tipos de Publicación
+                </div>
+                <div class="stat-number">
+                    ${stats.tiposUnicos.size}
+                </div>
+                <div>
+                    categorías distintas
+                </div>
+            </div>
+            <div class="stat-card">
+                <div>
+                    Publicación Más Reciente
+                </div>
+                <div class="stat-number">
+                    ${añoMax}
+                </div>
+                <div>
+                    año actual
+                </div>
+            </div>
+        `;
+    }
+    
+    /**
+     * Actualiza los gráficos con los datos actuales
+     */
+    function actualizarGraficos() {
+        const stats = calcularEstadisticas();
+        
+        // GRÁFICO DE BARRAS - Publicaciones por año
+        const canvasBarras = document.getElementById('graficoBarras');
+        
+        // Verificar si el canvas existe
+        if (!canvasBarras) {
+            console.error('No se encontró el elemento canvas para el gráfico de barras');
+            return;
+        }
+        
+        const ctxBarras = canvasBarras.getContext('2d');
+        
+        // Destruir gráfico anterior si existe
+        if (chartBarras) {
+            chartBarras.destroy();
+        }
+        
+        // Preparar datos para el gráfico de barras
+        aniosDisponibles = Object.keys(stats.publicacionesPorAnio).sort((a, b) => a - b);
+        const conteosAnios = aniosDisponibles.map(anio => stats.publicacionesPorAnio[anio]);
+        
+        console.log('Datos para gráfico de barras (años):', aniosDisponibles, conteosAnios);
+        
+        // Crear gráfico de barras si hay datos
+        if (aniosDisponibles.length > 0 && conteosAnios.length > 0) {
+            chartBarras = new Chart(ctxBarras, {
+                type: 'bar',
+                data: {
+                    labels: aniosDisponibles,
+                    datasets: [{
+                        label: 'Número de Publicaciones',
+                        data: conteosAnios,
+                        backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1,
+                        hoverBackgroundColor: 'rgba(54, 162, 235, 0.9)',
+                        hoverBorderColor: 'rgba(54, 162, 235, 1)',
+                        hoverBorderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        title: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Número de Publicaciones'
+                            },
+                            ticks: {
+                                precision: 0 // Mostrar solo números enteros
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Año'
+                            }
+                        }
+                    }
+                }
+            });
+        } else {
+            // Mostrar mensaje si no hay datos
+            const parent = canvasBarras.parentNode;
+            parent.innerHTML = '<div class="no-data-message">No hay datos de años para mostrar. Verifique la configuración de columnas.</div>';
+        }
+        
+        // GRÁFICO DE PASTEL - Distribución por tipo
+        const canvasPastel = document.getElementById('graficoPastel');
+        
+        // Verificar si el canvas existe
+        if (!canvasPastel) {
+            console.error('No se encontró el elemento canvas para el gráfico de pastel');
+            return;
+        }
+        
+        const ctxPastel = canvasPastel.getContext('2d');
+        
+        // Destruir gráfico anterior si existe
+        if (chartPastel) {
+            chartPastel.destroy();
+        }
+        
+        // Preparar datos para el gráfico de pastel
+        const tipos = Object.keys(stats.publicacionesPorTipo);
+        
+        // Ordenar tipos por cantidad (de mayor a menor) y tomar solo los primeros 8
+        const tiposOrdenados = tipos.sort((a, b) => stats.publicacionesPorTipo[b] - stats.publicacionesPorTipo[a]);
+        const conteosTipos = tiposOrdenados.map(tipo => stats.publicacionesPorTipo[tipo]);
+        
+        console.log('Datos para gráfico de pastel (tipos):', tiposOrdenados, conteosTipos);
+        
+        // Crear gráfico de pastel si hay datos
+        if (tiposOrdenados.length > 0 && conteosTipos.length > 0) {
+            // Colores para el gráfico de pastel
+            const colores = [
+                'rgba(255, 99, 132, 0.7)',
+                'rgba(54, 162, 235, 0.7)',
+                'rgba(255, 206, 86, 0.7)',
+                'rgba(75, 192, 192, 0.7)',
+                'rgba(153, 102, 255, 0.7)',
+                'rgba(255, 159, 64, 0.7)',
+                'rgba(199, 199, 199, 0.7)',
+                'rgba(83, 102, 255, 0.7)',
+                'rgba(40, 159, 64, 0.7)',
+                'rgba(210, 99, 132, 0.7)'
+            ];
+            
+            chartPastel = new Chart(ctxPastel, {
+                type: 'pie',
+                data: {
+                    labels: tiposOrdenados,
+                    datasets: [{
+                        data: conteosTipos,
+                        backgroundColor: colores.slice(0, tiposOrdenados.length),
+                        borderColor: colores.map(color => color.replace('0.7', '1')),
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: {
+                                boxWidth: 12,
+                                padding: 15
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.label || '';
+                                    const value = context.raw || 0;
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = Math.round((value / total) * 100);
+                                    return `${label}: ${value} (${percentage}%)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        } else {
+            // Mostrar mensaje si no hay datos
+            const parent = canvasPastel.parentNode;
+            parent.innerHTML = '<div class="no-data-message">No hay datos de tipos para mostrar. Verifique la configuración de columnas.</div>';
+        }
+    }
+    
+    /**
+     * Actualiza el selector de años con los años disponibles
+     */
+    function actualizarSelectorAnios() {
+        const selector = document.getElementById('selectorAnio');
+        const stats = calcularEstadisticas();
+        
+        // Limpiar selector (manteniendo la opción "Todos los años")
+        selector.innerHTML = '<option value="">-- Todos los años --</option>';
+        
+        // Obtener años ordenados (más recientes primero)
+        const años = Object.keys(stats.publicacionesPorAnio).sort((a, b) => b - a);
+        
+        // Añadir opciones al selector
+        años.forEach(año => {
+            const option = document.createElement('option');
+            option.value = año;
+            option.textContent = `${año} (${stats.publicacionesPorAnio[año]} publicaciones)`;
+            selector.appendChild(option);
+        });
+        
+        console.log('Selector de años actualizado con', años.length, 'años');
+    }
+    
+    // ===== FUNCIONES PARA DETALLES Y BÚSQUEDA =====
+    
+    /**
+     * Muestra todas las publicaciones sin filtrar por año
+     */
+    function mostrarTodasLasPublicaciones() {
+        anioSeleccionadoActual = '';
+        publicacionesFiltradas = [...datosActuales]; // Copia de todos los datos
+        
+        // Aplicar búsqueda si hay texto en la barra de búsqueda
+        const textoBusqueda = document.getElementById('barraBusqueda').value;
+        if (textoBusqueda) {
+            aplicarBusqueda(textoBusqueda);
+        } else {
+            actualizarTablaDetalles(publicacionesFiltradas);
+        }
+    }
+    
+    /**
+     * Filtra y muestra publicaciones de un año específico
+     * @param {string} anio - Año a filtrar
+     */
+    function mostrarDetallesAnio(anio) {
+        anioSeleccionadoActual = anio;
+        
+        // Filtrar publicaciones del año seleccionado
+        publicacionesFiltradas = datosActuales.filter(fila => {
+            let añoFila = null;
+            if (columnaAnioSeleccionada && fila[columnaAnioSeleccionada]) {
+                añoFila = parseInt(fila[columnaAnioSeleccionada]);
+            }
+            return añoFila === parseInt(anio);
+        });
+        
+        // Aplicar búsqueda si hay texto en la barra de búsqueda
+        const textoBusqueda = document.getElementById('barraBusqueda').value;
+        if (textoBusqueda) {
+            aplicarBusqueda(textoBusqueda);
+        } else {
+            actualizarTablaDetalles(publicacionesFiltradas);
+        }
+    }
+    
+    /**
+     * Filtra publicaciones por texto de búsqueda
+     * @param {string} texto - Texto a buscar en títulos y autores
+     */
+    function aplicarBusqueda(texto) {
+        const textoMinusculas = texto.toLowerCase().trim();
+        
+        // Si no hay texto de búsqueda, mostrar todas las publicaciones según el filtro actual
+        if (textoMinusculas === '') {
+            actualizarTablaDetalles(publicacionesFiltradas);
+            return;
+        }
+        
+        // Filtrar publicaciones por texto de búsqueda
+        const resultados = publicacionesFiltradas.filter(publicacion => {
+            const titulo = columnaTituloSeleccionada ? 
+                (publicacion[columnaTituloSeleccionada] || '').toString().toLowerCase() : '';
+            const autores = columnaAutoresSeleccionada ? 
+                (publicacion[columnaAutoresSeleccionada] || '').toString().toLowerCase() : '';
+            
+            // Buscar en título y autores
+            return titulo.includes(textoMinusculas) || autores.includes(textoMinusculas);
+        });
+        
+        actualizarTablaDetalles(resultados);
+    }
+    
+    /**
+     * Actualiza la tabla de detalles con las publicaciones proporcionadas
+     * @param {Array} publicaciones - Array de publicaciones a mostrar
+     */
+    function actualizarTablaDetalles(publicaciones) {
+        const tablaBody = document.querySelector('#tablaDetalles tbody');
+        const contador = document.getElementById('contadorDetalles');
+        
+        // Limpiar la tabla
+        tablaBody.innerHTML = '';
+        
+        // Llenar la tabla con los datos o mostrar mensaje si no hay resultados
+        if (publicaciones.length === 0) {
+            const textoBusqueda = document.getElementById('barraBusqueda').value;
+            if (textoBusqueda) {
+                if (anioSeleccionadoActual) {
+                    tablaBody.innerHTML = `
+                        <tr>
+                            <td colspan="2" style="text-align: center; padding: 20px;">
+                                No se encontraron publicaciones del año ${anioSeleccionadoActual} que coincidan con la búsqueda
+                            </td>
+                        </tr>
+                    `;
+                } else {
+                    tablaBody.innerHTML = `
+                        <tr>
+                            <td colspan="2" style="text-align: center; padding: 20px;">
+                                No se encontraron publicaciones que coincidan con la búsqueda
+                            </td>
+                        </tr>
+                    `;
+                }
+            } else {
+                if (anioSeleccionadoActual) {
+                    tablaBody.innerHTML = `
+                        <tr>
+                            <td colspan="2" style="text-align: center; padding: 20px;">
+                                No hay publicaciones para el año ${anioSeleccionadoActual}
+                            </td>
+                        </tr>
+                    `;
+                } else {
+                    tablaBody.innerHTML = `
+                        <tr>
+                            <td colspan="2" style="text-align: center; padding: 20px;">
+                                No hay publicaciones disponibles
+                            </td>
+                        </tr>
+                    `;
+                }
+            }
+        } else {
+            // Llenar la tabla con las publicaciones
+            publicaciones.forEach(publicacion => {
+                const titulo = columnaTituloSeleccionada ? (publicacion[columnaTituloSeleccionada] || 'Sin título') : 'Sin información de título';
+                const autores = columnaAutoresSeleccionada ? (publicacion[columnaAutoresSeleccionada] || 'Sin autores') : 'Sin información de autores';
+                
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${titulo}</td>
+                    <td>${autores}</td>
+                `;
+                tablaBody.appendChild(tr);
+            });
+        }
+        
+        // Actualizar contador con información contextual
+        const textoBusqueda = document.getElementById('barraBusqueda').value;
+        if (textoBusqueda) {
+            if (anioSeleccionadoActual) {
+                contador.textContent = `Mostrando ${publicaciones.length} publicación(es) del año ${anioSeleccionadoActual} que coinciden con "${textoBusqueda}"`;
+            } else {
+                contador.textContent = `Mostrando ${publicaciones.length} publicación(es) de todos los años que coinciden con "${textoBusqueda}"`;
+            }
+        } else {
+            if (anioSeleccionadoActual) {
+                contador.textContent = `Mostrando ${publicaciones.length} publicación(es) del año ${anioSeleccionadoActual}`;
+            } else {
+                contador.textContent = `Mostrando ${publicaciones.length} publicación(es) de todos los años`;
+            }
+        }
+    }
+    
+    // ===== INICIALIZACIÓN DE LA APLICACIÓN =====
+    
+    /**
+     * Función que se ejecuta cuando el DOM está completamente cargado
+     * Configura event listeners e inicia la carga de datos
+     */
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('Página cargada, iniciando carga de datos...');
+        
+        // Configurar event listener para el selector de años
+        document.getElementById('selectorAnio').addEventListener('change', function() {
+            const anioSeleccionado = this.value;
+            if (anioSeleccionado) {
+                mostrarDetallesAnio(anioSeleccionado);
+            } else {
+                mostrarTodasLasPublicaciones();
+            }
+        });
+        
+        // Configurar event listener para la barra de búsqueda (búsqueda en tiempo real)
+        document.getElementById('barraBusqueda').addEventListener('input', function() {
+            aplicarBusqueda(this.value);
+        });
+        
+        // Cargar datos automáticamente al iniciar la página
+        cargarDatos();
+        
+        // Configurar recarga automática cada 10 minutos para mantener datos actualizados
+        setInterval(() => {
+            if (!isLoading) {
+                console.log('Recarga automática programada');
+                currentUrlIndex = 0; // Resetear a la URL principal
+                cargarDatos();
+            }
+        }, 600000); // 10 minutos = 600,000 milisegundos
+    });
+</script>
