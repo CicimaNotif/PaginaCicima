@@ -1,0 +1,329 @@
+<!-- Contenedor principal que organiza el layout en dos columnas -->
+<div class="contenedor-principal">
+    <!-- Celda grande de texto: Sección de descripción del área -->
+    <div class="celda-texto">
+        <!-- Título principal de la sección -->
+        <h2>
+            ¿Que constituye el Área?
+        </h2>
+        <!-- Primer párrafo descriptivo -->
+        <p>
+            El área de Estudios Fisicoquímicos del Patrimonio Cultural se constituye como una disciplina científica fundamentalmente interdisciplinaria, que se especializa en la aplicación metódica de técnicas analíticas avanzadas y preferentemente no destructivas para la caracterización material, el diagnóstico del estado de conservación y la autenticación de bienes del patrimonio cultural tangible. Su esencia reside en un arsenal metodológico que combina de forma sinérgica métodos de espectroscopía, difracción y microscopía, creando un enfoque analítico integral. Este conjunto de herramientas permite desentrañar la composición química, la estructura molecular y la morfología superficial de una amplia y diversa gama de objetos culturales, desde frágiles documentos históricos celulósicos, como actas de independencia y pactos fundacionales, hasta artefactos arqueológicos líticos, cerámicos y textiles, como lo demuestran los estudios sobre cortinas de teatro centenarias, colgantes de piedra verde y complejos cerámicos del período formativo.
+        </p>
+        <!-- Segundo párrafo descriptivo -->
+        <p>
+            La aplicación de estas técnicas no es un fin en sí mismo, sino que está rigurosamente orientada a responder preguntas científicas cruciales para la comprensión y preservación del legado cultural. Los estudios se centran en identificar los agentes y mecanismos de deterioro específicos —como la hidrólisis ácida, la oxidación o el biodeterioro— que amenazan la integridad de los objetos. Simultáneamente, esta evidencia material es fundamental para determinar la procedencia geográfica de las materias primas utilizadas y para elucidar las tecnologías de manufactura empleadas por sociedades pasadas, revelando aspectos de su conocimiento técnico y su interacción con el medio. El fin último de esta investigación, por tanto, es netamente práctico y de impacto directo: generar evidencia científica sólida que sirva como base para el diseño de protocolos de conservación y restauración. Este enfoque aleja las intervenciones de las prácticas meramente empíricas, asegurando que las decisiones estén fundadas en criterios objetivos y específicos para cada material y su condición particular. De esta manera, el área se erige como un pilar indispensable para garantizar la preservación material del legado cultural, permitiendo que las generaciones presentes y futuras puedan continuar aprendiendo de y valorando estos testimonios tangibles de la historia y la creatividad humana.
+        </p>
+    </div>
+    
+    <!-- Contenedor derecho: Agrupa las dos celdas verticales (papers e investigador) -->
+    <div class="contenedor-derecho">
+        <!-- Celda del carrusel vertical: Muestra los papers recientes -->
+        <div class="celda-carrusel-vertical">
+            <!-- Título de la sección de papers -->
+            <div class="titulo-seccion titulo-papers">
+                <h3>
+                    Papers Recientes
+                </h3>
+            </div>
+            <!-- Contenedor del carrusel vertical con scroll -->
+            <div class="carrusel-vertical">
+                <!-- Cada h3 contiene un enlace a un paper específico -->
+                <h3>
+                    <a class="item-carrusel" href="#">A brief insight into the secrets of the 120-year-old main curtain of the National Theatre of Costa Rica through non-destructive characterization techniques</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Physicochemical characterization and deterioration condition evaluation of three primary documents of Costa Rica's independence process</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Geochemical and mineralogical relations of three ceramic complexes from the formative period (2000-300 BC) in Costa Rica</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Evaluación del estado de deterioro del Acta de la Independencia, el Acta de los Nublados y el Pacto de Concordia con motivo de la celebración del Bicentenario de la Independencia</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Estudio mineralógico y tipológico de colgantes hachoides del Museo del Jade y de la Cultura Precolombina</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Mineralogical and mechanical characterization of a green stone pendant, from the archaeological site of Nuevo Corinto, Costa Rica</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Caracterización mineralógica y mecánica de un colgante de piedra verde, del sitio arqueológico Nuevo Corinto, Costa Rica</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Contribuciones del Dr. Michael J. Snarskis a la Arqueología costarricense</a>
+                </h3>
+            </div>
+        </div>
+        
+        <!-- Celda del investigador: Muestra información del investigador principal -->
+        <div class="celda-investigador">
+            <!-- Título de la sección de investigadores -->
+            <div class="titulo-seccion">
+                <h3>
+                    Investigadores
+                </h3>
+            </div>
+            <!-- Contenedor del investigador -->
+            <div class="investigador-container">
+                <!-- Item individual del investigador -->
+                <div class="item-investigador">
+                    <!-- Imagen del investigador con atributos de accesibilidad -->
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/rs234406_krb_25055f5ae95204751.jpg" alt="Mavis L. Montero Villalobos" width="704" height="510">
+                    <!-- Nombre y título del investigador -->
+                    <div class="subtitulo-investigador">
+                        Mavis L. Montero Villalobos, PhD.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Estilos CSS para el layout y componentes */
+
+/* Contenedor principal: utiliza flexbox para layout de dos columnas */
+.contenedor-principal {
+    display: flex; /* Activa flexbox para layout flexible */
+    gap: 20px; /* Espacio entre las columnas */
+    max-width: 1400px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrado horizontal */
+    width: 100%; /* Ancho completo del viewport */
+}
+
+/* Celda grande de texto - ocupa el 50% del ancho */
+.celda-texto {
+    flex: 1; /* Ocupa el espacio disponible proporcionalmente */
+    background-color: white; /* Fondo blanco para contraste */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1); /* Sombra sutil para elevación */
+    padding: 30px; /* Espaciado interno generoso */
+    overflow-y: auto; /* Scroll vertical si el contenido excede la altura */
+    max-height: 800px; /* Altura máxima con scroll */
+    width: 50%; /* Ancho explícito del 50% */
+}
+
+/* Estilos para el título de la celda de texto */
+.celda-texto h2 {
+    color: #0074cc; /* Color azul institucional */
+    margin-bottom: 20px; /* Espacio inferior */
+    padding-bottom: 10px; /* Espacio en la parte inferior del título */
+    border-bottom: 2px solid #0074cc; /* Línea decorativa inferior */
+    font-size: 28px; /* Tamaño de fuente grande */
+    text-align: center; /* Centrado del texto */
+}
+
+/* Estilos para los párrafos de la celda de texto */
+.celda-texto p {
+    line-height: 1.6; /* Interlineado para mejor legibilidad */
+    margin-bottom: 15px; /* Espacio entre párrafos */
+    color: #555; /* Color gris para texto secundario */
+    text-align: justify; /* Texto justificado para apariencia formal */
+}
+
+/* Contenedor derecho - ocupa el 50% del ancho */
+.contenedor-derecho {
+    flex: 1; /* Ocupa el espacio disponible proporcionalmente */
+    display: flex; /* Flexbox para organizar elementos hijos */
+    flex-direction: column; /* Organización vertical de los hijos */
+    gap: 20px; /* Espacio entre los elementos hijos */
+    width: 50%; /* Ancho explícito del 50% */
+}
+
+/* Celda del carrusel vertical de papers */
+.celda-carrusel-vertical {
+    background-color: white; /* Fondo blanco */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1); /* Sombra sutil */
+    padding: 20px; /* Espaciado interno */
+    height: 400px; /* Altura fija */
+    overflow: hidden; /* Oculta contenido que se sale */
+    display: flex; /* Flexbox para organización interna */
+    flex-direction: column; /* Organización vertical */
+}
+
+/* Contenedor del carrusel vertical con scroll */
+.carrusel-vertical {
+    height: 100%; /* Ocupa toda la altura disponible */
+    overflow-y: auto; /* Scroll vertical cuando hay overflow */
+    padding-right: 10px; /* Espacio para el scrollbar */
+    flex: 1; /* Ocupa el espacio restante */
+}
+
+/* Personalización del scrollbar para WebKit (Chrome, Safari, Edge) */
+.carrusel-vertical::-webkit-scrollbar {
+    width: 6px; /* Ancho del scrollbar */
+}
+
+.carrusel-vertical::-webkit-scrollbar-thumb {
+    background-color: #0074cc; /* Color del thumb del scrollbar */
+    border-radius: 10px; /* Bordes redondeados del thumb */
+}
+
+/* Estilo para los enlaces de papers - TAMAÑO MÁS PEQUEÑO */
+.item-carrusel {
+    display: block; /* Elemento de bloque para ocupar todo el ancho */
+    padding: 10px 12px; /* Espaciado interno */
+    margin-bottom: 6px; /* Espacio entre items */
+    background-color: #f8f9fa; /* Fondo gris muy claro */
+    border-radius: 8px; /* Bordes redondeados */
+    border-left: 4px solid #0074cc; /* Borde izquierdo azul como acento */
+    transition: all 0.3s ease; /* Transición suave para efectos hover */
+    cursor: pointer; /* Cursor de pointer para indicar interactividad */
+    text-decoration: none; /* Sin subrayado en enlaces */
+    color: inherit; /* Hereda el color del texto padre */
+    text-align: center; /* Texto centrado */
+}
+
+/* Efecto hover para los items del carrusel */
+.item-carrusel:hover {
+    background-color: #e3f2fd; /* Fondo azul claro al pasar el mouse */
+    transform: translateX(5px); /* Desplazamiento sutil a la derecha */
+    text-decoration: none; /* Mantiene sin subrayado */
+    color: inherit; /* Mantiene el color heredado */
+}
+
+/* Estilos para los títulos dentro de los items del carrusel */
+.item-carrusel h3 {
+    font-size: 11px; /* Tamaño de fuente pequeño para títulos largos */
+    color: #2c3e50; /* Color gris oscuro para texto */
+    margin: 0; /* Sin márgenes */
+    text-align: center; /* Texto centrado */
+    line-height: 1.2; /* Interlineado compacto */
+    font-weight: normal; /* Peso normal (no negrita) */
+}
+
+/* Título de Papers Recientes - perfectamente centrado */
+.titulo-papers {
+    display: flex; /* Flexbox para centrado perfecto */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    margin-bottom: 15px; /* Espacio inferior */
+    color: #2c3e50; /* Color de texto */
+    text-align: center; /* Texto centrado */
+    width: 100%; /* Ancho completo */
+    padding: 0; /* Sin padding */
+}
+
+/* Estilos específicos para el título de papers */
+.titulo-papers h3 {
+    color: #0074cc; /* Color azul */
+    font-size: 20px; /* Tamaño de fuente */
+    margin: 0; /* Sin márgenes */
+}
+
+/* Celda del investigador */
+.celda-investigador {
+    background-color: white; /* Fondo blanco */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1); /* Sombra sutil */
+    padding: 20px; /* Espaciado interno */
+    height: 380px; /* Altura fija */
+    overflow: hidden; /* Oculta contenido que se sale */
+    display: flex; /* Flexbox para organización interna */
+    flex-direction: column; /* Organización vertical */
+}
+
+/* Contenedor del investigador */
+.investigador-container {
+    flex: 1; /* Ocupa el espacio disponible */
+    display: flex; /* Flexbox para centrado */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+}
+
+/* Item individual del investigador */
+.item-investigador {
+    display: flex; /* Flexbox para organización */
+    flex-direction: column; /* Organización vertical */
+    align-items: center; /* Centrado horizontal de elementos hijos */
+    width: 100%; /* Ancho completo */
+    max-width: 300px; /* Ancho máximo */
+}
+
+/* Estilos para la imagen del investigador */
+.item-investigador img {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Recorta la imagen para cubrir el contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Subtítulo del investigador (nombre y título) */
+.subtitulo-investigador {
+    padding: 15px; /* Espaciado interno */
+    background-color: #f8f9fa; /* Fondo gris claro */
+    text-align: center; /* Texto centrado */
+    width: 100%; /* Ancho completo */
+    border-radius: 0 0 8px 8px; /* Bordes redondeados solo abajo */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #2c3e50; /* Color de texto */
+    font-weight: bold; /* Texto en negrita */
+    margin-top: -5px; /* Superposición sutil con la imagen */
+}
+
+/* Títulos de secciones - ahora centrados */
+.titulo-seccion {
+    display: flex; /* Flexbox para centrado */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    margin-bottom: 15px; /* Espacio inferior */
+    color: #2c3e50; /* Color de texto */
+    text-align: center; /* Texto centrado */
+}
+
+/* Estilos para los títulos de sección */
+.titulo-seccion h3 {
+    color: #0074cc; /* Color azul */
+    font-size: 22px; /* Tamaño de fuente */
+    margin: 0; /* Sin márgenes */
+}
+
+/* Media queries para diseño responsive */
+
+/* Estilos para tablets y dispositivos móviles */
+@media (max-width: 768px) {
+    .contenedor-principal {
+        flex-direction: column; /* Cambia a una columna en móviles */
+    }
+    
+    .celda-texto {
+        max-height: none; /* Elimina la altura máxima */
+        width: 100%; /* Ancho completo en móviles */
+    }
+    
+    .contenedor-derecho {
+        width: 100%; /* Ancho completo en móviles */
+    }
+    
+    .celda-carrusel-vertical {
+        height: 300px; /* Altura reducida en móviles */
+    }
+    
+    .celda-investigador {
+        height: 300px; /* Altura reducida en móviles */
+    }
+    
+    .item-carrusel h3 {
+        font-size: 10px; /* Tamaño de fuente aún más pequeño en móviles */
+    }
+    
+    .titulo-papers h3 {
+        font-size: 18px; /* Tamaño reducido para títulos en móviles */
+    }
+    
+    .titulo-seccion h3 {
+        font-size: 20px; /* Tamaño reducido para títulos de sección */
+    }
+    
+    .subtitulo-investigador {
+        font-size: 14px; /* Tamaño reducido para subtítulos */
+    }
+    
+    .item-investigador img {
+        height: 150px; /* Altura reducida para imágenes en móviles */
+    }
+}
+</style>
