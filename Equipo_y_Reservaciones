@@ -1,0 +1,514 @@
+<!-- 
+    ============================================================
+    SECCIÓN DE EQUIPO Y RESERVACIONES - CICIMA
+    ============================================================
+    Este componente muestra todos los equipos disponibles del centro
+    en un carrusel horizontal con enlaces directos a cada equipo
+-->
+
+<!-- 
+    CONTENEDOR PRINCIPAL DEL CARRUSEL
+    Envuelve toda la sección con estilos de tarjeta
+-->
+<div class="carousel-container">
+    
+    <!-- 
+        TÍTULO PRINCIPAL DE LA SECCIÓN
+        Encabezado que identifica la sección de equipos y reservaciones
+    -->
+    <div class="profile-title">
+        Equipo y Reservaciones
+    </div>
+    
+    <!-- 
+        CARRUSEL HORIZONTAL DE EQUIPOS
+        Contiene múltiples celdas con grupos de equipos
+    -->
+    <div class="horizontal-carousel">
+        
+        <!-- 
+            CELDA 1: PRIMER GRUPO DE EQUIPOS
+            Contiene tres equipos de caracterización avanzada
+        -->
+        <div class="carousel-cell">
+            <!-- 
+                EQUIPO 1.1: DIFRACTÓMETRO DE RAYOS X
+                Enlace que combina imagen y botón descriptivo
+            -->
+            <a class="btn-with-image" href="https://cicima.ucr.ac.cr/difractometro-rayos-x-empyrean">
+                <!-- Imagen representativa del equipo -->
+                <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/GiSAX.jpeg" 
+                     alt="Imagen 1" 
+                     width="2720" 
+                     height="2768">
+                <!-- Botón con nombre del equipo -->
+                <button class="btn-blue-equip">Difractómetro de Rayos X EMPYREAN</button>
+            </a>
+            
+            <!-- 
+                EQUIPO 1.2: MICROSCOPÍA CONFOCAL
+                Segundo equipo del primer grupo
+            -->
+            <a class="btn-with-image" href="https://cicima.ucr.ac.cr/sistema-microscopia-confocal-superalta-resolucion-n-sim-s-n-storm-a1rhd">
+                <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/IMG_2524.jpg" 
+                     alt="Imagen 2" 
+                     width="3943" 
+                     height="3157">
+                <button class="btn-blue-equip">Sistema de Microscopía Confocal de Súperalta Resolución N-SIM-S y N-Storm A1RHD</button>
+            </a>
+            
+            <!-- 
+                EQUIPO 1.3: MICROSCOPIO ELECTRÓNICO DE BARRIDO
+                Tercer equipo del primer grupo
+            -->
+            <a class="btn-with-image" href="https://cicima.ucr.ac.cr/microscopio-barrido-electronico-jsm-it500">
+                <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/IMG_2365_0.jpg" 
+                     alt="Imagen 3" 
+                     width="2234" 
+                     height="3192">
+                <button class="btn-blue-equip">Microscopio de Barrido Electrónico JSM-IT500</button>&nbsp;
+            </a>
+        </div>
+
+        <!-- 
+            CELDA 2: SEGUNDO GRUPO DE EQUIPOS
+            Contiene equipos de microscopía y espectrofotometría
+        -->
+        <div class="carousel-cell">
+            <!-- 
+                EQUIPO 2.1: MICROSCOPIO DE FUERZA ATÓMICA
+                Equipo para análisis a escala atómica
+            -->
+            <a class="btn-with-image" href="https://cicima.ucr.ac.cr/microscopio-fuerza-atomica-multimode-spm">
+                <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/IMG_2519.jpg" 
+                     alt="Imagen 4" 
+                     width="4027" 
+                     height="5861">
+                <button class="btn-blue-equip">Microscopio de Fuerza Atómica Multimode-SPM</button>
+            </a>
+            
+            <!-- 
+                EQUIPO 2.2: MICROSCOPIO INVERTIDO DE EPI-FLUORESCENCIA
+                Equipo para análisis biológico
+            -->
+            <a class="btn-with-image" href="https://cicima.ucr.ac.cr/microscopio-invertido-epi-fluorescencia-ti2-e">
+                <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/IMG_2513.jpg" 
+                     alt="Imagen 5" 
+                     width="3569" 
+                     height="3084">
+                <button class="btn-blue-equip">Microscopio Invertido de Epi-fluorescencia Ti2-E</button>
+            </a>
+            
+            <!-- 
+                EQUIPO 2.3: SISTEMA DE MICROESPECTROFOTOMETRÍA
+                Equipo para análisis espectral
+            -->
+            <a class="btn-with-image" href="https://cicima.ucr.ac.cr/sistema-microespectrofotometria-visnir-lv100nd508pv">
+                <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/IMG_2504.jpg" 
+                     alt="Imagen 6" 
+                     width="4032" 
+                     height="4712">
+                <button class="btn-blue-equip">Sistema de Microespectrofotómetría (Vis/NIR) LV100ND/508PV</button>&nbsp;
+            </a>
+        </div>
+
+        <!-- 
+            CELDA 3: TERCER GRUPO DE EQUIPOS
+            Contiene equipos de espectroscopía avanzada
+        -->
+        <div class="carousel-cell">
+            <!-- 
+                EQUIPO 3.1: ESPECTROFOTÓMETRO UV/VIS/NIR
+                Equipo para análisis espectral de alta precisión
+            -->
+            <a class="btn-with-image" href="https://cicima.ucr.ac.cr/espectrofotometro-precision-uvvisnir-lambda1050">
+                <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/IMG_2369.jpg" 
+                     alt="Imagen 4" 
+                     width="4027" 
+                     height="2017">
+                <button class="btn-blue-equip">Espectrofotómetro de precisión (UV/Vis/NIR) Lambda1050</button>
+            </a>
+            
+            <!-- 
+                EQUIPO 3.2: ESPECTRÓMETRO INFRARROJO FT-IR
+                Equipo para análisis de infrarrojo
+            -->
+            <a class="btn-with-image" href="https://cicima.ucr.ac.cr/espectrometro-infrarrojo-transformada-fourier-ft-ir-frontier100">
+                <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/IMG_2370.jpg" 
+                     alt="Imagen 5" 
+                     width="3569" 
+                     height="2763">
+                <button class="btn-blue-equip">Espectrómetro Infrarrojo de Transformada de Fourier (FT-IR) Frontier100</button>
+            </a>
+            
+            <!-- 
+                EQUIPO 3.3: SISTEMA DE IMÁGENES EN INFRARROJO
+                Equipo para imágenes espectrales
+            -->
+            <a class="btn-with-image" href="https://cicima.ucr.ac.cr/sistema-imagenes-en-infrarrojo-ft-ir-spotligth400">
+                <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/IMG_2496.jpg" 
+                     alt="Imagen 6" 
+                     width="4032" 
+                     height="3651">
+                <button class="btn-blue-equip">Sistema de Imágenes en Infrarrojo (FT-IR) Spotligth400</button>&nbsp;
+            </a>
+        </div>
+
+        <!-- 
+            CELDA 5: QUINTO GRUPO DE EQUIPOS
+            Contiene equipos de fluorescencia, Raman y termoanálisis
+            Nota: No existe Celda 4, salta de 3 a 5
+        -->
+        <div class="carousel-cell">
+            <!-- 
+                EQUIPO 5.1: FLUORÓMETRO
+                Equipo para análisis de fluorescencia
+            -->
+            <a class="btn-with-image" href="https://cicima.ucr.ac.cr/fluorometro-fl8500">
+                <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/IMG_2490.jpg" 
+                     alt="Imagen 4" 
+                     width="4027" 
+                     height="3108">
+                <button class="btn-blue-equip">Fluorómetro FL8500</button>
+            </a>
+            
+            <!-- 
+                EQUIPO 5.2: SISTEMA DE MICROESPECTROSCOPÍA RAMAN
+                Equipo para análisis Raman
+            -->
+            <a class="btn-with-image" href="https://cicima.ucr.ac.cr/sistema-modular-microespectrocopia-raman-alpha300r">
+                <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/IMG_2366.jpg" 
+                     alt="Imagen 5" 
+                     width="3569" 
+                     height="6081">
+                <button class="btn-blue-equip">Sistema Modular de Microespectrocopía Raman Alpha300R</button>
+            </a>
+            
+            <!-- 
+                EQUIPO 5.3: ANALIZADOR TERMOGRAVIMÉTRICO
+                Equipo para análisis térmico
+            -->
+            <a class="btn-with-image" href="https://cicima.ucr.ac.cr/analizador-termogravimetrico-tga-5500">
+                <img src="https://i.imgur.com/c5CS6fp.jpeg" 
+                     alt="Imagen 6" 
+                     width="4032" 
+                     height="2812">
+                <button class="btn-blue-equip">Analizador Termogravimétrico TGA-5500</button>&nbsp;
+            </a>
+        </div>
+
+        <!-- 
+            CELDA 6: SEXTO GRUPO DE EQUIPOS
+            Contiene equipos de análisis térmico, mecánico y preparación de muestras
+        -->
+        <div class="carousel-cell">
+            <!-- 
+                EQUIPO 6.1: CALORÍMETRO DE BARRIDO DIFERENCIAL
+                Equipo para análisis calorimétrico
+            -->
+            <a class="btn-with-image" href="https://cicima.ucr.ac.cr/calorimetro-barrido-diferencial-dsc2500">
+                <img src="https://i.imgur.com/iq0MzZw.jpeg" 
+                     alt="Imagen 4" 
+                     width="4027" 
+                     height="2771">
+                <button class="btn-blue-equip">Calorímetro de Barrido Diferencial DSC2500</button>
+            </a>
+            
+            <!-- 
+                EQUIPO 6.2: ANALIZADOR DINÁMICO MECÁNICO
+                Equipo para análisis de propiedades mecánicas
+            -->
+            <a class="btn-with-image" href="https://cicima.ucr.ac.cr/analizador-dinamico-mecanico-g2-rsa">
+                <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/IMG_2608.jpg" 
+                     alt="Imagen 5" 
+                     width="3569" 
+                     height="3432">
+                <button class="btn-blue-equip">Analizador Dinámico Mecánico G2 RSA</button>
+            </a>
+            
+            <!-- 
+                EQUIPO 6.3: REÓMETRO
+                Equipo para análisis reológico
+            -->
+            <a class="btn-with-image" href="https://cicima.ucr.ac.cr/reometro-ares-g2">
+                <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/IMG_2597.jpg" 
+                     alt="Imagen 6" 
+                     width="4032" 
+                     height="4993">
+                <button class="btn-blue-equip">Reómetro ARES G2</button>&nbsp;
+            </a>
+            
+            <!-- 
+                EQUIPO 6.4: CORTADORA DE HILO DE DIAMANTE
+                Equipo para preparación de muestras
+            -->
+            <a class="btn-with-image" href="https://cicima.ucr.ac.cr/cortadora-hilo-diamante-dws100">
+                <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/IMG_2618.jpg" 
+                     alt="Imagen 6" 
+                     width="4032" 
+                     height="3103">
+                <button class="btn-blue-equip">Cortadora de Hilo de Diamante DWS.100</button>&nbsp;
+            </a>
+        </div>
+    </div>
+    
+    <!-- 
+        DESCRIPCIÓN DE LA SECCIÓN
+        Texto explicativo sobre el proceso de reservaciones
+    -->
+    <p class="carousel-description">
+        El Centro de Investigación en Ciencia e Ingeniería de Materiales (CICIMA) invita a investigadores, industrias y estudiantes a colaborar y utilizar su plataforma tecnológica de vanguardia. Para agilizar la planificación de sus proyectos, cada equipo cuenta con un enlace a su calendario de disponibilidad. Les invitamos a contactar al Laboratorio para realizar reservaciones y explorar juntos las posibilidades que ofrecen nuestras herramientas para impulsar la innovación en ciencia de materiales.
+    </p>
+    
+    <!-- 
+        BOTONES DE RESERVA EN LÍNEA
+        Enlaces para solicitudes de colaboración interna y externa
+    -->
+    <div class="reserve-buttons-container">
+        <!-- Botón para personas internas de la UCR -->
+        <a class="btn-reserve" 
+           href="https://cicima.ucr.ac.cr/solicitud-colaboracion-personas-internas-ucr" 
+           target="_blank" 
+           rel="noopener noreferrer">
+            Solicitud de Colaboración Personas Internas
+        </a>
+        
+        <!-- Botón para personas externas a la UCR -->
+        <a class="btn-reserve" 
+           href="https://cicima.ucr.ac.cr/solicitud-colaboracion-personas-externas-ucr" 
+           target="_blank" 
+           rel="noopener noreferrer">
+            Solicitud de Colaboración Personas Externas
+        </a>
+    </div>
+</div>
+
+<!-- 
+    ============================================================
+    ESTILOS CSS PARA LA SECCIÓN DE EQUIPO Y RESERVACIONES
+    ============================================================
+    Define la apariencia visual y comportamiento responsive
+-->
+<style>
+    /* 
+        CONTENEDOR PRINCIPAL DEL CARRUSEL
+        Estilo de tarjeta con sombras y bordes redondeados
+    */
+    .carousel-container {
+        background-color: white; /* Fondo blanco para contraste profesional */
+        border-radius: 20px; /* Esquinas muy redondeadas */
+        box-shadow: 0 4px 16px rgba(0,0,0,0.1); /* Sombra pronunciada para destacar */
+        padding: 20px; /* Espaciado interno */
+        max-width: 100%; /* Ancho máximo del 100% del contenedor padre */
+        box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+        overflow: hidden; /* Oculta cualquier contenido que se desborde */
+        margin-bottom: 30px; /* Margen inferior transparente añadido */
+    }
+
+    /* 
+        TÍTULO DEL PERFIL
+        Encabezado destacado en azul institucional
+    */
+    .profile-title {
+        font-size: 28px; /* Tamaño de fuente grande */
+        font-weight: bold; /* Negrita para énfasis */
+        color: #0074cc; /* Color azul institucional personalizado */
+        margin-bottom: 20px; /* Espacio inferior */
+        text-align: center; /* Centrado horizontal */
+    }
+
+    /* 
+        CARRUSEL HORIZONTAL PRINCIPAL
+        Configura el comportamiento de scroll horizontal
+    */
+    .horizontal-carousel {
+        display: flex; /* Usa Flexbox para disposición horizontal */
+        overflow-x: auto; /* Habilita scroll horizontal cuando hay muchos elementos */
+        overflow-y: hidden; /* Deshabilita scroll vertical */
+        scroll-snap-type: x mandatory; /* Fuerza el snap a cada celda al hacer scroll */
+        -webkit-overflow-scrolling: touch; /* Scroll suave en dispositivos iOS */
+        scroll-behavior: smooth; /* Transición suave al hacer scroll */
+        overflow-y: hidden; /* Evita scroll vertical (redundante pero seguro) */
+        height: auto; /* Altura se adapta al contenido */
+    }
+
+    /* 
+        CELDA INDIVIDUAL DEL CARRUSEL
+        Cada celda ocupa el 100% del ancho visible y contiene varios equipos
+    */
+    .carousel-cell {
+        flex: 0 0 auto; /* No crece, no se encoge, tamaño automático */
+        min-width: 100%; /* Ancho mínimo del 100% del contenedor */
+        display: flex; /* Flexbox interno para organizar los equipos */
+        justify-content: space-between; /* Distribuye el espacio entre equipos */
+        align-items: flex-start; /* Alinea los elementos en la parte superior */
+        padding: 10px 20px; /* Espaciado interno */
+        box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+        gap: 15px; /* Espacio uniforme entre equipos */
+        margin-right: 20px; /* Margen derecho entre celdas */
+    }
+
+    /* 
+        ENLACE CON IMAGEN Y BOTÓN
+        Contenedor que agrupa imagen y botón para cada equipo
+    */
+    .btn-with-image {
+        display: flex; /* Flexbox para organización vertical */
+        flex-direction: column; /* Elementos en columna (imagen arriba, botón abajo) */
+        align-items: center; /* Centrado horizontal */
+        text-decoration: none; /* Elimina subrayado de enlaces */
+        width: 30%; /* Ancho del 30% para 3 elementos por fila */
+        box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+        justify-content: flex-start; /* Alinea elementos en la parte superior */
+        gap: 15px; /* Espacio fijo entre imagen y botón */
+    }
+
+    /* 
+        IMAGEN DEL EQUIPO
+        Estilo para las imágenes representativas de cada equipo
+    */
+    .btn-with-image img {
+        width: 100%; /* Ancho completo del contenedor */
+        height: 400px; /* Altura fija para consistencia visual */
+        object-fit: cover; /* Recorta la imagen para llenar el espacio manteniendo proporción */
+        border-radius: 10px; /* Esquinas redondeadas */
+        margin: 0; /* Sin márgenes */
+        flex-shrink: 0; /* Evita que la imagen se encoja */
+    }
+
+    /* 
+        BOTÓN DE EQUIPO
+        Estilo para los botones que muestran el nombre del equipo
+    */
+    .btn-blue-equip {
+        background-color: #007BFF; /* Color azul Bootstrap estándar */
+        border: none; /* Sin borde */
+        border-radius: 20px; /* Esquinas muy redondeadas */
+        color: white; /* Texto blanco para contraste */
+        font-size: 16px; /* Tamaño de fuente legible */
+        padding: 10px 15px; /* Espaciado interno */
+        cursor: pointer; /* Cursor de mano al pasar */
+        width: 100%; /* Ancho completo del contenedor */
+        height: 100px; /* Altura fija para consistencia */
+        text-align: center; /* Texto centrado */
+        transition: background-color 0.3s; /* Transición suave para hover */
+        margin-top: 0; /* Sin margen superior */
+    }
+
+    /* 
+        EFECTO HOVER PARA BOTONES DE EQUIPO
+        Cambio de color al interactuar
+    */
+    .btn-blue-equip:hover {
+        background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+    }
+
+    /* 
+        DESCRIPCIÓN DEL CARRUSEL
+        Texto explicativo sobre el proceso de reservaciones
+    */
+    .carousel-description {
+        margin-top: 20px; /* Espacio superior */
+        font-size: 16px; /* Tamaño de fuente estándar */
+        color: #555; /* Color gris medio */
+        text-align: center; /* Texto centrado */
+    }
+
+    /* 
+        CONTENEDOR DE BOTONES DE RESERVA
+        Organización horizontal de los botones de solicitud
+    */
+    .reserve-buttons-container {
+        display: flex; /* Flexbox para disposición horizontal */
+        justify-content: center; /* Centrado horizontal */
+        margin-top: 25px; /* Espacio superior */
+        gap: 20px; /* Espacio uniforme entre botones */
+    }
+
+    /* 
+        BOTÓN DE RESERVA
+        Estilo para los botones de solicitud de colaboración
+    */
+    .btn-reserve {
+        background-color: #007BFF; /* Mismo azul que los botones de equipos */
+        border: none; /* Sin borde */
+        border-radius: 20px; /* Esquinas muy redondeadas */
+        color: white; /* Texto blanco para contraste */
+        font-size: 18px; /* Tamaño de fuente prominente */
+        padding: 15px 30px; /* Espaciado interno generoso */
+        cursor: pointer; /* Cursor de mano al pasar */
+        text-align: center; /* Texto centrado */
+        transition: background-color 0.3s; /* Transición suave para hover */
+        text-decoration: none; /* Sin subrayado */
+        font-weight: bold; /* Texto en negrita */
+    }
+
+    /* 
+        EFECTO HOVER PARA BOTONES DE RESERVA
+        Cambio de color al interactuar (consistente con botones de equipos)
+    */
+    .btn-reserve:hover {
+        background-color: #0056b3; /* Mismo hover que los botones de equipos */
+    }
+
+    /* 
+        MEDIA QUERY PARA TABLETS Y MÓVILES GRANDES (768px o menos)
+        Ajustes específicos para pantallas medianas
+    */
+    @media (max-width: 768px) {
+        /* Reduce el margen inferior en dispositivos móviles */
+        .carousel-container {
+            margin-bottom: 25px;
+        }
+        
+        /* Cambia a disposición vertical en móviles */
+        .carousel-cell {
+            flex-direction: column; /* Elementos en columna */
+            gap: 20px; /* Espacio aumentado entre elementos */
+            min-width: 100%; /* Ancho completo */
+            margin-right: 0; /* Sin margen derecho */
+        }
+        
+        /* Ajusta el ancho y espaciado de los enlaces */
+        .btn-with-image {
+            width: 80%; /* Ancho aumentado para mejor visualización */
+            height: auto; /* Altura automática */
+            justify-content: flex-start; /* Alineación superior */
+            gap: 10px; /* Espacio reducido entre imagen y botón */
+        }
+        
+        /* Reduce la altura de las imágenes en móviles */
+        .btn-with-image img {
+            height: 150px; /* Altura reducida para móviles */
+        }
+        
+        /* Permite altura automática para botones en móviles */
+        .btn-blue-equip {
+            height: auto; /* Altura automática para adaptarse al contenido */
+        }
+        
+        /* Ajusta el tamaño de fuente de los botones de reserva */
+        .btn-reserve {
+            font-size: 16px; /* Tamaño de fuente reducido */
+            padding: 12px 25px; /* Padding reducido */
+        }
+        
+        /* Cambia a disposición vertical para botones de reserva en móviles */
+        .reserve-buttons-container {
+            flex-direction: column; /* Elementos en columna */
+            align-items: center; /* Centrado horizontal */
+            gap: 15px; /* Espacio reducido entre botones */
+        }
+    }
+
+    /* 
+        MEDIA QUERY PARA MÓVILES PEQUEÑOS (480px o menos)
+        Ajustes adicionales para pantallas muy pequeñas
+    */
+    @media (max-width: 480px) {
+        /* Reduce aún más el margen inferior en pantallas pequeñas */
+        .carousel-container {
+            margin-bottom: 20px;
+        }
+    }
+</style>
