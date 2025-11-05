@@ -1,0 +1,364 @@
+<!-- Contenedor principal con diseño de dos columnas -->
+<div class="contenedor-principal">
+    <!-- Celda grande de texto: Descripción detallada del área de Sensores -->
+    <div class="celda-texto">
+        <!-- Título principal de la sección -->
+        <h2>
+            Sensores
+        </h2>
+        <!-- Primer párrafo: Introducción y fundamentos de la línea de investigación -->
+        <p>
+            Esta línea de investigación se dedica al diseño racional, la fabricación y la caracterización de plataformas sensoras de alta sensibilidad y selectividad, basándose fundamentalmente en el uso estratégico de materiales nanoestructurados y porosos. El pilar central de esta exploración científica es el estudio y la aplicación del silicio poroso, un material cuya arquitectura interna presenta una superficie extremadamente alta, lo que lo convierte en un sustrato excepcional para la detección de vapores orgánicos e inorgánicos. La investigación profundiza en la funcionalización de la superficie de este material con grupos orgánicos específicos, una estrategia química crucial para incrementar la selectividad hacia moléculas diana específicas.
+        </p>
+        <!-- Segundo párrafo: Aplicaciones y desarrollos específicos -->
+        <p>
+            Paralelamente al desarrollo de sensores de silicio poroso, esta área innova en la creación de materiales híbridos inteligentes, como lo demuestra el desarrollo de películas delgadas que modulan de manera reversible su transmisión óptica en respuesta a los cambios en la humedad ambiental, un avance con potencial aplicación en ventanas inteligentes o sistemas de control pasivo. Complementariamente, se diseñan y desarrollan microsistemas que emplean la espectroscopia de impedancia eléctrica para la detección y caracterización precisa de compuestos en disolución.
+        </p>
+        <!-- Tercer párrafo: Impacto y aplicaciones futuras -->
+        <p>
+            Esta convergencia de conocimientos en ciencia de materiales, electroquímica y óptica sienta las bases tecnológicas para la próxima generación de dispositivos de diagnóstico point-of-care, que buscan llevar el análisis clínico directamente al lugar del paciente, y de sistemas de monitoreo ambiental in situ, permitiendo una detección rápida y continua de contaminantes en el campo. En esencia, esta línea de investigación representa un esfuerzo integral por transitar desde la ciencia fundamental de los materiales porosos funcionalizados hasta la ingeniería de dispositivos sensores prácticos, con el potencial de impactar significativamente en los campos de la salud y la protección ambiental.
+        </p>
+    </div>
+    
+    <!-- Contenedor derecho: Agrupa las dos celdas (papers e investigadores) -->
+    <div class="contenedor-derecho">
+        <!-- Celda del carrusel vertical: Lista de papers recientes -->
+        <div class="celda-carrusel-vertical">
+            <!-- Título de la sección de papers -->
+            <div class="titulo-seccion titulo-papers">
+                <h3>
+                    Papers Recientes
+                </h3>
+            </div>
+            <!-- Contenedor del carrusel vertical con scroll -->
+            <div class="carrusel-vertical">
+                <!-- Cada h3 contiene un enlace a un paper específico sobre sensores -->
+                <h3>
+                    <a class="item-carrusel" href="#">Development of an organic vapor sensor based on functionalized porous silicon</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Effect of ethanol in an inorganic salt detector based on porous silicon</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">The Effect of N2 in Vapor Detectors Based on Porous Silicon Layers</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Organic vapor sensors based on functionalized macroporous Si using single and double-side electrochemical etching</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">DC and AC polar protic solvents vapor sensor developed from porous silicon</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Application of flicker noise analysis for the structural optimization of porous silicon as a basic material in the production of new sensors and light-emitting diodes</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Advanced materials for contaminants detection: case of porous silicon</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Flicker noise analysis of laminar voltage signals of porous silicon films</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Novel Reversible Humidity-Responsive Light Transmission Hybrid Thin-Film Material Based on a Dispersive Porous Structure with Embedded Hygroscopic and Deliquescent Substances</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Desarrollo de microsistemas para aplicaciones de caracterización de compuestos en medios acuosos por impedancia eléctrica</a>
+                </h3>
+            </div>
+        </div>
+        
+        <!-- Celda del carrusel horizontal: Muestra múltiples investigadores -->
+        <div class="celda-carrusel-horizontal">
+            <!-- Título de la sección de investigadores -->
+            <div class="titulo-seccion">
+                <h3>
+                    Investigadores
+                </h3>
+            </div>
+            <!-- Contenedor del carrusel horizontal con scroll -->
+            <div class="carrusel-horizontal">
+                <!-- Primer investigador -->
+                <div class="item-investigador">
+                    <!-- Imagen del investigador con atributos de accesibilidad -->
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-09/ArturoRamirez.png" alt="Dr. Arturo Ramírez Porras" width="1280" height="764">
+                    <!-- Nombre y título del investigador -->
+                    <div class="subtitulo-investigador">
+                        Dr. Arturo Ramírez Porras
+                    </div>
+                </div>
+                <!-- Segundo investigador -->
+                <div class="item-investigador">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-09/Erick-Castellon.jpg" alt="Dr. Erick Castellón Elizondo" width="512" height="420">
+                    <div class="subtitulo-investigador">
+                        Dr. Erick Castellón Elizondo
+                    </div>
+                </div>
+                <!-- Tercer investigador -->
+                <div class="item-investigador">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/monica%20prado%20%281%29.png" alt="Dra. Mónica Prado Porras" width="350" height="319">
+                    <div class="subtitulo-investigador">
+                        Dra. Mónica Prado Porras
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Estilos CSS para el layout y componentes */
+
+/* Contenedor principal: utiliza flexbox para layout de dos columnas */
+.contenedor-principal {
+    display: flex; /* Activa flexbox para layout flexible */
+    gap: 20px; /* Espacio entre las columnas */
+    max-width: 1400px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrado horizontal */
+    width: 100%; /* Ancho completo del viewport */
+}
+
+/* Celda grande de texto - ocupa el 50% del ancho */
+.celda-texto {
+    flex: 1; /* Ocupa el espacio disponible proporcionalmente */
+    background-color: white; /* Fondo blanco para contraste */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1); /* Sombra sutil para elevación */
+    padding: 30px; /* Espaciado interno generoso */
+    overflow-y: auto; /* Scroll vertical si el contenido excede la altura */
+    max-height: 800px; /* Altura máxima con scroll */
+    width: 50%; /* Ancho explícito del 50% */
+}
+
+/* Estilos para el título de la celda de texto */
+.celda-texto h2 {
+    color: #0074cc; /* Color azul institucional */
+    margin-bottom: 20px; /* Espacio inferior */
+    padding-bottom: 10px; /* Espacio en la parte inferior del título */
+    border-bottom: 2px solid #0074cc; /* Línea decorativa inferior */
+    font-size: 28px; /* Tamaño de fuente grande */
+    text-align: center; /* Centrado del texto */
+}
+
+/* Estilos para los párrafos de la celda de texto */
+.celda-texto p {
+    line-height: 1.6; /* Interlineado para mejor legibilidad */
+    margin-bottom: 15px; /* Espacio entre párrafos */
+    color: #555; /* Color gris para texto secundario */
+    text-align: justify; /* Texto justificado para apariencia formal */
+}
+
+/* Contenedor derecho - ocupa el 50% del ancho */
+.contenedor-derecho {
+    flex: 1; /* Ocupa el espacio disponible proporcionalmente */
+    display: flex; /* Flexbox para organizar elementos hijos */
+    flex-direction: column; /* Organización vertical de los hijos */
+    gap: 20px; /* Espacio entre los elementos hijos */
+    width: 50%; /* Ancho explícito del 50% */
+}
+
+/* Celda del carrusel vertical de papers */
+.celda-carrusel-vertical {
+    background-color: white; /* Fondo blanco */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1); /* Sombra sutil */
+    padding: 20px; /* Espaciado interno */
+    height: 400px; /* Altura fija */
+    overflow: hidden; /* Oculta contenido que se sale */
+    display: flex; /* Flexbox para organización interna */
+    flex-direction: column; /* Organización vertical */
+}
+
+/* Contenedor del carrusel vertical con scroll */
+.carrusel-vertical {
+    height: 100%; /* Ocupa toda la altura disponible */
+    overflow-y: auto; /* Scroll vertical cuando hay overflow */
+    padding-right: 10px; /* Espacio para el scrollbar */
+    flex: 1; /* Ocupa el espacio restante */
+}
+
+/* Personalización del scrollbar para WebKit (Chrome, Safari, Edge) */
+.carrusel-vertical::-webkit-scrollbar {
+    width: 6px; /* Ancho del scrollbar */
+}
+
+.carrusel-vertical::-webkit-scrollbar-thumb {
+    background-color: #0074cc; /* Color del thumb del scrollbar */
+    border-radius: 10px; /* Bordes redondeados del thumb */
+}
+
+/* Estilo para los enlaces de papers - TAMAÑO MÁS PEQUEÑO */
+.item-carrusel {
+    display: block; /* Elemento de bloque para ocupar todo el ancho */
+    padding: 8px 10px; /* Espaciado interno reducido */
+    margin-bottom: 5px; /* Espacio entre items reducido */
+    background-color: #f8f9fa; /* Fondo gris muy claro */
+    border-radius: 8px; /* Bordes redondeados */
+    border-left: 4px solid #0074cc; /* Borde izquierdo azul como acento */
+    transition: all 0.3s ease; /* Transición suave para efectos hover */
+    cursor: pointer; /* Cursor de pointer para indicar interactividad */
+    text-decoration: none; /* Sin subrayado en enlaces */
+    color: inherit; /* Hereda el color del texto padre */
+    text-align: center; /* Texto centrado */
+}
+
+/* Efecto hover para los items del carrusel */
+.item-carrusel:hover {
+    background-color: #e3f2fd; /* Fondo azul claro al pasar el mouse */
+    transform: translateX(5px); /* Desplazamiento sutil a la derecha */
+    text-decoration: none; /* Mantiene sin subrayado */
+    color: inherit; /* Mantiene el color heredado */
+}
+
+/* Estilos para los títulos dentro de los items del carrusel */
+.item-carrusel h3 {
+    font-size: 10px; /* Tamaño de fuente muy pequeño para títulos largos */
+    color: #2c3e50; /* Color gris oscuro para texto */
+    margin: 0; /* Sin márgenes */
+    text-align: center; /* Texto centrado */
+    line-height: 1.2; /* Interlineado compacto */
+    font-weight: normal; /* Peso normal (no negrita) */
+}
+
+/* Título de Papers Recientes - perfectamente centrado */
+.titulo-papers {
+    display: flex; /* Flexbox para centrado perfecto */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    margin-bottom: 15px; /* Espacio inferior */
+    color: #2c3e50; /* Color de texto */
+    text-align: center; /* Texto centrado */
+    width: 100%; /* Ancho completo */
+    padding: 0; /* Sin padding */
+}
+
+/* Estilos específicos para el título de papers */
+.titulo-papers h3 {
+    color: #0074cc; /* Color azul */
+    font-size: 20px; /* Tamaño de fuente */
+    margin: 0; /* Sin márgenes */
+}
+
+/* Celda del carrusel horizontal de investigadores */
+.celda-carrusel-horizontal {
+    background-color: white; /* Fondo blanco */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1); /* Sombra sutil */
+    padding: 20px; /* Espaciado interno */
+    height: 380px; /* Altura fija (ligeramente menor que la celda de papers) */
+    overflow: hidden; /* Oculta contenido que se sale */
+}
+
+/* Contenedor del carrusel horizontal con scroll */
+.carrusel-horizontal {
+    display: flex; /* Flexbox para organización horizontal */
+    overflow-x: auto; /* Scroll horizontal cuando hay overflow */
+    gap: 15px; /* Espacio entre items del carrusel */
+    padding-bottom: 10px; /* Espacio inferior para el scrollbar */
+    scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+/* Personalización del scrollbar horizontal para WebKit */
+.carrusel-horizontal::-webkit-scrollbar {
+    height: 6px; /* Alto del scrollbar horizontal */
+}
+
+.carrusel-horizontal::-webkit-scrollbar-thumb {
+    background-color: #0074cc; /* Color del thumb del scrollbar */
+    border-radius: 10px; /* Bordes redondeados del thumb */
+}
+
+/* Estilo para cada investigador en el carrusel horizontal */
+.item-investigador {
+    min-width: 180px; /* Ancho mínimo para cada tarjeta de investigador */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta contenido que se sale */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    display: flex; /* Flexbox para organización interna */
+    flex-direction: column; /* Organización vertical */
+}
+
+/* Estilos para la imagen del investigador */
+.item-investigador img {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 150px; /* Altura fija */
+    object-fit: cover; /* Recorta la imagen para cubrir el contenedor */
+}
+
+/* Subtítulo del investigador (nombre y título) */
+.subtitulo-investigador {
+    padding: 12px 8px; /* Espaciado interno reducido */
+    background-color: #f8f9fa; /* Fondo gris claro */
+    text-align: center; /* Texto centrado */
+    font-size: 12px; /* Tamaño de fuente pequeño */
+    color: #2c3e50; /* Color de texto */
+    font-weight: bold; /* Texto en negrita */
+    line-height: 1.2; /* Interlineado compacto */
+}
+
+/* Títulos de secciones - centrados */
+.titulo-seccion {
+    display: flex; /* Flexbox para centrado */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    margin-bottom: 15px; /* Espacio inferior */
+    color: #2c3e50; /* Color de texto */
+    text-align: center; /* Texto centrado */
+}
+
+/* Estilos para los títulos de sección */
+.titulo-seccion h3 {
+    color: #0074cc; /* Color azul */
+    font-size: 22px; /* Tamaño de fuente */
+    margin: 0; /* Sin márgenes */
+}
+
+/* Media queries para diseño responsive */
+
+/* Estilos para tablets y dispositivos móviles */
+@media (max-width: 768px) {
+    .contenedor-principal {
+        flex-direction: column; /* Cambia a una columna en móviles */
+    }
+    
+    .celda-texto {
+        max-height: none; /* Elimina la altura máxima */
+        width: 100%; /* Ancho completo en móviles */
+    }
+    
+    .contenedor-derecho {
+        width: 100%; /* Ancho completo en móviles */
+    }
+    
+    .celda-carrusel-vertical {
+        height: 300px; /* Altura reducida en móviles */
+    }
+    
+    .celda-carrusel-horizontal {
+        height: 300px; /* Altura reducida en móviles */
+    }
+    
+    .item-carrusel h3 {
+        font-size: 9px; /* Tamaño de fuente aún más pequeño en móviles */
+    }
+    
+    .titulo-papers h3 {
+        font-size: 18px; /* Tamaño reducido para títulos en móviles */
+    }
+    
+    .titulo-seccion h3 {
+        font-size: 20px; /* Tamaño reducido para títulos de sección */
+    }
+    
+    .item-investigador {
+        min-width: 140px; /* Ancho mínimo reducido en móviles */
+    }
+    
+    .item-investigador img {
+        height: 120px; /* Altura reducida para imágenes en móviles */
+    }
+    
+    .subtitulo-investigador {
+        font-size: 10px; /* Tamaño reducido para subtítulos */
+        padding: 8px 5px; /* Padding reducido */
+    }
+}
+</style>
