@@ -1,0 +1,309 @@
+<!-- 
+    ============================================================
+    CARRUSEL HORIZONTAL DE LABORATORIOS - CICIMA
+    ============================================================
+    Este componente muestra los diferentes laboratorios especializados
+    del centro en formato de carrusel horizontal con navegación por scroll
+-->
+
+<!-- 
+    CONTENEDOR EXTERNO DEL CARRUSEL HORIZONTAL
+    Envuelve todo el carrusel y proporciona el fondo y estructura base
+-->
+<div class="horizontal-carousel-wrapper full-slide">
+    
+    <!-- 
+        CARRUSEL HORIZONTAL PRINCIPAL
+        Contiene todos los elementos del carrusel en formato horizontal
+    -->
+    <div class="horizontal-carousel">
+        
+        <!-- 
+            CUADRO 1: LABORATORIO DE SÍNTESIS FÍSICA Y DIFRACCIÓN DE RAYOS X
+            Primer elemento del carrusel
+        -->
+        <div class="profile-cell horizontal-item">
+            <!-- Sección de información textual -->
+            <div class="profile-info">
+                <!-- Título del laboratorio -->
+                <div class="profile-title">
+                    Laboratorio de Síntesis Física y Difracción de Rayos X
+                </div>
+                
+                <!-- Descripción técnica del laboratorio -->
+                <div class="profile-description centered-text">
+                    El Laboratorio de Síntesis Física y Difracción de Rayos X se especializa en la caracterización avanzada de materiales mediante técnicas como la difracción de rayos X y la microscopía confocal de super alta resolución. El difractómetro permite analizar la estructura cristalina, composición y propiedades físicas de los materiales a nivel atómico, mientras que el microscopio confocal ofrece imágenes tridimensionales con resolución nanométrica, facilitando el estudio detallado de la morfología, topografía y distribución de partículas. Juntas, estas herramientas brindan una capacidad única para investigar materiales y células con precisión y profundidad.
+                </div>
+                
+                <!-- Botón de acción para más información -->
+                <div class="button-container">
+                    <a class="button btn-blue" href="https://cicima.ucr.ac.cr/laboratorio-sintesis-fisica-difraccion-rayos-x">Ver más</a>
+                </div>
+            </div>
+            
+            <!-- Sección de imagen representativa -->
+            <div class="vertical-carousel">
+                <img src="https://i.imgur.com/hLaUU2s.jpeg" alt="Imagen 1" width="1280" height="1178">
+            </div>
+        </div>
+
+        <!-- 
+            CUADRO 2: LABORATORIO DE MICROSCOPÍA DE SUPERFICIES
+            Segundo elemento del carrusel
+        -->
+        <div class="profile-cell horizontal-item">
+            <div class="profile-info">
+                <div class="profile-title">
+                    Laboratorio de Microscopía de Superficies
+                </div>
+                <div class="profile-description centered-text">
+                    El Laboratorio de Microscopía de Superficies está especializado en el análisis detallado de las propiedades y estructuras superficiales de materiales, utilizando dos instrumentos clave: un Microscopio Electrónico de Barrido (SEM) y un Microscopio de Fuerza Atómica (AFM). El SEM permite obtener imágenes tridimensionales de alta resolución y analizar la composición química de las superficies, mientras que el AFM explora topografía y propiedades mecánicas a escala atómica. Estos equipos son fundamentales en campos como ciencia de materiales, nanotecnología, biología, catálisis y electrónica, ofreciendo capacidades avanzadas de caracterización y análisis para una amplia gama de aplicaciones científicas y tecnológicas.
+                </div>
+                <div class="button-container">
+                    <a class="button btn-blue" href="https://cicima.ucr.ac.cr/laboratorio-microscopia-superficies">Ver más</a>
+                </div>
+            </div>
+            <div class="vertical-carousel">
+                <img src="https://i.imgur.com/XVQyUo5.jpeg" alt="Imagen 2" width="1280" height="872">
+            </div>
+        </div>
+
+        <!-- 
+            CUADRO 3: LABORATORIO DE ÓPTICA DE PRECISIÓN
+            Tercer elemento del carrusel
+        -->
+        <div class="profile-cell horizontal-item">
+            <div class="profile-info">
+                <div class="profile-title">
+                    Laboratorio de Óptica de Precisión
+                </div>
+                <div class="profile-description centered-text">
+                    El Laboratorio de Óptica de Precisión y Espectroscopía se especializa en el análisis avanzado de materiales mediante técnicas ópticas y espectroscópicas de alta resolución. Equipado con instrumentos como microscopios de epi-fluorescencia, espectrofotómetros, sistemas FT-IR, fluorómetros y espectroscopía Raman, permite estudiar la composición química, estructura molecular, propiedades ópticas y térmicas de diversos materiales. Su enfoque combina la precisión en el manejo de la luz con la espectroscopia para investigar el comportamiento de los materiales a nivel molecular, con aplicaciones en ciencia de materiales, biología, química, nanotecnología, medicina e industria. Además, promueve la colaboración científica y la innovación tecnológica.
+                </div>
+                <div class="button-container">
+                    <a class="button btn-blue" href="https://cicima.ucr.ac.cr/laboratorio-optica-precision">Ver más</a>
+                </div>
+            </div>
+            <div class="vertical-carousel">
+                <img src="https://i.imgur.com/m95QxXi.jpeg" alt="Imagen 1" width="1280" height="1045">
+            </div>
+        </div>
+
+        <!-- 
+            CUADRO 4: LABORATORIO DE SÍNTESIS QUÍMICA Y TERMOANÁLISIS
+            Cuarto elemento del carrusel
+        -->
+        <div class="profile-cell horizontal-item">
+            <div class="profile-info">
+                <div class="profile-title">
+                    Laboratorio de Síntesis Química y Termoanálisis
+                </div>
+                <div class="profile-description centered-text">
+                    El Laboratorio de Síntesis Química y Termoanálisis se dedica al desarrollo y caracterización de materiales mediante síntesis química y técnicas termoanalíticas avanzadas. Equipado con instrumentos como DSC, TGA, reómetro y DMA, permite estudiar propiedades térmicas, composición, estabilidad, comportamiento mecánico y reológico de diversos materiales. Estas herramientas son fundamentales para analizar transiciones de fase, descomposición, elasticidad, viscosidad y rigidez, brindando información clave para el diseño y aplicación de materiales en sectores como la electrónica, medicina, automotriz y más. El laboratorio combina capacidades de síntesis con análisis detallado para impulsar la innovación en materiales funcionales.
+                </div>
+                <div class="button-container">
+                    <a class="button btn-blue" href="https://cicima.ucr.ac.cr/laboratorio-sintesis-quimica-termoanalisis">Ver más</a>
+                </div>
+            </div>
+            <div class="vertical-carousel">
+                <img src="https://i.imgur.com/zEnwfyG.jpeg" alt="Imagen 1" width="1280" height="686">
+            </div>
+        </div>
+
+        <!-- 
+            CUADRO 5: LABORATORIO DE ANÁLISIS DE MATERIALES DE INTERÉS CULTURAL
+            Quinto elemento del carrusel
+        -->
+        <div class="profile-cell horizontal-item">
+            <div class="profile-info">
+                <div class="profile-title">
+                    Laboratorio de Análisis de Materiales de Interés Cultural
+                </div>
+                <div class="profile-description centered-text">
+                    LAB-Cultura es una unidad de investigación del Centro de Investigación en Ciencia e Ingeniería de Materiales (CICIMA) de la Universidad de Costa Rica, dedicada exclusivamente al estudio de materiales patrimoniales mediante técnicas fisicoquímicas no invasivas. Como primer laboratorio científico especializado en conservación patrimonial en el país, su objetivo es aportar al resguardo del patrimonio cultural costarricense a través del análisis de la composición, estructura y estado de conservación de objetos como jades, cerámica, papel, metales y pinturas murales. Equipado con tecnologías como espectroscopía Raman, infrarroja, fluorescencia de rayos X y microscopía avanzada, LAB-Cultura ha desarrollado múltiples proyectos de investigación y colabora activamente con instituciones estatales como el Museo Nacional, el Museo de Jade, los Museos del Banco Central y el Archivo Nacional.
+                </div>
+                <div class="button-container">
+                    <a class="button btn-blue" href="https://cicima.ucr.ac.cr/laboratorio-analisis-materiales-interes-cultural-lab-cultura">Ver más</a>
+                </div>
+            </div>
+            <div class="vertical-carousel">
+                <img src="https://i.imgur.com/gvZk34F.jpeg" alt="Imagen 1" width="1280" height="967">
+            </div>
+        </div>
+
+        <!-- 
+            CUADRO 6: LABORATORIO DE BIOMATERIALES Y BIOMÍMESIS
+            Sexto elemento del carrusel
+        -->
+        <div class="profile-cell horizontal-item">
+            <div class="profile-info">
+                <div class="profile-title">
+                    Laboratorio de Biomateriales y Biomímesis
+                </div>
+                <div class="profile-description centered-text">
+                    El Laboratorio de Biomateriales y Biomímesis es un espacio interdisciplinario que estudia estructuras biológicas para inspirar el diseño y desarrollo de nuevos materiales, integrando saberes de la biología, física, ingeniería, arte, y otras disciplinas. Su enfoque se basa en la biomímesis y en la colaboración entre especies y comunidades, buscando alternativas sostenibles y respetuosas con la biodiversidad. Promueve la ciencia abierta, la formación de jóvenes investigadores y la interacción con comunidades locales, cuestionando modelos extractivistas y antropocéntricos, y apostando por tecnologías accesibles y descolonizadoras desde una perspectiva latinoamericana.
+                </div>
+                <div class="button-container">
+                    <a class="button btn-blue" href="https://cicima.ucr.ac.cr/laboratorio-biomateriales-biomimesis">Ver más</a>
+                </div>
+            </div>
+            <div class="vertical-carousel">
+                <img src="https://i.imgur.com/880uEwa.jpeg" alt="Imagen 1" width="1280" height="960">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 
+    ============================================================
+    ESTILOS CSS PARA EL CARRUSEL HORIZONTAL
+    ============================================================
+    Define la apariencia y comportamiento del carrusel
+-->
+<style>
+    /* 
+        CONTENEDOR EXTERNO DEL CARRUSEL
+        Proporciona el fondo, bordes y sombra para todo el componente
+    */
+    .horizontal-carousel-wrapper.full-slide {
+        background-color: white; /* Fondo blanco para contraste profesional */
+        border-radius: 20px; /* Esquinas redondeadas para diseño moderno */
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada para destacar */
+        overflow: hidden; /* Oculta cualquier contenido que se desborde */
+        max-width: 100%; /* Ancho máximo del 100% del contenedor padre */
+        height: 100%; /* Altura del 100% del contenedor padre */
+        padding: 0; /* Sin padding interno */
+    }
+
+    /* 
+        CARRUSEL HORIZONTAL PRINCIPAL
+        Configura el comportamiento de scroll horizontal
+    */
+    .horizontal-carousel {
+        display: flex; /* Usa Flexbox para disposición horizontal */
+        overflow-x: auto; /* Habilita scroll horizontal cuando hay muchos elementos */
+        scroll-snap-type: x mandatory; /* Fuerza el snap a cada elemento al hacer scroll */
+        -webkit-overflow-scrolling: touch; /* Scroll suave en dispositivos iOS */
+        scroll-behavior: smooth; /* Transición suave al hacer scroll */
+        width: 100%; /* Ancho completo del contenedor */
+        height: 100%; /* Altura completa del contenedor */
+    }
+
+    /* 
+        ELEMENTO INDIVIDUAL DEL CARRUSEL
+        Cada laboratorio ocupa el 100% del ancho visible
+    */
+    .profile-cell.horizontal-item {
+        flex: 0 0 100%; /* No crece, no se encoge, ancho fijo del 100% */
+        display: flex; /* Flexbox interno para organizar texto e imagen */
+        flex-direction: row; /* Disposición en fila (texto a la izquierda, imagen a la derecha) */
+        align-items: center; /* Centra verticalmente el contenido */
+        justify-content: space-between; /* Distribuye el espacio entre texto e imagen */
+        padding: 40px; /* Espaciado interno generoso */
+        box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+        scroll-snap-align: start; /* Alinea cada elemento al inicio al hacer snap */
+    }
+
+    /* 
+        INFORMACIÓN DE PERFIL (ÁREA DE TEXTO)
+        Ocupa la mayor parte del espacio disponible
+    */
+    .profile-info {
+        flex: 1; /* Ocupa el espacio restante disponible */
+        text-align: center; /* Texto centrado */
+        padding-right: 20px; /* Separación a la derecha de la imagen */
+    }
+
+    /* 
+        TÍTULO DEL PERFIL
+        Estilo destacado para el nombre del laboratorio
+    */
+    .profile-title {
+        font-size: 24px; /* Tamaño de fuente grande */
+        font-weight: bold; /* Negrita para énfasis */
+        color: #0074cc; /* Color azul institucional personalizado */
+        margin-bottom: 10px; /* Espacio inferior */
+    }
+
+    /* 
+        TEXTO CENTRADO
+        Clase utilitaria para texto alineado al centro
+    */
+    .centered-text {
+        font-size: 16px; /* Tamaño de fuente estándar para lectura */
+        color: #555; /* Color gris medio para buen contraste */
+    }
+
+    /* 
+        CARRUSEL VERTICAL (ÁREA DE IMAGEN)
+        Contenedor para la imagen representativa
+    */
+    .vertical-carousel {
+        width: 200px; /* Ancho fijo para la imagen */
+    }
+
+    /* 
+        IMAGEN DENTRO DEL CARRUSEL VERTICAL
+        Estilo para la imagen representativa del laboratorio
+    */
+    .vertical-carousel img {
+        width: 100%; /* Ancho completo del contenedor */
+        border-radius: 10px; /* Esquinas redondeadas */
+        object-fit: cover; /* Recorta la imagen para llenar el espacio manteniendo proporción */
+    }
+
+    /* 
+        CONTENEDOR DE BOTÓN
+        Espaciado alrededor del botón de acción
+    */
+    .button-container {
+        margin-top: 20px; /* Espacio superior para separar del texto */
+    }
+
+    /* 
+        ESTILO BASE PARA BOTONES
+        Diseño consistente para elementos clickeables
+    */
+    .button {
+        display: inline-block; /* Permite dimensiones específicas */
+        padding: 12px 25px; /* Espaciado interno generoso */
+        font-size: 16px; /* Tamaño de fuente legible */
+        color: white; /* Texto blanco para contraste */
+        text-decoration: none; /* Elimina subrayado de enlaces */
+        border-radius: 20px; /* Esquinas muy redondeadas */
+        background-color: #007BFF; /* Color azul Bootstrap estándar */
+        transition: background-color 0.3s; /* Transición suave para hover */
+    }
+
+    /* 
+        EFECTO HOVER PARA BOTONES
+        Cambio de color al pasar el cursor
+    */
+    .button:hover {
+        background-color: #0056b3; /* Azul más oscuro al interactuar */
+    }
+
+    /* 
+        MEDIA QUERY PARA DISPOSITIVOS MÓVILES (768px o menos)
+        Adapta el diseño para pantallas pequeñas
+    */
+    @media (max-width: 768px) {
+        /* 
+            EN MÓVIL: CAMBIA A DISEÑO DE UNA COLUMNA
+            Apila el contenido verticalmente
+        */
+        .profile-cell.horizontal-item {
+            flex-direction: column; /* Cambia de fila a columna */
+            text-align: center; /* Centra todo el texto */
+        }
+        
+        /* 
+            EN MÓVIL: IMAGEN OCUPA ANCHO COMPLETO
+            Optimiza el espacio en pantallas pequeñas
+        */
+        .vertical-carousel {
+            margin-top: 20px; /* Espacio superior para separar del texto */
+            width: 100%; /* Ancho completo en móvil */
+        }
+    }
+</style>
