@@ -1,0 +1,530 @@
+<!-- Contenedor principal del carrusel horizontal con diseño de slide completo -->
+<div class="lab-carousel-wrapper full-slide">
+    <!-- Título general de la sección dentro del contenedor -->
+    <h2 class="lab-section-title">
+        Líneas de Investigación
+    </h2>
+    
+    <!-- Contenedor principal del carrusel que alberga todos los slides -->
+    <div class="lab-carousel">
+        <!-- Cuadro 1: Representa un slide individual del carrusel -->
+        <div class="lab-cell lab-item">
+            <!-- Sección de información principal del área de investigación -->
+            <div class="lab-info">
+                <!-- Título específico de la línea de investigación -->
+                <div class="lab-title">
+                    Estudios Fisicoquímicos del Patrimonio Cultural
+                </div>
+                <!-- Descripción detallada de la línea de investigación -->
+                <div class="lab-description lab-centered-text">
+                    Esta línea de investigación aplica un conjunto de técnicas fisicoquímicas no destructivas y micro-destructivas (como espectroscopías vibracionales, microscopía electrónica y difracción de rayos X) para la caracterización material de bienes patrimoniales. Su objetivo es diagnosticar el estado de conservación, entender los procesos de degradación y autenticar artefactos históricos y arqueológicos, proporcionando la base científica para estrategias de conservación preventiva y curativa.
+                </div>
+                <!-- Contenedor del botón de acción -->
+                <div class="lab-button-container">
+                    <!-- Botón que enlaza a más información sobre esta línea -->
+                    <a class="lab-button lab-btn-blue" href="https://cicima.ucr.ac.cr/estudios-fisicoquimicos-patrimonio-cultural">Ver más</a>
+                </div>
+            </div>
+            
+            <!-- Sección que lista las investigaciones relacionadas con esta área -->
+            <div class="lab-list-container">
+                <h3>
+                    Investigaciones en el Área
+                </h3>
+                <!-- Lista no ordenada de proyectos de investigación -->
+                <ul class="lab-name-list">
+                    <li>
+                        Physicochemical characterization and deterioration condition evaluation of three primary documents of Costa Rica's independence process
+                    </li>
+                    <!-- Más elementos de lista... -->
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Cuadro 2: Estructura idéntica para cada línea de investigación -->
+        <div class="lab-cell lab-item">
+            <!-- Misma estructura que el cuadro 1 -->
+        </div>
+        
+        <!-- Más cuadros (del 3 al 15) con la misma estructura -->
+        
+    </div>
+    
+    <!-- Indicadores de navegación que muestran la posición actual en el carrusel -->
+    <div class="lab-carousel-indicators">
+        <!-- Cada indicador representa un slide, el activo tiene clase 'active' -->
+        <div class="lab-indicator active" data-index="0">
+            &nbsp; <!-- Espacio en blanco para el indicador visual -->
+        </div>
+        <!-- Más indicadores para cada slide (del 1 al 14) -->
+    </div>
+</div>
+
+<style>
+/* Estilos CSS para el carrusel completo */
+
+/* Contenedor externo con diseño de tarjeta elevada */
+.lab-carousel-wrapper.full-slide {
+  background-color: white; /* Fondo blanco para contraste */
+  border-radius: 20px; /* Bordes redondeados */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Sombra sutil para efecto de elevación */
+  overflow: hidden; /* Oculta contenido que se sale del contenedor */
+  max-width: 100%; /* Ancho máximo del 100% del contenedor padre */
+  height: 450px; /* Altura fija del carrusel */
+  padding: 0; /* Sin padding interno */
+  position: relative; /* Posicionamiento relativo para elementos hijos absolutos */
+  margin-bottom: 30px; /* Margen inferior para separación */
+}
+
+/* Estilos para el título de la sección */
+.lab-section-title {
+    text-align: center; /* Centrado horizontal */
+    margin: 15px 0 10px 0; /* Márgenes superior e inferior */
+    color: #0056b3; /* Color azul institucional */
+    font-size: 24px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Negrita para énfasis */
+    padding: 0 20px; /* Padding horizontal */
+}
+
+/* Contenedor del carrusel con scroll horizontal */
+.lab-carousel {
+  display: flex; /* Layout flex para alinear slides horizontalmente */
+  overflow-x: auto; /* Scroll horizontal cuando hay overflow */
+  scroll-snap-type: x mandatory; /* Forza el snap a cada slide */
+  -webkit-overflow-scrolling: touch; /* Scroll suave en dispositivos táctiles */
+  scroll-behavior: smooth; /* Transición suave al desplazar */
+  width: 100%; /* Ancho completo del contenedor */
+  height: calc(100% - 60px); /* Altura calculada restando espacio del título */
+  scrollbar-width: none; /* Oculta scrollbar en Firefox */
+  -ms-overflow-style: none; /* Oculta scrollbar en IE/Edge */
+}
+
+/* Oculta scrollbar en Chrome, Safari y Opera */
+.lab-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Estilos para cada slide individual del carrusel */
+.lab-cell.lab-item {
+  flex: 0 0 100%; /* Cada slide ocupa el 100% del ancho del contenedor */
+  display: flex; /* Layout flex para organizar contenido interno */
+  flex-direction: row; /* Organización horizontal del contenido */
+  align-items: stretch; /* Los elementos hijos ocupan toda la altura */
+  justify-content: space-between; /* Espacio entre elementos */
+  padding: 15px 30px; /* Padding interno */
+  box-sizing: border-box; /* Incluye padding en el cálculo del tamaño */
+  scroll-snap-align: start; /* Alineación al inicio para el snap */
+  gap: 20px; /* Espacio entre elementos hijos */
+}
+
+/* Sección de información principal de cada línea de investigación */
+.lab-info {
+  flex: 1; /* Ocupa el espacio disponible restante */
+  text-align: center; /* Texto centrado */
+  display: flex; /* Layout flex para organizar elementos internos */
+  flex-direction: column; /* Organización vertical */
+  justify-content: space-between; /* Espacio distribuido entre elementos */
+}
+
+/* Estilos para el título de cada línea de investigación */
+.lab-title {
+  font-size: 20px; /* Tamaño de fuente mediano */
+  font-weight: bold; /* Negrita para destacar */
+  color: #0074cc; /* Color azul para títulos */
+  margin-bottom: 10px; /* Margen inferior */
+  line-height: 1.3; /* Interlineado para mejor legibilidad */
+}
+
+/* Estilos para la descripción de cada línea */
+.lab-centered-text {
+  font-size: 14px; /* Tamaño de fuente pequeño */
+  color: #555; /* Color gris para texto secundario */
+  max-height: 180px; /* Altura máxima con scroll si es necesario */
+  overflow-y: auto; /* Scroll vertical si el contenido excede la altura */
+  padding-right: 8px; /* Padding derecho para el scrollbar */
+  line-height: 1.4; /* Interlineado para mejor legibilidad */
+  margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Contenedor de la lista de investigaciones - Ocupa el 50% del ancho */
+.lab-list-container {
+  flex: 0 0 50%; /* Ancho fijo del 50% */
+  background-color: #f8f9fa; /* Fondo gris claro para diferenciar */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 15px; /* Padding interno */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  display: flex; /* Layout flex para organización interna */
+  flex-direction: column; /* Organización vertical */
+  max-height: 320px; /* Altura máxima */
+}
+
+/* Estilos para el título de la lista de investigaciones */
+.lab-list-container h3 {
+  margin: 0 0 10px 0; /* Márgenes */
+  color: #0074cc; /* Color azul consistente */
+  font-size: 16px; /* Tamaño de fuente */
+  text-align: center; /* Texto centrado */
+  border-bottom: 1px solid #e0e0e0; /* Línea divisoria inferior */
+  padding-bottom: 6px; /* Padding inferior */
+}
+
+/* Estilos para la lista de investigaciones */
+.lab-name-list {
+  list-style-type: none; /* Elimina viñetas por defecto */
+  padding: 0; /* Sin padding */
+  margin: 0; /* Sin márgenes */
+  flex: 1; /* Ocupa espacio disponible */
+  overflow-y: auto; /* Scroll vertical si es necesario */
+}
+
+/* Estilos para cada elemento de la lista de investigaciones */
+.lab-name-list li {
+  padding: 6px 8px; /* Padding interno */
+  margin-bottom: 5px; /* Margen inferior entre elementos */
+  background-color: white; /* Fondo blanco para contraste */
+  border-radius: 5px; /* Bordes redondeados */
+  border-left: 3px solid #0074cc; /* Borde izquierdo azul como acento */
+  font-size: 12px; /* Tamaño de fuente pequeño */
+  transition: all 0.2s ease; /* Transición suave para efectos hover */
+  line-height: 1.3; /* Interlineado */
+}
+
+/* Efecto hover para elementos de la lista */
+.lab-name-list li:hover {
+  background-color: #e6f2ff; /* Fondo azul claro al pasar el mouse */
+  transform: translateX(3px); /* Desplazamiento sutil a la derecha */
+}
+
+/* Contenedor del botón de acción */
+.lab-button-container {
+  margin-top: 10px; /* Margen superior */
+}
+
+/* Estilos del botón principal */
+.lab-button {
+  display: inline-block; /* Display inline-block para dimensiones */
+  padding: 8px 16px; /* Padding interno */
+  font-size: 14px; /* Tamaño de fuente */
+  color: white; /* Texto blanco */
+  text-decoration: none; /* Sin subrayado */
+  border-radius: 15px; /* Bordes redondeados */
+  background-color: #007BFF; /* Color de fondo azul */
+  transition: background-color 0.3s; /* Transición suave para hover */
+}
+
+/* Efecto hover del botón */
+.lab-button:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+/* Contenedor de indicadores de navegación */
+.lab-carousel-indicators {
+  display: flex; /* Layout flex para alinear indicadores */
+  justify-content: center; /* Centrado horizontal */
+  margin: 10px 0; /* Márgenes verticales */
+  gap: 6px; /* Espacio entre indicadores */
+}
+
+/* Estilos para cada indicador individual */
+.lab-indicator {
+  width: 8px; /* Ancho pequeño */
+  height: 8px; /* Alto igual al ancho (círculo) */
+  border-radius: 50%; /* Forma circular */
+  background-color: #c1c1c1; /* Color gris por defecto */
+  cursor: pointer; /* Cursor de pointer para indicar interactividad */
+  transition: background-color 0.3s; /* Transición suave para cambios */
+}
+
+/* Estilos para el indicador activo */
+.lab-indicator.active {
+  background-color: #0074cc; /* Color azul cuando está activo */
+}
+
+/* Controles de navegación (flechas) */
+.lab-carousel-controls {
+  position: absolute; /* Posicionamiento absoluto sobre el carrusel */
+  top: 50%; /* Centrado vertical */
+  transform: translateY(-50%); /* Ajuste fino para centrado perfecto */
+  width: 100%; /* Ancho completo del contenedor padre */
+  display: flex; /* Layout flex para organizar controles */
+  justify-content: space-between; /* Controles en extremos opuestos */
+  padding: 0 15px; /* Padding horizontal */
+  pointer-events: none; /* Permite clicks a través del contenedor */
+  z-index: 10; /* Capa superior para estar sobre el contenido */
+}
+
+/* Estilos para cada control de navegación */
+.lab-carousel-control {
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+  border: none; /* Sin borde */
+  width: 40px; /* Ancho fijo */
+  height: 40px; /* Alto igual al ancho (círculo) */
+  border-radius: 50%; /* Forma circular */
+  display: flex; /* Layout flex para centrar contenido */
+  align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal */
+  cursor: pointer; /* Cursor de pointer */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para efecto de elevación */
+  transition: all 0.3s ease; /* Transición suave para efectos */
+  pointer-events: all; /* Habilita eventos de click */
+  font-size: 18px; /* Tamaño de fuente para flechas */
+  color: #0074cc; /* Color azul para iconos */
+  font-weight: bold; /* Negrita para iconos */
+}
+
+/* Efecto hover para controles de navegación */
+.lab-carousel-control:hover {
+  background-color: white; /* Fondo completamente blanco */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+  transform: scale(1.1); /* Ligero aumento de tamaño */
+}
+
+/* Media queries para diseño responsive */
+
+/* Estilos para tablets y dispositivos más pequeños */
+@media (max-width: 768px) {
+  .lab-cell.lab-item {
+    flex-direction: column; /* Cambia a organización vertical en móviles */
+    text-align: center; /* Texto centrado */
+    padding: 10px 15px; /* Padding reducido */
+    gap: 15px; /* Espacio entre elementos reducido */
+  }
+  
+  .lab-info {
+    padding-right: 0; /* Sin padding derecho */
+    margin-bottom: 15px; /* Margen inferior */
+  }
+  
+  .lab-list-container {
+    width: 100%; /* Ancho completo en móviles */
+    max-width: none; /* Sin ancho máximo */
+    height: 200px; /* Altura fija */
+    flex: 0 0 auto; /* No flex en móviles */
+  }
+  
+  .lab-section-title {
+    font-size: 20px; /* Tamaño de fuente reducido */
+    margin: 10px 0 8px 0; /* Márgenes reducidos */
+  }
+  
+  .lab-carousel-wrapper.full-slide {
+    height: 550px; /* Altura aumentada para acomodar contenido vertical */
+    margin-bottom: 25px; /* Margen inferior reducido */
+  }
+  
+  .lab-title {
+    font-size: 18px; /* Tamaño de título reducido */
+  }
+  
+  .lab-centered-text {
+    font-size: 13px; /* Tamaño de texto reducido */
+    max-height: 150px; /* Altura máxima reducida */
+  }
+  
+  .lab-carousel-controls {
+    display: none; /* Oculta controles de navegación en móviles */
+  }
+}
+
+/* Estilos para dispositivos móviles muy pequeños */
+@media (max-width: 480px) {
+  .lab-title {
+    font-size: 16px; /* Tamaño de título aún más reducido */
+  }
+  
+  .lab-centered-text {
+    font-size: 12px; /* Tamaño de texto aún más reducido */
+  }
+  
+  .lab-button {
+    padding: 6px 12px; /* Padding de botón reducido */
+    font-size: 12px; /* Tamaño de texto de botón reducido */
+  }
+  
+  .lab-list-container h3 {
+    font-size: 14px; /* Tamaño de título de lista reducido */
+  }
+  
+  .lab-name-list li {
+    font-size: 11px; /* Tamaño de texto de lista reducido */
+    padding: 5px 6px; /* Padding de elementos de lista reducido */
+  }
+  
+  .lab-carousel-wrapper.full-slide {
+    height: 520px; /* Altura ligeramente reducida */
+    margin-bottom: 20px; /* Margen inferior aún más reducido */
+  }
+}
+</style>
+
+<script>
+// Script JavaScript para la funcionalidad del carrusel
+
+// Espera a que el DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', function() {
+    // Selecciona el elemento del carrusel
+    const carousel = document.querySelector('.lab-carousel');
+    // Selecciona todos los indicadores de navegación
+    const indicators = document.querySelectorAll('.lab-indicator');
+    // Variable para rastrear el slide actual
+    let currentIndex = 0;
+    // Calcula el número total de slides
+    const totalSlides = document.querySelectorAll('.lab-cell').length;
+    // Variable para almacenar el intervalo de auto-scroll
+    let autoScrollInterval;
+    // Bandera para controlar si el auto-scroll está activo
+    let isAutoScrollActive = true;
+    // Variable para el timeout de interacción del usuario
+    let userInteractionTimeout;
+    
+    // Crear controles de navegación (flechas) dinámicamente
+    const controlsContainer = document.createElement('div');
+    controlsContainer.className = 'lab-carousel-controls';
+    
+    // Crear botón de navegación anterior
+    const prevButton = document.createElement('button');
+    prevButton.className = 'lab-carousel-control lab-carousel-prev';
+    prevButton.innerHTML = '&#10094;'; // Símbolo de flecha izquierda
+    prevButton.addEventListener('click', () => {
+        pauseAutoScrollTemporarily(); // Pausa auto-scroll temporalmente
+        goToSlide(currentIndex - 1); // Navega al slide anterior
+    });
+    
+    // Crear botón de navegación siguiente
+    const nextButton = document.createElement('button');
+    nextButton.className = 'lab-carousel-control lab-carousel-next';
+    nextButton.innerHTML = '&#10095;'; // Símbolo de flecha derecha
+    nextButton.addEventListener('click', () => {
+        pauseAutoScrollTemporarily(); // Pausa auto-scroll temporalmente
+        goToSlide(currentIndex + 1); // Navega al slide siguiente
+    });
+    
+    // Agregar botones al contenedor de controles
+    controlsContainer.appendChild(prevButton);
+    controlsContainer.appendChild(nextButton);
+    // Agregar controles al DOM después del carrusel
+    carousel.parentNode.appendChild(controlsContainer);
+    
+    // Función para actualizar el estado visual de los indicadores
+    function updateIndicators(index) {
+        // Remueve la clase 'active' de todos los indicadores
+        indicators.forEach(indicator => {
+            indicator.classList.remove('active');
+        });
+        // Agrega la clase 'active' al indicador correspondiente al slide actual
+        indicators[index].classList.add('active');
+    }
+    
+    // Función para navegar a un slide específico
+    function goToSlide(index) {
+        // Maneja el wrap-around (circular) de los índices
+        if (index < 0) index = totalSlides - 1;
+        if (index >= totalSlides) index = 0;
+        
+        // Actualiza el índice actual
+        currentIndex = index;
+        // Calcula el ancho de un slide
+        const slideWidth = carousel.clientWidth;
+        // Desplaza suavemente al slide seleccionado
+        carousel.scrollTo({
+            left: slideWidth * index,
+            behavior: 'smooth'
+        });
+        // Actualiza los indicadores visuales
+        updateIndicators(index);
+    }
+    
+    // Función para pausar temporalmente el auto-scroll cuando el usuario interactúa
+    function pauseAutoScrollTemporarily() {
+        isAutoScrollActive = false; // Desactiva el auto-scroll
+        clearInterval(autoScrollInterval); // Limpia el intervalo actual
+        
+        // Limpiar timeout anterior si existe
+        clearTimeout(userInteractionTimeout);
+        
+        // Reanudar después de 10 segundos de inactividad
+        userInteractionTimeout = setTimeout(() => {
+            isAutoScrollActive = true; // Reactiva el auto-scroll
+            startAutoScroll(); // Reinicia el auto-scroll
+        }, 10000); // 10 segundos
+    }
+    
+    // Función para iniciar el auto-scroll automático
+    function startAutoScroll() {
+        if (!isAutoScrollActive) return; // Sale si el auto-scroll está desactivado
+        
+        // Limpia cualquier intervalo existente
+        clearInterval(autoScrollInterval);
+        // Establece un nuevo intervalo para cambiar slides automáticamente
+        autoScrollInterval = setInterval(() => {
+            goToSlide(currentIndex + 1); // Navega al siguiente slide
+        }, 5000); // Cambia de slide cada 5 segundos
+    }
+    
+    // Detectar cambio de slide con scroll manual del usuario
+    carousel.addEventListener('scroll', function() {
+        // Calcula la posición actual de scroll
+        const scrollPosition = carousel.scrollLeft;
+        // Calcula el ancho de un slide
+        const slideWidth = carousel.clientWidth;
+        // Calcula el índice del slide actual basado en la posición de scroll
+        const newIndex = Math.round(scrollPosition / slideWidth);
+        
+        // Si el índice cambió, actualiza el estado
+        if (newIndex !== currentIndex) {
+            currentIndex = newIndex;
+            updateIndicators(currentIndex);
+            
+            // Pausa temporalmente el auto-scroll cuando el usuario se desplaza manualmente
+            pauseAutoScrollTemporarily();
+        }
+    });
+    
+    // Event listeners para los indicadores de navegación
+    indicators.forEach(indicator => {
+        indicator.addEventListener('click', function() {
+            // Obtiene el índice del indicador clickeado
+            const index = parseInt(this.getAttribute('data-index'));
+            // Pausa el auto-scroll temporalmente
+            pauseAutoScrollTemporarily();
+            // Navega al slide correspondiente
+            goToSlide(index);
+        });
+    });
+    
+    // Navegación con teclado (flechas izquierda y derecha)
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowLeft') {
+            pauseAutoScrollTemporarily(); // Pausa auto-scroll
+            goToSlide(currentIndex - 1); // Slide anterior
+        } else if (e.key === 'ArrowRight') {
+            pauseAutoScrollTemporarily(); // Pausa auto-scroll
+            goToSlide(currentIndex + 1); // Slide siguiente
+        }
+    });
+    
+    // Pausar auto-scroll cuando el usuario interactúa con el carrusel (mouse sobre)
+    carousel.addEventListener('mouseenter', () => {
+        isAutoScrollActive = false; // Desactiva auto-scroll
+        clearInterval(autoScrollInterval); // Limpia el intervalo
+    });
+    
+    // Reanudar auto-scroll cuando el usuario deja de interactuar (mouse fuera)
+    carousel.addEventListener('mouseleave', () => {
+        // Solo reanuda si no hay interacción reciente del usuario
+        if (!userInteractionTimeout) {
+            isAutoScrollActive = true; // Reactiva auto-scroll
+            startAutoScroll(); // Reinicia el auto-scroll
+        }
+    });
+    
+    // Asegurarse de que el carrusel se redimensione correctamente al cambiar tamaño de ventana
+    window.addEventListener('resize', function() {
+        // Recalcula la posición después del redimensionamiento
+        goToSlide(currentIndex);
+    });
+    
+    // Iniciar auto-scroll al cargar la página
+    startAutoScroll();
+});
+</script>
