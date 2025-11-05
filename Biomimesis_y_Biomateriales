@@ -1,0 +1,348 @@
+<div class="contenedor-principal">
+    <!-- Celda grande de texto -->
+    <div class="celda-texto">
+        <h2>
+            Biomimesis y Biomateriales
+        </h2>
+        <p>
+            El área de Biomimesis y Biomateriales se constituye como una disciplina científica de vanguardia que se articula en dos pilares fundamentales e intrínsecamente conectados: la biomimesis, que estudia sistemas biológicos como modelo de inspiración para el diseño de materiales avanzados, y el desarrollo de biomateriales, que utiliza y modifica polímeros naturales para crear dispositivos biocompatibles con aplicaciones específicas. La investigación biomimética se centra en la caracterización óptico-estructural de sistemas biológicos complejos, con un énfasis notable en el estudio de los exoesqueletos de escarabajos del género Chrysina. Estos insectos poseen microestructuras quitinosas organizadas en estratos multidireccionales que funcionan como cristales fotónicos naturales, capaces de reflejar selectivamente luz circularmente polarizada y generar sus vibrantes colores estructurales metálicos.
+        </p>
+        <p>
+            Paralelamente, y en un fructífero diálogo con los hallazgos biomiméticos, se sintetizan y funcionalizan activamente biomateriales a partir de una amplia gama de biopolímeros como el quitosano (derivado de la quitina de los mismos exoesqueletos estudiados), almidón, carragenina y ácido poliláctico (PLA). El objetivo es fabricar plataformas tecnológicas versátiles, que incluyen andamios tisulares 3D porosos que mimetizan la matriz extracelular para ingeniería de tejidos, sistemas de liberación controlada de fármacos donde un polímero conductor puede actuar como membrana de dosificación electro-activa, y bio-compuestos con propiedades mecánicas y eléctricas sintonizables para su uso en biosensores o aplicaciones ambientales.
+        </p>
+        <p>
+            La convergencia de estos dos pilares genera un ciclo virtuoso de innovación: la naturaleza proporciona el diseño (como la estructura fotónica del escarabajo), y la ciencia de materiales proporciona las herramientas para emularlo, mejorarlo y aplicarlo utilizando materiales sostenibles. Este enfoque se manifiesta en una gran diversidad de aplicaciones, que van desde el desarrollo de hormigones hidrofóbicos inspirados en fenómenos naturales y la encapsulación de nematodos para control biológico, hasta la exploración de fenómenos físicos como la flexoelectricidad en huesos para futuras aplicaciones en regeneración ósea.
+        </p>
+    </div>
+    <!-- Contenedor derecho con dos celdas -->
+    <div class="contenedor-derecho">
+        <!-- Carrusel vertical de títulos de papers -->
+        <div class="celda-carrusel-vertical">
+            <div class="titulo-seccion titulo-papers">
+                <h3>
+                    Papers Recientes
+                </h3>
+            </div>
+            <div class="carrusel-vertical">
+                <h3>
+                    <a class="item-carrusel" href="#">Optical properties of chitin and chitosan biopolymers with application to structural color analysis</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">A new lignocellulosic biomass deconstruction process combining thermo-mechano chemical action and bio-catalytic enzymatic hydrolysis</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Modified cellulose/poly composite as photocatalyst for the removal of pharmaceuticals from water</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Flexoelectricity in bones</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Visible light reflection spectra from cuticle layered materials</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Heterogeneous water oxidation: surface activity versus amorphization activation in cobalt phosphate catalysts</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Visualización de las interacciones patógeno – hospedero a nivel de ultraestructura</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">External Morphology of Tagosodes orizicolus Revealed by Scanning Electron Microscopy</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Mejora de costos de producción de nanopartículas de hidroxiapatita</a>
+                </h3>
+                <h3>
+                    <a class="item-carrusel" href="#">Photonic crystal properties of the cuticle of Chrysina resplendens scarabs</a>
+                </h3>
+            </div>
+        </div>
+        <!-- Carrusel horizontal de investigadores -->
+        <div class="celda-carrusel-horizontal">
+            <div class="titulo-seccion">
+                <h3>
+                    Investigadores
+                </h3>
+            </div>
+            <div class="carrusel-horizontal">
+                <div class="item-investigador">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-09/Daniel.png" alt="Dr. Daniel Azofeifa Alvarado" width="1280" height="1092">
+                    <div class="subtitulo-investigador">
+                        Dr. Daniel Azofeifa Alvarado
+                    </div>
+                </div>
+                <div class="item-investigador">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-09/Erick-Castellon.jpg" alt="Dr. Erick Castellón Elizondo" width="512" height="420">
+                    <div class="subtitulo-investigador">
+                        Dr. Erick Castellón Elizondo
+                    </div>
+                </div>
+                <div class="item-investigador">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-09/esteban_avendano.jpg" alt="Ph.D. Esteban Avendaño Soto" width="522" height="400">
+                    <div class="subtitulo-investigador">
+                        Ph.D. Esteban Avendaño Soto
+                    </div>
+                </div>
+                <div class="item-investigador">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-09/Fabia%CC%81n%20Va%CC%81squez.jpg" alt="Dr. Fabián Vásquez Sancho" width="1280" height="833">
+                    <div class="subtitulo-investigador">
+                        Dr. Fabián Vásquez Sancho
+                    </div>
+                </div>
+                <div class="item-investigador">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2025-05/Marcela%20H.jpeg" alt="Dra. Marcela Hernández Jiménez" width="1208" height="1600">
+                    <div class="subtitulo-investigador">
+                        Dra. Marcela Hernández Jiménez
+                    </div>
+                </div>
+                <div class="item-investigador">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/rs234406_krb_25055f5ae95204751.jpg" alt="Dra. Mavis Montero Villalobos" width="704" height="510">
+                    <div class="subtitulo-investigador">
+                        Dra. Mavis Montero Villalobos
+                    </div>
+                </div>
+                <div class="item-investigador">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/monica%20prado%20%281%29.png" alt="Dra. Mónica Prado Porras" width="350" height="319">
+                    <div class="subtitulo-investigador">
+                        Dra. Mónica Prado Porras
+                    </div>
+                </div>
+                <div class="item-investigador">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/mi%20foto.JPG" alt="Dra. Rebeca Mora Castro" width="990" height="634">
+                    <div class="subtitulo-investigador">
+                        Dra. Rebeca Mora Castro
+                    </div>
+                </div>
+                <div class="item-investigador">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-09/Cindy-Torres-Quiro%CC%81s.jpg" alt="Dra. Cindy Torres Quirós" width="400" height="312">
+                    <div class="subtitulo-investigador">
+                        Dra. Cindy Torres Quirós
+                    </div>
+                </div>
+                <div class="item-investigador">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2023-10/Premiados-William_y_Adolfo_0.jpg" alt="Dr. William Vargas Castro" width="249" height="203">
+                    <div class="subtitulo-investigador">
+                        Dr. William Vargas Castro
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+.contenedor-principal {
+    display: flex;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+/* Celda grande de texto - ahora ocupa el 50% */
+.celda-texto {
+    flex: 1;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    padding: 30px;
+    overflow-y: auto;
+    max-height: 800px;
+    width: 50%;
+}
+.celda-texto h2 {
+    color: #0074cc;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0074cc;
+    font-size: 28px;
+    text-align: center;
+}
+.celda-texto p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+    text-align: justify;
+}
+/* Contenedor derecho - ahora ocupa el 50% */
+.contenedor-derecho {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+/* Celda carrusel vertical */
+.celda-carrusel-vertical {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    padding: 20px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.carrusel-vertical {
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 10px;
+    flex: 1;
+}
+.carrusel-vertical::-webkit-scrollbar {
+    width: 6px;
+}
+.carrusel-vertical::-webkit-scrollbar-thumb {
+    background-color: #0074cc;
+    border-radius: 10px;
+}
+/* Estilo para los enlaces de papers - TAMAÑO MÁS PEQUEÑO */
+.item-carrusel {
+    display: block;
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #0074cc;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+.item-carrusel:hover {
+    background-color: #e3f2fd;
+    transform: translateX(5px);
+    text-decoration: none;
+    color: inherit;
+}
+.item-carrusel h3 {
+    font-size: 10px; /* Tamaño más pequeño */
+    color: #2c3e50;
+    margin: 0;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: normal;
+}
+/* Título de Papers Recientes - perfectamente centrado */
+.titulo-papers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+}
+.titulo-papers h3 {
+    color: #0074cc;
+    font-size: 20px;
+    margin: 0;
+}
+/* Celda carrusel horizontal de investigadores */
+.celda-carrusel-horizontal {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    padding: 20px;
+    height: 380px;
+    overflow: hidden;
+}
+.carrusel-horizontal {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+}
+.carrusel-horizontal::-webkit-scrollbar {
+    height: 6px;
+}
+.carrusel-horizontal::-webkit-scrollbar-thumb {
+    background-color: #0074cc;
+    border-radius: 10px;
+}
+/* Estilo para cada investigador en el carrusel */
+.item-investigador {
+    min-width: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+.item-investigador img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.subtitulo-investigador {
+    padding: 12px 8px;
+    background-color: #f8f9fa;
+    text-align: center;
+    font-size: 12px;
+    color: #2c3e50;
+    font-weight: bold;
+    line-height: 1.2;
+}
+/* Títulos de secciones - ahora centrados */
+.titulo-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    text-align: center;
+}
+.titulo-seccion h3 {
+    color: #0074cc;
+    font-size: 22px;
+    margin: 0;
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedor-principal {
+        flex-direction: column;
+    }
+    
+    .celda-texto {
+        max-height: none;
+        width: 100%;
+    }
+    
+    .contenedor-derecho {
+        width: 100%;
+    }
+    
+    .celda-carrusel-vertical {
+        height: 300px;
+    }
+    
+    .celda-carrusel-horizontal {
+        height: 300px;
+    }
+    
+    .item-carrusel h3 {
+        font-size: 9px; /* Aún más pequeño en móviles */
+    }
+    
+    .titulo-papers h3 {
+        font-size: 18px;
+    }
+    
+    .titulo-seccion h3 {
+        font-size: 20px;
+    }
+    
+    .item-investigador {
+        min-width: 140px;
+    }
+    
+    .item-investigador img {
+        height: 120px;
+    }
+    
+    .subtitulo-investigador {
+        font-size: 10px;
+        padding: 8px 5px;
+    }
+}
+</style>
