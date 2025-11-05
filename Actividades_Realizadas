@@ -1,0 +1,702 @@
+<!-- 
+    ============================================================
+    CARRUSEL DE ACTIVIDADES - CICIMA
+    ============================================================
+    Este componente muestra las actividades, conferencias y eventos
+    del centro en un carrusel horizontal interactivo
+-->
+
+<!-- 
+    CONTENEDOR PRINCIPAL DEL CARRUSEL DE ACTIVIDADES
+    Envuelve todo el componente con estilos de tarjeta
+-->
+<div class="activities-carousel-container">
+    
+    <!-- 
+        TÍTULO PRINCIPAL DE LA SECCIÓN
+        Encabezado que identifica la sección de actividades
+    -->
+    <h2 class="activities-main-title">
+        Actividades
+    </h2>
+    
+    <!-- 
+        CONTENEDOR DEL CARRUSEL Y CONTROLES
+        Agrupa el carrusel y los elementos de navegación
+    -->
+    <div class="activities-carousel-wrapper">
+        
+        <!-- 
+            CARRUSEL HORIZONTAL DE ACTIVIDADES
+            Contiene todos los elementos de actividades en formato deslizable
+        -->
+        <div class="activities-carousel">
+            
+            <!-- 
+                ACTIVIDAD 1: SCIMAN25
+                Primer elemento del carrusel - Conferencia principal
+            -->
+            <div class="activity-item">
+                <!-- Título de la actividad -->
+                <div class="activity-title">
+                    SCIMAN25
+                </div>
+                
+                <!-- Imagen representativa de la actividad -->
+                <div class="activity-image">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2025-05/Dise%C3%B1o%20sin%20t%C3%ADtulo%20%283%29_0.png" 
+                         alt="SCIMAN 2025" 
+                         width="600" 
+                         height="598">
+                </div>
+                
+                <!-- Metadatos de fecha y hora -->
+                <div class="activity-meta">
+                    <span class="activity-date">15-16 de Julio, 2025</span>
+                    <span class="activity-time">9:00 AM - 5:00 PM</span>
+                </div>
+                
+                <!-- Información de ubicación -->
+                <div class="activity-ubicacion">
+                    <span class="ubicacion-text">Auditorio de la Facultad de Ciencias, Universidad de Costa Rica</span>
+                </div>
+            </div>
+
+            <!-- 
+                ACTIVIDAD 2: CONFERENCIA SOBRE VESÍCULAS Y ENDOCITOSIS
+                Segunda actividad - Conferencia especializada
+            -->
+            <div class="activity-item">
+                <div class="activity-title">
+                    SNARE-t-work in Action: Mapping vesicle trafficking end endocytosis in plasmodium falciparum with ultra-expasion microcopy
+                </div>
+                <div class="activity-image">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2025-05/downloadgram.org_485638368_17928478074019396_5687130822288625673_n.jpg" 
+                         alt="Conferencia Materiales Sostenibles" 
+                         width="600" 
+                         height="749">
+                </div>
+                <div class="activity-meta">
+                    <span class="activity-date">20 de Marzo, 2025</span>
+                    <span class="activity-time">11:00 AM - 1:00 PM</span>
+                </div>
+                <div class="activity-ubicacion">
+                    <span class="ubicacion-text">Auditorio de Microbiología, Universidad de Costa Rica</span>
+                </div>
+            </div>
+
+            <!-- 
+                ACTIVIDAD 3: ELECTROCROMISMO EN PELÍCULAS DELGADAS
+                Tercera actividad - Seminario técnico
+            -->
+            <div class="activity-item">
+                <div class="activity-title">
+                    Electrocromismo en películas delgadas de oxido de tungsteno: Detalle acerca de la síntesis mediante electrodepositación química
+                </div>
+                <div class="activity-image">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2025-05/downloadgram.org_464516858_1114710099987670_2755621919141707378_n.jpg" 
+                         alt="Seminario de Investigación" 
+                         width="600" 
+                         height="600">
+                </div>
+                <div class="activity-meta">
+                    <span class="activity-date">30 de Octubre, 2024</span>
+                    <span class="activity-time">11:00 AM - 1:00 PM</span>
+                </div>
+                <div class="activity-ubicacion">
+                    <span class="ubicacion-text">Organización para Estudios Tropicales (OET), Ciudad de la Investigación, Finca 2, San Pedro – Montes de Oca, San José, Costa Rica.</span>
+                </div>
+            </div>
+
+            <!-- 
+                ACTIVIDAD 4: NANOANTENAS ÓPTICAS CON ORIGAMI DE ADN
+                Cuarta actividad - Avances en nanotecnología
+            -->
+            <div class="activity-item">
+                <div class="activity-title">
+                    Nanoantenas ópticas fabricadas mediante origami de ADN: una plataforma para la emisión quiral de fluoróforos
+                </div>
+                <div class="activity-image">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2025-05/downloadgram.org_462653984_905269464816895_908629530830773179_n.jpg" 
+                         alt="Curso Avanzado" 
+                         width="600" 
+                         height="450">
+                </div>
+                <div class="activity-meta">
+                    <span class="activity-date">16 de Octubre, 2024</span>
+                    <span class="activity-time">11:00 AM - 1:00 PM</span>
+                </div>
+                <div class="activity-ubicacion">
+                    <span class="ubicacion-text">Organización para Estudios Tropicales (OET), Ciudad de la Investigación, Finca 2, San Pedro – Montes de Oca, San José, Costa Rica.</span>
+                </div>
+            </div>
+
+            <!-- 
+                ACTIVIDAD 5: AFM - MÁS QUE IMÁGENES BONITAS
+                Quinta actividad - Microscopía de fuerza atómica
+            -->
+            <div class="activity-item">
+                <div class="activity-title">
+                    AFM: Una técnica que hace más que imágenes bonitas
+                </div>
+                <div class="activity-image">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2025-05/downloadgram.org_456692941_1441619019807559_7039107263659158131_n.jpg" 
+                         alt="Exhibición Estudiantil" 
+                         width="600" 
+                         height="600">
+                </div>
+                <div class="activity-meta">
+                    <span class="activity-date">28 de Agosto, 2024</span>
+                    <span class="activity-time">3:30 PM - 6:00 PM</span>
+                </div>
+                <div class="activity-ubicacion">
+                    <span class="ubicacion-text">Organización para Estudios Tropicales (OET), Ciudad de la Investigación, Finca 2, San Pedro – Montes de Oca, San José, Costa Rica.</span>
+                </div>
+            </div>
+
+            <!-- 
+                ACTIVIDAD 6: NANOESTRUCTURAS FERROELÉCTRICAS
+                Sexta actividad - Investigación en nanoestructuras
+            -->
+            <div class="activity-item">
+                <div class="activity-title">
+                    Exploración de nuevas funcionalidades en nanoestructuras ferroeléctricas mediante microscopía de fuerza atómica
+                </div>
+                <div class="activity-image">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2025-05/downloadgram.org_456438365_8284040871646267_1339763675927054778_n.jpg" 
+                         alt="Mesa Redonda" 
+                         width="600" 
+                         height="711">
+                </div>
+                <div class="activity-meta">
+                    <span class="activity-date">21 de Agosto, 2024</span>
+                    <span class="activity-time">1:00 PM - 3:00 PM</span>
+                </div>
+                <div class="activity-ubicacion">
+                    <span class="ubicacion-text">Auditorio de la Escuela de Física y Matemática, Edificio de Física-Matemática, Ciudad Universitaria Rodrigo Facio, San Pedro – Montes de Oca, San José.</span>
+                </div>
+            </div>
+
+            <!-- 
+                ACTIVIDAD 7: QUÍMICA DE LOS DOCUMENTOS
+                Séptima actividad - Conservación y patrimonio
+            -->
+            <div class="activity-item">
+                <div class="activity-title">
+                    La química de los documentos
+                </div>
+                <div class="activity-image">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2025-05/downloadgram.org_454728425_1178750396683810_1248490643981480101_n.jpg" 
+                         alt="Mesa Redonda" 
+                         width="600" 
+                         height="405">
+                </div>
+                <div class="activity-meta">
+                    <span class="activity-date">13 - 23 de Agosto, 2024</span>
+                    <span class="activity-time">8:00 PM - 5:00 PM</span>
+                </div>
+                <div class="activity-ubicacion">
+                    <span class="ubicacion-text">Auditorio de la Escuela de Física y Matemática, Edificio de Física-Matemática, Ciudad Universitaria Rodrigo Facio, San Pedro – Montes de Oca, San José.</span>
+                </div>
+            </div>
+
+            <!-- 
+                ACTIVIDAD 8: APRENDIZAJE HUMANO Y MÁQUINA
+                Octava actividad - Inteligencia artificial aplicada
+            -->
+            <div class="activity-item">
+                <div class="activity-title">
+                    Aprendizaje humano y aprendizaje máquina en la identificación de escarabajos costarricenses
+                </div>
+                <div class="activity-image">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2025-05/downloadgram.org_446748479_882987293594182_1231887484429591304_n.jpg" 
+                         alt="Mesa Redonda" 
+                         width="600" 
+                         height="600">
+                </div>
+                <div class="activity-meta">
+                    <span class="activity-date">07 de Junio, 2024</span>
+                    <span class="activity-time">3:00 PM - 5:00 PM</span>
+                </div>
+                <div class="activity-ubicacion">
+                    <span class="ubicacion-text">Organización para Estudios Tropicales (OET), Ciudad de la Investigación, Finca 2, San Pedro – Montes de Oca, San José, Costa Rica.</span>
+                </div>
+            </div>
+
+            <!-- 
+                ACTIVIDAD 9: PROPIEDADES ÓPTICAS DE ESCARABAJOS
+                Novena actividad - Biomimética y óptica
+            -->
+            <div class="activity-item">
+                <div class="activity-title">
+                    En la búsqueda del oro y la plata en los bosques costarricenses: propiedades ópticas de los escarabajos con apariencia metálica
+                </div>
+                <div class="activity-image">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2025-05/downloadgram.org_447068362_272408492633050_4147357330241749639_n.jpg" 
+                         alt="Mesa Redonda" 
+                         width="600" 
+                         height="750">
+                </div>
+                <div class="activity-meta">
+                    <span class="activity-date">31 de Mayo, 2024</span>
+                    <span class="activity-time">2:00 PM - 4:00 PM</span>
+                </div>
+                <div class="activity-ubicacion">
+                    <span class="ubicacion-text">Escuela de Física, Calle 39, Av 1-3, Ciudad Universitaria Rodrigo Facio, San Pedro – Montes de Oca, San José.</span>
+                </div>
+            </div>
+
+            <!-- 
+                ACTIVIDAD 10: INTERFAZ ORGÁNICO-INORGÁNICO EN CORALES
+                Décima actividad - Bio-materiales marinos
+            -->
+            <div class="activity-item">
+                <div class="activity-title">
+                    Análisis de la interfaz orgánico-inorgánica en octocorales: el caso de M. fruticosa
+                </div>
+                <div class="activity-image">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2025-05/downloadgram.org_441402595_1089536805472277_6688903065040130_n.jpg" 
+                         alt="Mesa Redonda" 
+                         width="600" 
+                         height="600">
+                </div>
+                <div class="activity-meta">
+                    <span class="activity-date">03 de Mayo, 2024</span>
+                    <span class="activity-time">3:00 PM - 5:00 PM</span>
+                </div>
+                <div class="activity-ubicacion">
+                    <span class="ubicacion-text">Calle 39 , Av 8-10 , Los Yoses - San Pedro</span>
+                </div>
+            </div>
+
+            <!-- 
+                ACTIVIDAD 11: SCIMAN 23
+                Undécima actividad - Evento anual del año anterior
+            -->
+            <div class="activity-item">
+                <div class="activity-title">
+                    SciMan 23
+                </div>
+                <div class="activity-image">
+                    <img src="https://cicima.ucr.ac.cr/sites/default/files/2025-04/sciman2.png" 
+                         alt="Mesa Redonda" 
+                         width="600" 
+                         height="450">
+                </div>
+                <div class="activity-meta">
+                    <span class="activity-date">11 de Diciembre, 2023</span>
+                    <span class="activity-time">11:00 PM - 5:00 PM</span>
+                </div>
+                <div class="activity-ubicacion">
+                    <span class="ubicacion-text">Calle 39 , Av 8-10 , Los Yoses - San Pedro</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 
+            CONTROLES INFERIORES DEL CARRUSEL
+            Navegación y enlace para ver todas las actividades
+        -->
+        <div class="carousel-bottom-controls">
+            <!-- Botón de navegación anterior -->
+            <p>
+                <button class="activity-control activity-prev">‹</button>
+            </p>
+            
+            <!-- Enlace para ver todas las actividades -->
+            <div class="view-all-container">
+                <a class="view-all-button" href="https://cicima.ucr.ac.cr/actividades">Ver todas las actividades</a>
+            </div>
+            
+            <!-- Botón de navegación siguiente -->
+            <p>
+                <button class="activity-control activity-next">›</button>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- 
+    ============================================================
+    ESTILOS CSS PARA EL CARRUSEL DE ACTIVIDADES
+    ============================================================
+    Define la apariencia visual y comportamiento responsive
+-->
+<style>
+    /* 
+        CONTENEDOR PRINCIPAL DEL CARRUSEL
+        Estilo de tarjeta con sombras y bordes redondeados
+    */
+    .activities-carousel-container {
+        background-color: white; /* Fondo blanco para contraste profesional */
+        border-radius: 20px; /* Esquinas muy redondeadas */
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Sombra pronunciada para destacar */
+        overflow: hidden; /* Oculta cualquier contenido que se desborde */
+        max-width: 100%; /* Ancho máximo del 100% del contenedor padre */
+        padding: 40px; /* Espaciado interno generoso */
+        margin: 20px auto; /* Centrado automático con márgenes */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna y legible */
+    }
+
+    /* 
+        TÍTULO PRINCIPAL DE LA SECCIÓN
+        Encabezado destacado en azul institucional
+    */
+    .activities-main-title {
+        text-align: center; /* Centrado horizontal */
+        font-size: 32px; /* Tamaño de fuente muy grande para destacar */
+        color: #0074cc; /* Color azul institucional */
+        margin-bottom: 30px; /* Espacio inferior generoso */
+        font-weight: 700; /* Peso de fuente muy negrita */
+    }
+
+    /* 
+        CONTENEDOR DEL CARRUSEL
+        Posicionamiento relativo para elementos hijos absolutos
+    */
+    .activities-carousel-wrapper {
+        position: relative; /* Permite posicionamiento absoluto de elementos hijos */
+    }
+
+    /* 
+        CARRUSEL HORIZONTAL PRINCIPAL
+        Contenedor flexible con scroll horizontal
+    */
+    .activities-carousel {
+        display: flex; /* Usa Flexbox para disposición horizontal */
+        overflow-x: hidden; /* Oculta la barra de scroll horizontal por defecto */
+        scroll-behavior: smooth; /* Scroll suave al navegar */
+        width: 100%; /* Ancho completo del contenedor */
+        position: relative; /* Posicionamiento para elementos hijos */
+        padding: 10px 0; /* Padding vertical para espacio de respiración */
+    }
+
+    /* 
+        ELEMENTO INDIVIDUAL DE ACTIVIDAD
+        Tarjeta que contiene información de cada actividad
+    */
+    .activity-item {
+        flex: 0 0 calc(33.333% - 20px); /* Ancho fijo para 3 elementos por vista (33.33% - margen) */
+        margin: 0 10px; /* Márgenes horizontales entre elementos */
+        display: flex; /* Flexbox interno para organización vertical */
+        flex-direction: column; /* Organiza el contenido en columna */
+        padding: 20px; /* Espaciado interno */
+        box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+        background-color: #f9fafc; /* Fondo gris muy claro para contraste sutil */
+        border-radius: 15px; /* Esquinas redondeadas */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Sombra sutil */
+        transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves para efectos hover */
+    }
+
+    /* 
+        EFECTO HOVER PARA TARJETAS DE ACTIVIDAD
+        Elevación y sombra más pronunciada al interactuar
+    */
+    .activity-item:hover {
+        transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    }
+
+    /* 
+        TÍTULO DE LA ACTIVIDAD
+        Texto destacado en azul para el nombre de la actividad
+    */
+    .activity-title {
+        font-size: 18px; /* Tamaño de fuente legible */
+        font-weight: bold; /* Negrita para énfasis */
+        color: #0074cc; /* Color azul institucional */
+        margin-bottom: 15px; /* Espacio inferior */
+        line-height: 1.3; /* Interlineado cómodo para lectura */
+        text-align: center; /* Texto centrado */
+        min-height: 60px; /* Altura mínima para consistencia visual */
+        display: flex; /* Flexbox para centrado vertical */
+        align-items: center; /* Centrado vertical */
+        justify-content: center; /* Centrado horizontal */
+    }
+
+    /* 
+        CONTENEDOR DE IMAGEN
+        Controla el tamaño y recorte de las imágenes
+    */
+    .activity-image {
+        width: 100%; /* Ancho completo del contenedor */
+        height: 180px; /* Altura fija para consistencia */
+        overflow: hidden; /* Oculta partes de la imagen que se desborden */
+        border-radius: 10px; /* Esquinas redondeadas */
+        margin-bottom: 15px; /* Espacio inferior */
+    }
+
+    /* 
+        IMAGEN DENTRO DEL CONTENEDOR
+        Estilo para las imágenes de actividades
+    */
+    .activity-image img {
+        width: 100%; /* Ancho completo del contenedor */
+        height: 100%; /* Alto completo del contenedor */
+        object-fit: cover; /* Recorta la imagen para llenar el espacio manteniendo proporción */
+        transition: transform 0.5s; /* Transición suave para efecto hover */
+    }
+
+    /* 
+        EFECTO HOVER PARA IMÁGENES
+        Zoom sutil al pasar el cursor sobre la tarjeta
+    */
+    .activity-item:hover .activity-image img {
+        transform: scale(1.05); /* Zoom del 5% al interactuar */
+    }
+
+    /* 
+        CONTENEDOR DE METADATOS (FECHA Y HORA)
+        Organización vertical de información temporal
+    */
+    .activity-meta {
+        display: flex; /* Flexbox para organización */
+        flex-direction: column; /* Elementos en columna */
+        gap: 8px; /* Espacio uniforme entre elementos */
+        margin-bottom: 15px; /* Espacio inferior */
+        font-size: 14px; /* Tamaño de fuente pequeño */
+        color: #666; /* Color gris medio */
+        padding: 0 10px; /* Padding horizontal */
+    }
+
+    /* 
+        FECHA Y HORA INDIVIDUALES
+        Estilo para elementos de fecha y hora
+    */
+    .activity-date, .activity-time {
+        display: flex; /* Flexbox para alineación con iconos */
+        align-items: center; /* Centrado vertical con iconos */
+        gap: 8px; /* Espacio entre icono y texto */
+    }
+
+    /* 
+        ICONO DE CALENDARIO PARA FECHA
+        Pseudoelemento antes del texto de fecha
+    */
+    .activity-date:before {
+        content: "📅"; /* Emoji de calendario */
+        font-size: 16px; /* Tamaño del icono */
+    }
+
+    /* 
+        ICONO DE RELOJ PARA HORA
+        Pseudoelemento antes del texto de hora
+    */
+    .activity-time:before {
+        content: "🕒"; /* Emoji de reloj */
+        font-size: 16px; /* Tamaño del icono */
+    }
+
+    /* 
+        CONTENEDOR DE UBICACIÓN
+        Estilo para la información de lugar
+    */
+    .activity-ubicacion {
+        font-size: 14px; /* Tamaño de fuente pequeño */
+        color: #555; /* Color gris oscuro */
+        line-height: 1.5; /* Interlineado cómodo */
+        padding: 0 10px; /* Padding horizontal */
+        flex-grow: 1; /* Ocupa el espacio disponible restante */
+        display: flex; /* Flexbox para alineación */
+        align-items: center; /* Centrado vertical */
+        gap: 8px; /* Espacio entre icono y texto */
+    }
+
+    /* 
+        ICONO DE UBICACIÓN
+        Pseudoelemento antes del texto de ubicación
+    */
+    .ubicacion-text:before {
+        content: "📍"; /* Emoji de ubicación */
+        font-size: 16px; /* Tamaño del icono */
+        margin-right: 5px; /* Espacio a la derecha del icono */
+    }
+
+    /* 
+        CONTROLES INFERIORES DEL CARRUSEL
+        Contenedor para navegación y enlace "ver todas"
+    */
+    .carousel-bottom-controls {
+        display: flex; /* Flexbox para disposición horizontal */
+        justify-content: center; /* Centrado horizontal */
+        align-items: center; /* Centrado vertical */
+        margin-top: 20px; /* Espacio superior */
+        gap: 20px; /* Espacio uniforme entre elementos */
+    }
+
+    /* 
+        BOTONES DE CONTROL DEL CARRUSEL
+        Estilo para botones de navegación anterior/siguiente
+    */
+    .activity-control {
+        background-color: #0074cc; /* Color azul institucional */
+        color: white; /* Texto blanco para contraste */
+        border: none; /* Sin borde */
+        width: 40px; /* Ancho fijo */
+        height: 40px; /* Alto fijo */
+        border-radius: 50%; /* Forma circular */
+        cursor: pointer; /* Cursor de mano al pasar */
+        font-size: 18px; /* Tamaño de fuente para flechas */
+        display: flex; /* Flexbox para centrado */
+        align-items: center; /* Centrado vertical */
+        justify-content: center; /* Centrado horizontal */
+        transition: background-color 0.3s; /* Transición suave para hover */
+    }
+
+    /* 
+        EFECTO HOVER PARA BOTONES DE CONTROL
+        Cambio de color al interactuar
+    */
+    .activity-control:hover {
+        background-color: #0056a3; /* Azul más oscuro al pasar el cursor */
+    }
+
+    /* 
+        CONTENEDOR DEL BOTÓN "VER TODAS"
+        Centrado del enlace principal
+    */
+    .view-all-container {
+        display: flex; /* Flexbox para centrado */
+        justify-content: center; /* Centrado horizontal */
+    }
+
+    /* 
+        BOTÓN "VER TODAS LAS ACTIVIDADES"
+        Enlace destacado para ver la lista completa
+    */
+    .view-all-button {
+        display: inline-block; /* Permite dimensiones específicas */
+        padding: 12px 30px; /* Espaciado interno generoso */
+        font-size: 16px; /* Tamaño de fuente legible */
+        color: white; /* Texto blanco para contraste */
+        text-decoration: none; /* Sin subrayado */
+        border-radius: 30px; /* Esquinas muy redondeadas */
+        background-color: #0074cc; /* Color azul institucional */
+        transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+        font-weight: 600; /* Peso de fuente seminegrita */
+    }
+
+    /* 
+        EFECTO HOVER PARA BOTÓN "VER TODAS"
+        Cambio de color y elevación al interactuar
+    */
+    .view-all-button:hover {
+        background-color: #0056a3; /* Azul más oscuro al pasar el cursor */
+        transform: translateY(-2px); /* Efecto de elevación */
+    }
+
+    /* 
+        MEDIA QUERY PARA TABLETS (992px o menos)
+        Ajusta el número de elementos visibles a 2 por fila
+    */
+    @media (max-width: 992px) {
+        .activity-item {
+            flex: 0 0 calc(50% - 20px); /* Ancho para 2 elementos por vista (50% - margen) */
+        }
+    }
+
+    /* 
+        MEDIA QUERY PARA MÓVILES (768px o menos)
+        Ajustes específicos para pantallas pequeñas
+    */
+    @media (max-width: 768px) {
+        /* Reduce el padding en móviles */
+        .activities-carousel-container {
+            padding: 20px;
+        }
+        
+        /* Un elemento por vista en móviles */
+        .activity-item {
+            flex: 0 0 calc(100% - 20px); /* Ancho completo (100% - margen) */
+        }
+        
+        /* Elimina la altura mínima del título en móviles */
+        .activity-title {
+            min-height: auto;
+        }
+        
+        /* Cambia a disposición vertical en controles */
+        .carousel-bottom-controls {
+            flex-direction: column; /* Elementos en columna */
+            gap: 15px; /* Espacio reducido entre elementos */
+        }
+    }
+</style>
+
+<!-- 
+    ============================================================
+    JAVASCRIPT PARA LA FUNCIONALIDAD DEL CARRUSEL
+    ============================================================
+    Controla la navegación y comportamiento del carrusel
+-->
+<script>
+    // Espera a que el DOM esté completamente cargado antes de ejecutar el código
+    document.addEventListener('DOMContentLoaded', function() {
+        // Obtiene referencias a los elementos principales del carrusel
+        const carousel = document.querySelector('.activities-carousel');
+        const prevButton = document.querySelector('.activity-prev');
+        const nextButton = document.querySelector('.activity-next');
+        const items = document.querySelectorAll('.activity-item');
+        
+        // Variables de estado del carrusel
+        let currentIndex = 0; // Índice actual del carrusel
+        const itemsPerView = 3; // Número de elementos visibles por defecto (para desktop)
+        
+        /**
+         * FUNCIÓN: ACTUALIZAR POSICIÓN DEL CARRUSEL
+         * Calcula y aplica el desplazamiento horizontal del carrusel
+         * basándose en el índice actual y el número de elementos por vista
+         */
+        function updateCarousel() {
+            // Verifica que existan elementos en el carrusel
+            if (items.length === 0) return;
+            
+            // Calcula el ancho de un elemento (incluyendo márgenes)
+            const itemWidth = items[0].offsetWidth + 20; // offsetWidth + margen (10px + 10px)
+            
+            // Desplaza el carrusel a la posición calculada
+            carousel.scrollTo({
+                left: currentIndex * itemWidth * itemsPerView, // Posición horizontal
+                behavior: 'smooth' // Transición suave
+            });
+        }
+        
+        /**
+         * EVENT LISTENER: BOTÓN ANTERIOR
+         * Navega al grupo anterior de elementos cuando se hace click
+         */
+        prevButton.addEventListener('click', function() {
+            // Verifica que no estemos en el primer grupo
+            if (currentIndex > 0) {
+                currentIndex--; // Decrementa el índice
+                updateCarousel(); // Actualiza la posición
+            }
+        });
+        
+        /**
+         * EVENT LISTENER: BOTÓN SIGUIENTE
+         * Navega al siguiente grupo de elementos cuando se hace click
+         */
+        nextButton.addEventListener('click', function() {
+            // Calcula el número máximo de grupos posibles
+            const maxIndex = Math.ceil(items.length / itemsPerView) - 1;
+            
+            // Verifica que no estemos en el último grupo
+            if (currentIndex < maxIndex) {
+                currentIndex++; // Incrementa el índice
+                updateCarousel(); // Actualiza la posición
+            }
+        });
+        
+        /**
+         * EVENT LISTENER: REDIMENSIONAMIENTO DE VENTANA
+         * Recalcula la posición del carrusel cuando cambia el tamaño de la ventana
+         */
+        window.addEventListener('resize', function() {
+            updateCarousel(); // Vuelve a calcular y aplicar la posición
+        });
+        
+        // Inicializa el carrusel en la posición correcta
+        updateCarousel();
+    });
+</script>
